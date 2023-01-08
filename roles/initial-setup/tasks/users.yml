@@ -1,0 +1,17 @@
+---
+- name: Create asgard Superuser
+  ansible.builtin.user:
+    name: asgard
+    groups:
+      - sudo
+    create_home: true
+    shell: /bin/bash
+
+- name: Allow Superusers Passwordless Sudo
+  ansible.builtin.template:
+    src: templates/passwordless_sudo_entry.j2
+    dest: /etc/sudoers.d/00_{{ username }}
+    mode: 0440
+    owner: root
+    group: root
+    force: true
