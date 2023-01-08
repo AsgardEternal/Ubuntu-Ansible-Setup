@@ -2,6 +2,9 @@ all:
   vars:
     server_timezone: America/Chicago
   hosts:
-    192.168.122.71:
-      ansible_user: asgard
+    asgard.orion-technologies.io:
+      superusers:
+        - username: asgard
+          public_keys:
+            - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ sam@orion
 

@@ -9,5 +9,7 @@
   roles:
     - role: initial-setup
       tags:
-        - ssh
-        - users
+        - initial
+    - role: docker
+      tags:
+        - docker

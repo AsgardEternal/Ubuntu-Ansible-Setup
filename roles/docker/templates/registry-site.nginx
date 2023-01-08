@@ -1,0 +1,29 @@
+server {
+        root html;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name {{ registry_site_name }} www.{{ registry_site_name }};
+
+        # disable limits to avoid HTTP 413 for large image uploads
+        client_max_body_size 0;
+
+        # Avoids HTTP 411, see https://github.com/moby/moby/issues/1486
+        chunked_transfer_encoding on;
+
+        location /v2/ {
+                # Do not allow connections from docker 1.5 and earlier
+                # docker pre-1.6.0 did not properly set the user agent on ping, catch "Go *" user agents
+                if ($http_user_agent ~ "^(docker\/1\.(3|4|5(?!\.[0-9]-dev))|Go ).*$" ) {
+                    return 404;
+                }
+
+                proxy_pass                          http://localhost:5000;
+                proxy_set_header  Host              $http_host;   # required for docker client's sake
+                proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+                proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+                proxy_set_header  X-Forwarded-Proto $scheme;
+                proxy_read_timeout                  900;
+        }
+}

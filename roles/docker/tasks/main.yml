@@ -1,0 +1,4 @@
+---
+# tasks file for docker
+- ansible.builtin.import_tasks: install-docker.yml
+- ansible.builtin.import_tasks: setup-docker-registry.yml

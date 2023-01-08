@@ -1,0 +1,124 @@
+---
+- name: Ensure Nginx and Utilities are Installed
+  become: true
+  ansible.builtin.apt:
+    name:
+      - nginx
+      - certbot
+      - python3-certbot-nginx
+      - apache2-utils
+    state: present
+
+- name: Add Allowance For Nginx On The Firewall
+  become: true
+  community.general.ufw:
+    state: enabled
+    rule: allow
+    name: Nginx Full
+
+- name: Template Site Into Place
+  become: true
+  ansible.builtin.template:
+    src: "templates/registry-site.nginx"
+    dest: "/etc/nginx/sites-available/{{ registry_site_name }}"
+    mode: 0644
+    owner: root
+    group: root
+    force: false
+
+- name: Ensure Site is Enabled
+  become: true
+  ansible.builtin.file:
+    state: link
+    src: "/etc/nginx/sites-available/{{ registry_site_name }}"
+    dest: "/etc/nginx/sites-enabled/{{ registry_site_name }}"
+    owner: root
+    group: root
+
+- name: Check if Obtaining an SSL Certificate is Required
+  become: true
+  ansible.builtin.stat:
+    path: "/etc/letsencrypt/live/{{ registry_site_name }}"
+  register: ssl_cert_stat
+
+- name: Obtain SSL Certificate For Registry Site if Necessary
+  become: true
+  # yamllint disable-line rule:line-length
+  ansible.builtin.command: sudo certbot --nginx -d "{{ registry_site_name }}" -d "www.{{ registry_site_name }}" -m "{{ registry_site_email }}" --agree-tos --non-interactive
+  when: not ssl_cert_stat.stat.exists
+
+- name: Create Docker Registry User
+  become: true
+  ansible.builtin.user:
+    name: "{{ registry_system_user }}"
+    shell: /bin/bash
+    state: present
+    groups:
+      - docker
+    create_home: true
+
+- name: Create Necessary Directories For Registry
+  become: true
+  ansible.builtin.file:
+    path: "/home/{{ registry_system_user }}/docker-registry/{{ item }}"
+    state: directory
+    mode: 0751
+    owner: "{{ registry_system_user }}"
+    group: "{{ registry_system_user }}"
+  loop:
+    - auth
+    - data
+
+- name: Get Stat of Registry Password
+  become: true
+  ansible.builtin.stat:
+    path: "/home/{{ registry_system_user }}/docker-registry/auth/registry.password"
+  register: registry_password_stat
+
+- name: Fail if No Registry Password Provided On Command Line And Registry Password Generation Needed
+  ansible.builtin.fail:
+    msg: "No Registry Password Was Provided! Provide it via: --extra-vars='docker_registry_password={PASSWORD HERE}'"
+  when: not registry_password_stat.stat.exists | bool and docker_registry_password is undefined
+
+- name: Generate Registry Password
+  become: true
+  ansible.builtin.shell:
+    cmd: htpasswd -Bic registry.password '{{ registry_login_user }}' <<< '{{ docker_registry_password }}'
+    executable: /bin/bash
+    chdir: "/home/{{ registry_system_user }}/docker-registry/auth"
+  changed_when: false
+
+- name: Set Permissions For Registry Password File
+  become: true
+  ansible.builtin.file:
+    path: "/home/{{ registry_system_user }}/docker-registry/auth/registry.password"
+    mode: 0700
+    owner: "{{ registry_system_user }}"
+    group: "{{ registry_system_user }}"
+
+- name: Copy docker-compose.yml Into Place
+  become: true
+  ansible.builtin.copy:
+    src: files/docker-compose.yml
+    dest: "/home/{{ registry_system_user }}/docker-registry/docker-compose.yml"
+    force: true
+    owner: "{{ registry_system_user }}"
+    group: "{{ registry_system_user }}"
+    mode: 0644
+
+- name: Check if Registry is Running
+  become: true
+  become_user: "{{ registry_system_user }}"
+  ansible.builtin.command: docker container inspect -f ''{{'.State.Running'}}'' docker-registry
+  changed_when: false
+  failed_when: false
+  register: registry_running
+
+- name: Run Registry if it isn't Running
+  become: true
+  become_user: "{{ registry_system_user }}"
+  ansible.builtin.command:
+    cmd: docker compose up -d
+
+    chdir: "/home/{{ registry_system_user }}/docker-registry"
+  when: registry_running.rc >= 1
