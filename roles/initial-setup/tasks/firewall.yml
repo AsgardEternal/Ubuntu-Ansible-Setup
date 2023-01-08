@@ -1,0 +1,7 @@
+- name: Permit OpenSSH Through The Firewall & Enable UFW
+  become: true
+  community.general.ufw:
+    state: enabled
+    rule: allow
+    name: OpenSSH
+    log: true

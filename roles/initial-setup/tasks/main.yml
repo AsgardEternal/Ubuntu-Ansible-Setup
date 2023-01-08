@@ -3,3 +3,5 @@
 - ansible.builtin.import_tasks: users.yml
 - ansible.builtin.import_tasks: ssh.yml
 - ansible.builtin.import_tasks: dns.yml
+- ansible.builtin.import_tasks: firewall.yml
+
