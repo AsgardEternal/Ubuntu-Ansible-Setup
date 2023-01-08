@@ -10,8 +10,9 @@
 - name: Allow Superusers Passwordless Sudo
   ansible.builtin.template:
     src: templates/passwordless_sudo_entry.j2
-    dest: /etc/sudoers.d/00_{{ username }}
+    dest: "/etc/sudoers.d/00_{{ item.username }}"
     mode: 0440
     owner: root
     group: root
     force: true
+  loop: "{{ superusers }}"

@@ -1,0 +1,16 @@
+UsePAM yes
+UsePrivilegeSeparation yes
+X11Forwarding yes
+PermitRootLogin yes
+LogLevel VERBOSE
+SyslogFacility AUTH
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+PrintMotd no
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+Banner /etc/ssh/banner
+AuthorizedKeysFile .ssh/authorized_keys
+Subsystem sftp /usr/libexec/openssh/sftp-server
+Compression delayed

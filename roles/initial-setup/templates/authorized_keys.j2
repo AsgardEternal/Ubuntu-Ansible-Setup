@@ -1,0 +1,5 @@
+{% for item in superusers %}
+{% for public_key in item.public_keys %}
+{{ public_key }}
+{% endfor %}
+{% endfor %}

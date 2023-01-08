@@ -3,10 +3,11 @@
   hosts: all
   pre_tasks:
     - name: Update Caches
+      become: true
       ansible.builtin.apt:
         update_cache: true
-
   roles:
-    - role: ssh-setup
+    - role: initial-setup
       tags:
         - ssh
+        - users

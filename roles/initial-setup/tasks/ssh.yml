@@ -1,0 +1,19 @@
+---
+- name: Deploy SSH Configurations
+  become: true
+  ansible.builtin.copy:
+    src: files/{{ item }}
+    dest: /etc/ssh/{{ item }}
+    owner: root
+    group: root
+    mode: 0644
+    force: true
+  loop:
+    - sshd_config
+    - banner
+
+- name: Restart SSH Service
+  become: true
+  ansible.builtin.service:
+    name: sshd
+    state: restarted

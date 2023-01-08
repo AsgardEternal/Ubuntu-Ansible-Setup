@@ -1,2 +1,4 @@
 ---
 # tasks file for initial-setup
+- ansible.builtin.import_tasks: users.yml
+- ansible.builtin.import_tasks: ssh.yml

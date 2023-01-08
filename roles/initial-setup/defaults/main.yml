@@ -1,2 +1,6 @@
 ---
 # defaults file for initial-setup
+superusers:
+  - username: asgard
+    public_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ sam@orion

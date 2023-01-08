@@ -1,17 +1,42 @@
 ---
-- name: Create asgard Superuser
+- name: Create Superusers
+  become: true
   ansible.builtin.user:
-    name: asgard
+    name: "{{ item.username }}"
     groups:
       - sudo
     create_home: true
     shell: /bin/bash
+  loop: "{{ superusers }}"
+
+- name: Generate .ssh Directories for Superusers
+  become: true
+  ansible.builtin.file:
+    state: directory
+    path: "/home/{{ item.username }}/.ssh/"
+    mode: 0700
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  loop: "{{ superusers }}"
+
+- name: Deploy Public Keys to authorized_keys Files
+  become: true
+  ansible.builtin.template:
+    src: templates/authorized_keys.j2
+    dest: "/home/{{ item.username }}/.ssh/authorized_keys"
+    mode: 0600
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  loop: "{{ superusers }}"
 
 - name: Allow Superusers Passwordless Sudo
+  become: true
   ansible.builtin.template:
     src: templates/passwordless_sudo_entry.j2
-    dest: /etc/sudoers.d/00_{{ username }}
+    dest: "/etc/sudoers.d/00_{{ item.username }}"
     mode: 0440
     owner: root
     group: root
     force: true
+  loop: "{{ superusers }}"
+
