@@ -1,0 +1,19 @@
+- name: Ensure resolved.conf.d Exists in /etc/systemd/
+  become: true
+  ansible.builtin.file:
+    path: /etc/systemd/resolved.conf.d/
+    state: directory
+    mode: 0751
+    owner: root
+    group: root
+
+- name: Apply patch for dns.config
+  become: true
+  ansible.builtin.copy:
+    src: files/dns.conf
+    dest: /etc/systemd/resolved.conf.d/dns.conf
+    owner: root
+    group: root
+    mode: 0644
+    force: true
+  notify: Restart systemd-resolved

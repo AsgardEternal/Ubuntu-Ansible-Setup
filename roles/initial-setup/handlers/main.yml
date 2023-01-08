@@ -1,2 +1,7 @@
 ---
 # handlers file for initial-setup
+- name: Restart systemd-resolved
+  become: true
+  ansible.builtin.service:
+    name: systemd-resolved
+    state: restarted

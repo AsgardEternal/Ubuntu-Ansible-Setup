@@ -1,5 +1,5 @@
 all:
   hosts:
     192.168.122.71:
-      ansible_user: sam
+      ansible_user: asgard
 
