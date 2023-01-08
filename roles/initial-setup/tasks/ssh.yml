@@ -11,9 +11,4 @@
   loop:
     - sshd_config
     - banner
-
-- name: Restart SSH Service
-  become: true
-  ansible.builtin.service:
-    name: sshd
-    state: restarted
+  notify: Restart SSHD

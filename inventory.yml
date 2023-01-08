@@ -1,4 +1,6 @@
 all:
+  vars:
+    server_timezone: America/Chicago
   hosts:
     192.168.122.71:
       ansible_user: asgard

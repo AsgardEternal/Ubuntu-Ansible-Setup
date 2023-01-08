@@ -5,3 +5,19 @@
   ansible.builtin.service:
     name: systemd-resolved
     state: restarted
+  listen:
+    - Restart systemd-resolved
+
+- name: Enable NTP
+  become: true
+  ansible.builtin.command: timedatectl set-ntp on
+  listen:
+    - Enable NTP
+
+- name: Restart SSHD
+  become: true
+  ansible.builtin.service:
+    name: sshd
+    state: restarted
+  listen:
+    - Restart SSHD

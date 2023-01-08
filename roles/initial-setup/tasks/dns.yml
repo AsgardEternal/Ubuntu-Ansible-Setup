@@ -1,3 +1,4 @@
+---
 - name: Ensure resolved.conf.d Exists in /etc/systemd/
   become: true
   ansible.builtin.file:
@@ -17,3 +18,9 @@
     mode: 0644
     force: true
   notify: Restart systemd-resolved
+
+- name: Set timezone to server's timezone
+  become: true
+  community.general.timezone:
+    name: "{{ server_timezone }}"
+  notify: Enable NTP
