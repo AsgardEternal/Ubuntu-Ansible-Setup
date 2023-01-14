@@ -7,4 +7,5 @@ all:
         - username: asgard
           public_keys:
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ sam@orion
+            - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP7P1Cm+zltA135iFnS7rvf9YlfELjuX1YIgSm9HA5f0 skillet@skillet-laptop
 
