@@ -12,5 +12,5 @@ PasswordAuthentication no
 ChallengeResponseAuthentication no
 Banner /etc/ssh/banner
 AuthorizedKeysFile .ssh/authorized_keys
-Subsystem sftp /usr/libexec/openssh/sftp-server
+Subsystem sftp internal-sftp
 Compression delayed
