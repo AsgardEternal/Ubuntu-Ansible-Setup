@@ -3,6 +3,10 @@ all:
     server_timezone: America/Chicago
   hosts:
     asgard.orion-technologies.io:
+      registry_site: asgard.orion-technologies.io
+      registry_site_email: price@orion-technologies.io
+      registry_system_user: docker-reg
+      registry_login_user: asgard
       docker_registry_password: !vault |
         $ANSIBLE_VAULT;1.1;AES256
         39613330363530353535316466353531663031633732363633393636613763613866323331383865
