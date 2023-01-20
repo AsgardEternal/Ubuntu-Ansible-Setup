@@ -86,6 +86,7 @@
     cmd: htpasswd -Bic registry.password '{{ registry_login_user }}' <<< '{{ docker_registry_password }}'
     executable: /bin/bash
     chdir: "/home/{{ registry_system_user }}/docker-registry/auth"
+  no_log: true
   changed_when: false
 
 - name: Set Permissions For Registry Password File
