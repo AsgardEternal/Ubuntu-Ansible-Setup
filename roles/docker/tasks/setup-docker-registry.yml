@@ -20,7 +20,7 @@
   become: true
   ansible.builtin.template:
     src: "templates/registry-site.nginx"
-    dest: "/etc/nginx/sites-available/{{ registry_site_name }}"
+    dest: "/etc/nginx/sites-available/{{ registry_site }}"
     mode: 0644
     owner: root
     group: root
@@ -30,21 +30,21 @@
   become: true
   ansible.builtin.file:
     state: link
-    src: "/etc/nginx/sites-available/{{ registry_site_name }}"
-    dest: "/etc/nginx/sites-enabled/{{ registry_site_name }}"
+    src: "/etc/nginx/sites-available/{{ registry_site }}"
+    dest: "/etc/nginx/sites-enabled/{{ registry_site }}"
     owner: root
     group: root
 
 - name: Check if Obtaining an SSL Certificate is Required
   become: true
   ansible.builtin.stat:
-    path: "/etc/letsencrypt/live/{{ registry_site_name }}"
+    path: "/etc/letsencrypt/live/{{ registry_site }}"
   register: ssl_cert_stat
 
 - name: Obtain SSL Certificate For Registry Site if Necessary
   become: true
   # yamllint disable-line rule:line-length
-  ansible.builtin.command: sudo certbot --nginx -d "{{ registry_site_name }}" -d "www.{{ registry_site_name }}" -m "{{ registry_site_email }}" --agree-tos --non-interactive
+  ansible.builtin.command: sudo certbot --nginx -d "{{ registry_site }}" -d "www.{{ registry_site }}" -m "{{ registry_site_email }}" --agree-tos --non-interactive
   when: not ssl_cert_stat.stat.exists
 
 - name: Create Docker Registry User

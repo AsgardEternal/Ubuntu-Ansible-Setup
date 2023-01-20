@@ -4,7 +4,7 @@ server {
         # Add index.php to the list if you are using PHP
         index index.html index.htm index.nginx-debian.html;
 
-        server_name {{ registry_site_name }} www.{{ registry_site_name }};
+        server_name {{ registry_site }} www.{{ registry_site }};
 
         # disable limits to avoid HTTP 413 for large image uploads
         client_max_body_size 0;
