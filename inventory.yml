@@ -213,7 +213,31 @@ all:
               - name: Mr_poopy_diaper
                 comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
                 steam64: 76561199302780874
-
+                
+          - name: CAS
+            permissions:
+              - reserve
+            members:
+              - name: Albertime
+                comment: CAS
+                steam64: 7656119844551138
+                
+              - name: JF
+                comment: CAS
+                steam64: 76561198094918611
+                
+              - name: Jashy
+                comment: CAS
+                steam64: 76561198153409985
+                
+              - name: Oscar
+                comment: CAS
+                steam64: 76561198150626482
+                
+              - name: Skay
+                comment: CAS
+                steam64: 76561198248146940
+                
         ban_urls: []
         remote_admin_hosts: []
         messages:
