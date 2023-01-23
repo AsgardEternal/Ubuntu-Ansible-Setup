@@ -9,6 +9,7 @@
   changed_when: false
   loop_control:
     index_var: idx
+    label: "{{ item.name }}"
   register: squad_servers_updated
 
 - ansible.builtin.set_fact:
@@ -32,6 +33,8 @@
     group: "{{ squad_server_group }}"
     mode: 0755
   loop: "{{ squad_servers }}"
+  loop_control:
+    label: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
 
 - name: Template In Squad Server's Docker Compose
   become: true
@@ -42,9 +45,11 @@
     group: "{{ squad_server_group }}"
     mode: 0644
 
-- ansible.builtin.include_tasks: nested_servers_loop.yml
+- name: Get Server Configurations
+  ansible.builtin.include_tasks: nested_servers_loop.yml
   loop_control:
     loop_var: template_file
+    label: "{{ template_file | basename }}"
   with_fileglob:
     - ../templates/server-config/*.j2
 
@@ -56,14 +61,16 @@
     owner: "{{ squad_server_user }}"
     group: "{{ squad_server_group }}"
     mode: 0644
-  no_log: true
   loop: "{{ squad_servers }}"
   loop_control:
     loop_var: server
+    label: "{{ server.docker.name }}"
 
-- ansible.builtin.include_tasks: nested_ports_open.yml
+- name: Open Squad Server Ports
+  ansible.builtin.include_tasks: nested_ports_open.yml
   loop_control:
     loop_var: server
+    label: "{{ server.name }}"
   loop: "{{ squad_servers }}"
 
 
