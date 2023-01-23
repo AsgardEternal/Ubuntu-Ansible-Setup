@@ -24,7 +24,7 @@
     "discord": "{{ server.secrets.squadjs_discord_token }}",
     "sqlite": {
       "dialect": "sqlite",
-      "storage": "/home/steam/SquadJS/data/squadjs-data.sqlite"
+      "storage": "/home/steam/SquadJS/data nd//squadjs-data.sqlite"
     }
   },
   "plugins": [
@@ -93,8 +93,14 @@
       "ignoreChats": [],
       "ignorePhrases": [],
       "command": "admin",
+{% set _pingable_groups = [] %}
+{% for group in server.groups %}
+{%- if group.squadjs.admin_ping is defined and group.squadjs.admin_ping is true -%} {{ _pingable_groups.append(group) }} {% endif %}
+{% endfor %}
       "pingGroups": [
-        "Odin"
+{% for group in _pingable_groups %}
+            "{{ group.name }}"{{ ", " if not loop.last else "" }}
+{% endfor %}
       ],
       "pingDelay": 60000,
       "color": 16761867,

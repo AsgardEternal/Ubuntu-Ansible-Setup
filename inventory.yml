@@ -28,6 +28,8 @@ all:
               - canseeadminchat
               - reserve
               - config
+            squadjs:
+              admin_ping: true
             members:
               - name: Kinsher
                 comment: Server Administrator
@@ -61,6 +63,8 @@ all:
                 steam64: 76561198855097026
 
           - name: SrAdmin
+            squadjs:
+              admin_ping: true
             permissions:
               - changemap
               - balance
@@ -122,6 +126,8 @@ all:
                 steam64: 76561198107367726
 
           - name: JrAdmin
+            squadjs:
+              admin_ping: true
             permissions:
               - balance
               - chat
