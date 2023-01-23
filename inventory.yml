@@ -444,6 +444,7 @@ all:
             - Skorpo_RAAS_v5
             - Narva_RAAS_v4
             - Gorodok_RAAS_v09
+            - Harju_RAAS_v09
 
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           docker:
