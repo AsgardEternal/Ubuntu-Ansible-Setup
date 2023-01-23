@@ -1,0 +1,6 @@
+---
+# defaults file for squad-server
+squad_server_user: asgard
+squad_server_group: asgard
+squad_servers_dir: "/home/{{ squad_server_user }}/Squad-Servers/"
+squad_server_configs_dir: "{{ squad_servers_dir }}/configs"

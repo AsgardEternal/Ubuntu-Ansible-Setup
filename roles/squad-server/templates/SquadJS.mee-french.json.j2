@@ -1,0 +1,246 @@
+{
+  "server": {
+    "id": 1,
+    "host": "127.0.0.1",
+    "queryPort": 27165,
+    "rconPort": 21114,
+    "rconPassword": "asgardians",
+    "logReaderMode": "tail",
+    "logDir": "/home/steam/Squad-Server/SquadGame/Saved/Logs",
+    "ftp": {
+        "port": 21,
+        "user": "FTP Username",
+        "password": "FTP Password",
+        "useListForSize": false
+    },
+    "adminLists": [
+      {
+        "type": "local",
+        "source": "/home/steam/Squad-Server/SquadGame/ServerConfig/Admins.cfg"
+      }
+    ]
+  },
+  "connectors": {
+    "discord": "{{ server.secrets.squadjs_discord_token }}",
+    "sqlite": {
+      "dialect": "sqlite",
+      "storage": "/home/steam/SquadJS/data/squadjs-data.sqlite"
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "AutoKickUnassigned",
+      "enabled": true,
+      "warningMessage": "Join a squad, you are are unassigned and will be kicked",
+      "kickMessage": "Unassigned - automatically removed",
+      "frequencyOfWarnings": 30,
+      "unassignedTimer": 360,
+      "playerThreshold": 50,
+      "roundStartDelay": 900,
+      "ignoreAdmins": false,
+      "ignoreWhitelist": false
+    },
+    {
+      "plugin": "AutoTKWarn",
+      "enabled": true,
+      "attackerMessage": "Please apologise for ALL TKs in ALL chat!",
+      "victimMessage": null
+    },
+    {
+      "plugin": "CBLInfo",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "threshold": 6
+    },
+    {
+      "plugin": "ChatCommands",
+      "enabled": true,
+      "commands": [
+        {
+          "command": "squadjs",
+          "type": "warn",
+          "response": "This server is powered by SquadJS.",
+          "ignoreChats": []
+        }
+      ]
+    },
+    {
+      "plugin": "DBLog",
+      "enabled": false,
+      "database": "mysql",
+      "overrideServerID": null
+    },
+    {
+      "plugin": "DiscordAdminBroadcast",
+      "enabled": true,
+      "discordClient": "discord",
+      "channelID": "1064041184147816530",
+      "color": 16761867
+    },
+    {
+      "plugin": "DiscordAdminCamLogs",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867
+    },
+    {
+      "plugin": "DiscordAdminRequest",
+      "enabled": true,
+      "discordClient": "discord",
+      "channelID": "1064041184147816530",
+      "ignoreChats": [],
+      "ignorePhrases": [],
+      "command": "admin",
+      "pingGroups": [
+        "Odin"
+      ],
+      "pingDelay": 60000,
+      "color": 16761867,
+      "warnInGameAdmins": true,
+      "showInGameAdmins": true
+    },
+    {
+      "plugin": "DiscordChat",
+      "enabled": true,
+      "discordClient": "discord",
+      "channelID": "1064041184147816530",
+      "chatColors": {},
+      "color": 16761867,
+      "ignoreChats": [
+      ]
+    },
+    {
+      "plugin": "DiscordDebug",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "events": []
+    },
+    {
+      "plugin": "DiscordFOBHABExplosionDamage",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867
+    },
+    {
+      "plugin": "DiscordKillFeed",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867,
+      "disableCBL": false
+    },
+    {
+      "plugin": "DiscordPlaceholder",
+      "enabled": false,
+      "discordClient": "discord",
+      "command": "!placeholder",
+      "channelID": ""
+    },
+    {
+      "plugin": "DiscordRcon",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "permissions": {},
+      "prependAdminNameInBroadcast": false
+    },
+    {
+      "plugin": "DiscordRoundWinner",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867
+    },
+    {
+      "plugin": "DiscordRoundEnded",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867
+    },
+    {
+      "plugin": "DiscordServerStatus",
+      "enabled": true,
+      "discordClient": "discord",
+      "messageStore": "sqlite",
+      "command": "!status",
+      "disableSubscriptions": false,
+      "updateInterval": 60000,
+      "setBotStatus": true
+    },
+    {
+      "plugin": "DiscordSquadCreated",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867,
+      "useEmbed": true
+    },
+    {
+      "plugin": "DiscordSubsystemRestarter",
+      "enabled": false,
+      "discordClient": "discord",
+      "role": ""
+    },
+    {
+      "plugin": "DiscordTeamkill",
+      "enabled": false,
+      "discordClient": "discord",
+      "channelID": "",
+      "color": 16761867,
+      "disableCBL": false
+    },
+    {
+      "plugin": "FogOfWar",
+      "enabled": false,
+      "mode": 1,
+      "delay": 10000
+    },
+    {
+      "plugin": "IntervalledBroadcasts",
+      "enabled": false,
+      "broadcasts": [],
+      "interval": 300000
+    },
+    {
+      "plugin": "SeedingMode",
+      "enabled": true,
+      "interval": 600000,
+      "seedingThreshold": 50,
+      "seedingMessage": "Seeding Rules Active! Fight only over the middle flags! No FOB Hunting!",
+      "liveEnabled": true,
+      "liveThreshold": 52,
+      "liveMessage": "Live!",
+      "waitOnNewGames": true,
+      "waitTimeOnNewGame": 30
+    },
+    {
+      "plugin": "SocketIOAPI",
+      "enabled": false,
+      "websocketPort": "",
+      "securityToken": ""
+    },
+    {
+      "plugin": "TeamRandomizer",
+      "enabled": true,
+      "command": "randomize"
+    }
+  ],
+  "logger": {
+    "verboseness": {
+      "SquadServer": 1,
+      "LogParser": 1,
+      "RCON": 1
+    },
+    "colors": {
+      "SquadServer": "yellowBright",
+      "SquadServerFactory": "yellowBright",
+      "LogParser": "blueBright",
+      "RCON": "redBright"
+    }
+  }
+}

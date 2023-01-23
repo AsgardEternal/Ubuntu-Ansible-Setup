@@ -1,0 +1,29 @@
+---
+- name: Open TCP Server Ports
+  become: true
+  community.general.ufw:
+    state: enabled
+    rule: allow
+    port: "{{ item }}"
+    proto: tcp
+  loop:
+    - "{{ server.ports.game }}"
+    - "{{ server.ports.game|int + 1 }}"
+    - "{{ server.ports.query }}"
+    - "{{ server.ports.query|int + 1 }}"
+    - "{{ server.ports.rcon }}"
+
+
+- name: Open UDP Server Ports
+  become: true
+  community.general.ufw:
+    state: enabled
+    rule: allow
+    port: "{{ item }}"
+    proto: udp
+  loop:
+    - "{{ server.ports.game }}"
+    - "{{ server.ports.game|int + 1 }}"
+    - "{{ server.ports.query }}"
+    - "{{ server.ports.query|int + 1 }}"
+    - "{{ server.ports.rcon }}"

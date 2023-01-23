@@ -1,0 +1,42 @@
+# {{ ansible_managed }}
+version: '3.9'
+
+services:
+{% for server in squad_servers %}
+  squad:
+    image: {{ registry_site }}/{{ server.docker.image }}
+    container_name: squad-{{ server.docker.name }}
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+    volumes:
+      - {{ squad_server_configs_dir }}/{{ server.docker.name }}:/docker-mount/
+      - squadjs-data:/home/steam/SquadJS/data/
+    environment:
+      - GAMEPORT={{ server.ports.game }}
+      - QUERYPORT={{ server.ports.query }}
+      - RCONPORT={{ server.ports.rcon }}
+      - FIXEDMAXPLAYERS={{ server.max_players | default(100) }}
+      - RCON_PASSWORD={{ server.secrets.rcon_password }}
+    ports:
+      # Game Ports
+      - {{ server.ports.game }}:{{ server.ports.game }}/tcp
+      - {{ server.ports.game }}:{{ server.ports.game }}/udp
+      - {{ server.ports.game|int + 1 }}:{{ server.ports.game|int + 1}}/tcp
+      - {{ server.ports.game|int + 1 }}:{{ server.ports.game|int + 1}}/udp
+
+      # Query Ports
+      - {{ server.ports.query }}:{{ server.ports.query }}/tcp
+      - {{ server.ports.query }}:{{ server.ports.query }}/udp
+      - {{ server.ports.query|int + 1 }}:{{ server.ports.query|int + 1}}/tcp
+      - {{ server.ports.query|int + 1 }}:{{ server.ports.query|int + 1}}/udp
+
+      # RCON Port
+      - {{ server.ports.rcon }}:{{ server.ports.rcon }}/tcp
+      - {{ server.ports.rcon }}:{{ server.ports.rcon }}/udp
+{% endfor %}
+
+volumes:
+    squadjs-data:

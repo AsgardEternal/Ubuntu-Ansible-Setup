@@ -1,0 +1,69 @@
+---
+# tasks file for squad-server
+- name: Update Server Configs With Defaults if Missing
+  ansible.utils.update_fact:
+    updates:
+      - path: "squad_servers.{{ idx }}"
+        value: "{{ squad_default_settings | combine(item, recursive=True) }}"
+  loop: "{{ squad_servers }}"
+  changed_when: false
+  loop_control:
+    index_var: idx
+  register: squad_servers_updated
+
+- ansible.builtin.set_fact:
+    squad_servers: "{{ squad_servers_updated.results[-1].squad_servers }}"
+
+- name: Create Squad Directories
+  become: true
+  ansible.builtin.file:
+    state: directory
+    path: "{{ squad_server_configs_dir }}"
+    owner: "{{ squad_server_user }}"
+    group: "{{ squad_server_group }}"
+    mode: 0755
+
+- name: Create Squad Server Configuration Directories
+  become: true
+  ansible.builtin.file:
+    state: directory
+    path: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
+    owner: "{{ squad_server_user }}"
+    group: "{{ squad_server_group }}"
+    mode: 0755
+  loop: "{{ squad_servers }}"
+
+- name: Template In Squad Server's Docker Compose
+  become: true
+  ansible.builtin.template:
+    src: docker-compose.yml.j2
+    dest: "{{ squad_servers_dir }}/docker-compose.yml"
+    owner: "{{ squad_server_user }}"
+    group: "{{ squad_server_group }}"
+    mode: 0644
+
+- ansible.builtin.include_tasks: nested_servers_loop.yml
+  loop_control:
+    loop_var: template_file
+  with_fileglob:
+    - ../templates/server-config/*.j2
+
+- name: Template SquadJS Into Place
+  become: true
+  ansible.builtin.template:
+    src: "SquadJS.{{ server.docker.name }}.json.j2"
+    dest: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/SquadJS.json"
+    owner: "{{ squad_server_user }}"
+    group: "{{ squad_server_group }}"
+    mode: 0644
+  no_log: true
+  loop: "{{ squad_servers }}"
+  loop_control:
+    loop_var: server
+
+- ansible.builtin.include_tasks: nested_ports_open.yml
+  loop_control:
+    loop_var: server
+  loop: "{{ squad_servers }}"
+
+

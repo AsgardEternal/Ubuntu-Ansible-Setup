@@ -13,3 +13,6 @@
     - role: docker
       tags:
         - docker
+    - role: squad-server
+      tags:
+        - squad

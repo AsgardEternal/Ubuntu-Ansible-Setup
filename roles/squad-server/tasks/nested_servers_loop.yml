@@ -1,0 +1,12 @@
+- name: Template In Squad Server Configurations
+  become: true
+  ansible.builtin.template:
+    src: "{{ template_file }}"
+    dest: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/{{ template_file | basename | regex_replace('\\.j2$', '') }}"
+    owner: "{{ squad_server_user }}"
+    group: "{{ squad_server_group }}"
+    mode: 0644
+  no_log: true
+  loop_control:
+    loop_var: server
+  loop: "{{ squad_servers }}"
