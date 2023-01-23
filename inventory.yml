@@ -13,8 +13,199 @@ all:
           rcon_password: test
           squadjs_discord_token: ""
           license: ""
-        groups: []
-        admins: []
+        groups:
+          - name: Odin
+            permissions:
+              - changemap
+              - pause
+              - balance
+              - chat
+              - kick
+              - ban
+              - cameraman
+              - teamchange
+              - forceteamchange
+              - canseeadminchat
+              - reserve
+              - config
+            members:
+              - name: Kinsher
+                comment: Server Administrator
+                steam64: 76561197986710399
+
+              - name: Atrocity
+                steam64: 76561199101367413
+
+              - name: Xikky
+                steam64: 76561198001193856
+
+              - name: iiTherRealMcCoy
+                steam64: 76561199028579724
+
+              - name: MaxRecon
+                steam64: 76561198153769543
+
+              - name: SheHulk
+                steam64: 76561198067016254
+
+              - name: Malinoff
+                steam64: 76561198404402665
+
+              - name: Someoneulove
+                steam64: 76561198073942737
+
+              - name: Teggy
+                steam64: 76561198356666755
+
+              - name: SooperGloo
+                steam64: 76561198855097026
+
+          - name: SrAdmin
+            permissions:
+              - changemap
+              - balance
+              - chat
+              - kick
+              - ban
+              - cameraman
+              - teamchange
+              - forceteamchange
+              - canseeadminchat
+              - reserve
+            members:
+              - name: Frizz
+                steam64: 76561198339174737
+
+              - name: Lt_Longsword
+                steam64: 76561198373523022
+
+              - name: Buddy
+                steam64: 76561199201845769
+
+              - name: Ray
+                steam64: 76561198015328506
+
+              - name: Freeman
+                steam64: 76561198329170534
+
+              - name: Omega
+                steam64: 76561199018771290
+
+              - name: Coiffee
+                steam64: 76561198046579272
+
+              - name: Elon
+                steam64: 76561198203568744
+
+              - name: Kin_Seward
+                steam64: 76561198799111045
+
+              - name: RangerSix
+                steam64: 76561198206734757
+
+              - name: Epimetheus
+                steam64: 76561199094282718
+
+              - name: Chemji
+                steam64: 76561199127559778
+
+              - name: Mirage40K
+                steam64: 76561198059250541
+
+              - name: Rabbid_Squirrel
+                steam64: 76561198081576045
+
+              - name: Sweetwater
+                steam64: 76561198124658412
+
+              - name: wolf.rayne
+                steam64: 76561198107367726
+
+          - name: JrAdmin
+            permissions:
+              - balance
+              - chat
+              - kick
+              - ban
+              - teamchange
+              - canseeadminchat
+              - reserve
+            members:
+              - name: Sexo
+                comment: Primary Seeder
+                steam64: 76561198003130199
+
+          - name: Whitelist
+            permissions:
+              - reserve
+            members:
+              - name: Sam
+                comment: For Asgard IT Started 01/09/2023
+                steam64: 76561198090760895
+
+              - name: Skillet
+                comment: Server Administrator
+                steam64: 76561198221715432
+
+              - name: LtJamesFox
+                steam64: 76561198026192477
+                comment: Nevetsu@hotmail.com
+
+              - name: tcandan88(4skin)
+                comment: ducati979@aol.com
+                steam64: 76561198059124010
+
+              - name: Dick Deflator
+                comment: Granted Whitelist for 3 month's started 12/01/2022/Ends 02/28/2023
+                steam64: 76561199062085282
+
+              - name: Bagels
+                comment: adroessler10@gmail.com
+                steam64: 76561198059462064
+
+              - name: Hypothermiack
+                steam64: 76561198119385943
+
+              - name: TapatioTimmy
+                comment: camdenricketts4@gmail.com
+                steam64: 76561199123384670
+
+              - name: TheGoochSlooth
+                comment: justintestorelli@gmail.com
+                steam64: 76561199285813056
+
+              - name: Subterfuge
+                comment: jwlind@gmail.com
+                steam64: 76561197963075020
+
+              - name: Kybar
+                comment: carbarykyle@gmail.com
+                steam64: 76561198128034210
+
+              - name: Juggernaut
+                comment: robledoaustin@yahoo.com
+                steam64: 76561198049739312
+
+              - name: DamiSupreme
+                comment: alexdemiane93@gmail.com
+                steam64: 76561197979663830
+
+              - name: Dang Li Wang
+                comment: n.hinesly0602@gmail.com
+                steam64: 76561199241025555
+
+              - name: Jenna Tools
+                comment: n.hinesly0602@gmail.com
+                steam64: 76561199241627472
+
+              - name: Treaty ~ Sam
+                comment: For Asgard IT Started 01/09/2023
+                steam64: 76561198090760895
+
+              - name: Mr_poopy_diaper
+                comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
+                steam64: 76561199302780874
+
         ban_urls: []
         remote_admin_hosts: []
         messages: []

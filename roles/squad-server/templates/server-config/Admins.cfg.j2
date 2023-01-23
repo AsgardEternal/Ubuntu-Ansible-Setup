@@ -49,6 +49,11 @@ Group={{ group.name }}:{{ group.permissions | join(',') }}
 //
 //  Add your own below:
 /////////////////////////////////////////////////////////////////////////////////////////////
-{% for admin in server.admins %}
-Admin={{ admin.steam64 }}:{{ admin.group }} // {{ admin.name }}
+
+{% for group in server.groups %}
+// === {{ group.name }} ===
+{% for member in group.members | default([]) %}
+Admin={{ member.steam64 }}:{{ group.name }} // {{ member.name }} - {{ member.comment | default('') }}
+{% endfor %}
+
 {% endfor %}
