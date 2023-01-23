@@ -139,7 +139,7 @@ all:
             permissions:
               - reserve
             members:
-              - name: Sam
+              - name: Treay ~ Sam
                 comment: For Asgard IT Started 01/09/2023
                 steam64: 76561198090760895
 
@@ -197,10 +197,6 @@ all:
               - name: Jenna Tools
                 comment: n.hinesly0602@gmail.com
                 steam64: 76561199241627472
-
-              - name: Treaty ~ Sam
-                comment: For Asgard IT Started 01/09/2023
-                steam64: 76561198090760895
 
               - name: Mr_poopy_diaper
                 comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
