@@ -568,16 +568,16 @@ all:
             rcon: 21114
           layers:
             - JensensRange_USA-RUS
-            - MEE_BlackCoast_RASS_v1_USMC20vWAG
+            - MEE_BlackCoast_RAAS_v1_USMC20vWAG
             - MEE_Fallujah_Invasion_v3_USMC20vIRN
-            - MEE_Fools_road_RAAS_v1_GBvWAG
             - MEE_Narva_Invasion_v1_POLvWAG
             - MEE_Gorodok_RAAS_v1_HRvWAG
             - MEE_Tallil_Outskirts_Invasion_v3_TAFvIRGC
-            - MEE_Harju_Invasion_v1_USMC20vMI
-            - MEE_Lashkar_VAlley_Invasion_v4_ADFvMEINS
-            - MEE_Fallujah_Invasion_v5_TAFvMEINS
-            - MEE_Fahkri_invasion_v8_PIMAvMEINS
+            - MEE_Lashkar_Valley_Invasion_v4_ADFvMEINS
+            - MEE_Gorodok_RAAS_v2_75vWAG
+            - MEE_Island_Invasion_v1_PIMAvTAF
+            - MEE_Narva_RAAS_v1_POLvWAG
+            - MEE_Fallujah_AAS_v1_GDvMEINS
       registry_site: asgard.orion-technologies.io
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
