@@ -213,7 +213,7 @@ all:
               - name: Mr_poopy_diaper
                 comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
                 steam64: 76561199302780874
-                
+
           - name: CAS
             permissions:
               - reserve
@@ -221,23 +221,75 @@ all:
               - name: Albertime
                 comment: CAS
                 steam64: 7656119844551138
-                
+
               - name: JF
                 comment: CAS
                 steam64: 76561198094918611
-                
+
               - name: Jashy
                 comment: CAS
                 steam64: 76561198153409985
-                
+
               - name: Oscar
                 comment: CAS
                 steam64: 76561198150626482
-                
+
               - name: Skay
                 comment: CAS
                 steam64: 76561198248146940
-                
+
+          - name: HC
+            permissions:
+              - reserve
+            members:
+              - name: Sir Peabody
+                comment: HC
+                steam64: 76561198043032389
+
+              - name: Kameron
+                comment: HC
+                steam64: 76561197982328479
+
+              - name: Evans
+                comment: HC
+                steam64: 76561198101099268
+
+              - name: Brodizle
+                comment: HC
+                steam64: 76561198249614886
+
+              - name: Skeebler
+                comment: HC
+                steam64: 76561198191984002
+
+          - name: SLT
+            permissions:
+              - reserve
+            members:
+              - name: EnderDevs
+                comment: SLT
+                steam64: 76561198149412908
+
+              - name: JoeBrandonCheated
+                comment: SLT
+                steam64: 76561198448114730
+
+          - name: BR1
+            permissions:
+              - reserve
+            members:
+              - name: Madtopher
+                comment: BR1
+                steam64: 76561199060693600
+
+              - name: Dr. Hammerstein
+                comment: BR1
+                steam64: 76561198037486479
+
+              - name: Bags
+                comment: BR1
+                steam64: 76561198315718944
+
         ban_urls: []
         remote_admin_hosts: []
         messages:
