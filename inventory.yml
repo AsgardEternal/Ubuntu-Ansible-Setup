@@ -31,10 +31,6 @@ all:
             squadjs:
               admin_ping: true
             members:
-              - name: Treay ~ Sam
-                comment: For Asgard IT Started 01/09/2023
-                steam64: 76561198090760895
-              
               - name: Kinsher
                 comment: Server Administrator
                 steam64: 76561197986710399
@@ -149,7 +145,7 @@ all:
             permissions:
               - reserve
             members:
-              - name: Treaty ~ Sam
+              - name: Treay ~ Sam
                 comment: For Asgard IT Started 01/09/2023
                 steam64: 76561198090760895
 
