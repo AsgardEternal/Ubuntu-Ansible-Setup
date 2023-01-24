@@ -154,6 +154,18 @@ all:
               - name: Treay ~ Sam
                 comment: For Asgard IT Started 01/09/2023
                 steam64: 76561198090760895
+                
+              - name: RIOTYouth1
+                comment: aclerc1220@gmail.com
+                steam64: 76561198209119887
+                
+              - name: {ASG} Scarface
+                comment: logangrimes11@gmail.com
+                steam64: 76561198312514319
+                
+              - name: {ASG} young sloth
+                comment: logangrimes11@gmail.com
+                steam64: 76561198983371735
 
               - name: Skillet
                 comment: Server Administrator
