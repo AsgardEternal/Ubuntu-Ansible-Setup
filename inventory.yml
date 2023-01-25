@@ -225,6 +225,10 @@ all:
               - name: Mr_poopy_diaper
                 comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
                 steam64: 76561199302780874
+                
+              - name: OneBarStatus
+                comment: jacobadams135@yahoo.com
+                steam64: 76561198801895406
 
           - name: CAS
             permissions:
