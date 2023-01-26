@@ -8,7 +8,9 @@ all:
       squad_default_settings:
         docker:
           name: vanilla-squad
-          image: squad:latest
+          images:
+            server: squad:latest
+            squadjs: squadjs:latest
         secrets:
           rcon_password: test
           squadjs_discord_token: ""
@@ -154,7 +156,7 @@ all:
               - name: Treay ~ Sam
                 comment: For Asgard IT Started 01/09/2023
                 steam64: 76561198090760895
-                
+
               - name: Trippy Chivas
                 comment: devbryanbar@gmail.com
                 steam64: 76561198106004468
@@ -335,7 +337,9 @@ all:
         - name: "[ASG] Asgard Eternal | New Player Friendly"
           docker:
             name: vanilla
-            image: squad:latest
+            images:
+              server: squad:latest
+              squadjs: squadjs:latest
           secrets:
             rcon_password: !vault |
               $ANSIBLE_VAULT;1.1;AES256
@@ -468,7 +472,10 @@ all:
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           docker:
             name: mee-french
-            image: squad:mee-french-latest
+            images:
+              server: squad:mee-french-latest
+              squadjs: squadjs:latest
+
           secrets:
             rcon_password: !vault |
               $ANSIBLE_VAULT;1.1;AES256

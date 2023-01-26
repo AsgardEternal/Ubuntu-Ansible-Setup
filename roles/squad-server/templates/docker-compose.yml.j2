@@ -1,10 +1,34 @@
+{# vim:shiftwidth=2 #}
 # {{ ansible_managed }}
 version: '3.9'
 
 services:
 {% for server in squad_servers %}
+  squadjs-{{ server.docker.name }}:
+    image: {{ registry_site }}/{{ server.docker.images.squadjs }}
+    container_name: squadjs-{{ server.docker.name }}
+    restart: unless-stopped
+    links:
+        - "squad-{{ server.docker.name }}:squad"
+    volumes:
+        - type: bind
+          source: {{ squad_server_configs_dir }}/{{ server.docker.name }}/SquadJS.json
+          target: /home/squadjs/SquadJS/config.json
+
+        - type: bind
+          source: {{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/Admins.cfg
+          target: /home/squadjs/SquadConfig/Admins.cfg
+          read_only: true
+
+        - type: volume
+          source: squad-{{ server.docker.name }}-logs
+          target: /home/squadjs/SquadLogs/
+          read_only: true
+          volume:
+            nocopy: true
+
   squad-{{ server.docker.name }}:
-    image: {{ registry_site }}/{{ server.docker.image }}
+    image: {{ registry_site }}/{{ server.docker.images.server }}
     container_name: squad-{{ server.docker.name }}
     restart: unless-stopped
     dns:
@@ -13,7 +37,11 @@ services:
       - 1.1.1.1
     volumes:
       - {{ squad_server_configs_dir }}/{{ server.docker.name }}:/docker-mount/
-      - squadjs-data:/home/steam/SquadJS/data/
+
+      - type: volume
+        source: squad-{{ server.docker.name }}-logs
+        target: /home/steam/Squad-Server/SquadGame/Saved/Logs
+
     environment:
       - GAMEPORT={{ server.ports.game }}
       - QUERYPORT={{ server.ports.query }}
@@ -36,7 +64,12 @@ services:
       # RCON Port
       - {{ server.ports.rcon }}:{{ server.ports.rcon }}/tcp
       - {{ server.ports.rcon }}:{{ server.ports.rcon }}/udp
+
 {% endfor %}
 
 volumes:
-    squadjs-data:
+{% for server in squad_servers %}
+    squadjs-{{ server.docker.name }}-data:
+    squad-{{ server.docker.name }}-logs:
+
+{% endfor %}

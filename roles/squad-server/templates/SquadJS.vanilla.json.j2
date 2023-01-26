@@ -1,12 +1,12 @@
 {
   "server": {
-    "id": 1,
-    "host": "127.0.0.1",
+    "id": {{ server_id }},
+    "host": "squad",
     "queryPort": {{ server.ports.query }},
     "rconPort": {{ server.ports.rcon }},
     "rconPassword": "{{ server.secrets.rcon_password }}",
     "logReaderMode": "tail",
-    "logDir": "/home/steam/Squad-Server/SquadGame/Saved/Logs",
+    "logDir": "/home/squadjs/SquadLogs",
     "ftp": {
         "port": 21,
         "user": "FTP Username",
@@ -16,7 +16,7 @@
     "adminLists": [
       {
         "type": "local",
-        "source": "/home/steam/Squad-Server/SquadGame/ServerConfig/Admins.cfg"
+        "source": "/home/squadjs/SquadConfig/Admins.cfg"
       }
     ]
   },
@@ -24,7 +24,7 @@
     "discord": "{{ server.secrets.squadjs_discord_token }}",
     "sqlite": {
       "dialect": "sqlite",
-      "storage": "/home/steam/SquadJS/data/squadjs-data.sqlite"
+      "storage": "/home/squadjs/data/squadjs.sqlite"
     }
   },
   "plugins": [

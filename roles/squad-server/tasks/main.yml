@@ -64,6 +64,7 @@
   loop: "{{ squad_servers }}"
   loop_control:
     loop_var: server
+    index_var: server_id
     label: "{{ server.docker.name }}"
 
 - name: Open Squad Server Ports
