@@ -31,6 +31,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/ansible-server-setup:latest
+        cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
         cache-to: type=inline
-        tags: "${{ vars.DOCKER_REGISTRY_URL }}/squad:latest"
+        tags: "${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest"
