@@ -32,6 +32,7 @@ jobs:
       - name: Inject Private Key
         run: |
           mkdir -p "${HOME}/.ssh"
+
           cat << __EOF__ > "${HOME}/.ssh/key"
           ${{ secrets.ansible_ssh_key }}
           __EOF__
@@ -41,12 +42,12 @@ jobs:
           cat << __EOF__ > "${HOME}/.ssh/config"
           Host *
               User ${{ vars.ssh_user }}
-              StrictHostKeyChecking no{HOME}/.ssh/key
+              StrictHostKeyChecking no
 
           Host ${{ vars.server_host }}
               HostName ${{ vars.server_host }}
               User ${{ vars.ssh_user }}
-              IdentityFile $Host *
+              IdentityFile ~/.ssh/key
           __EOF__
 
       - name: Run Ansible Playbook For Squad
