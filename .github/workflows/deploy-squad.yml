@@ -39,11 +39,15 @@ jobs:
           chmod 0600 "${HOME}/.ssh/key"
 
           cat << __EOF__ > "${HOME}/.ssh/config"
-          Host ${{ vars.server_host }}
+          Host *
               User ${{ vars.ssh_user }}
-              IdentityFile ${HOME}/.ssh/key
+              StrictHostKeyChecking no{HOME}/.ssh/key
+
+          Host ${{ vars.server_host }}
+              HostName ${{ vars.server_host }}
+              User ${{ vars.ssh_user }}
+              IdentityFile $Host *
           __EOF__
-          ssh -o StrictHostKeyChecking=no asgard.orion-technologies.io
 
       - name: Run Ansible Playbook For Squad
         run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook playbook.yml --tags=squad
