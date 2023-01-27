@@ -1,10 +1,7 @@
 name: Build Docker Image
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - Development
+  workflow_call:
 
 jobs:
 
