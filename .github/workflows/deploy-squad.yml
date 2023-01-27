@@ -43,6 +43,7 @@ jobs:
               User ${{ vars.ssh_user }}
               IdentityFile ${HOME}/.ssh/key
           __EOF__
+          ssh -o StrictHostKeyChecking=no asgard.orion-technologies.io
 
       - name: Run Ansible Playbook For Squad
         run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook playbook.yml --tags=squad
