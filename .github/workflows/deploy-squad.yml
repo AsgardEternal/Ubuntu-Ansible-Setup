@@ -13,9 +13,9 @@ jobs:
     runs-on: self-hosted
     container:
       image: ${{ vars.ansible_container }}:latest
-      credentials:
-        username: "${{ secrets.DOCKER_REGISTRY_USER }}"
-        password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
+      # credentials:
+      #   username: "${{ secrets.DOCKER_REGISTRY_USER }}"
+      #   password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
       env:
         SQUAD_RCON_PASSWORD: "${{ secrets.squad_rcon_password }}"
 
