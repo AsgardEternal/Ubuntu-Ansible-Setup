@@ -39,4 +39,9 @@ __EOR__
 COPY --from=build /app/.venv ./.venv
 COPY . .
 ENV PATH="${PATH}:/app/.venv/bin"
+
+RUN <<__EOR__
+ansible-galaxy install -r requirements.yml
+__EOR__
+
 ENTRYPOINT [ "/bin/sh" ]
