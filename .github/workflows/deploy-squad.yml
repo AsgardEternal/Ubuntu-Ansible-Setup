@@ -10,8 +10,9 @@ jobs:
     secrets: inherit
 
   deploy:
-
     runs-on: self-hosted
+    needs:
+      - build-image
     container:
       image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
       credentials:
