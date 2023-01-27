@@ -39,7 +39,9 @@ jobs:
           chmod 0600 "${HOME}/.ssh/key"
 
           cat << __EOF__ > "${HOME}/.ssh/config"
-          ${{ vars.ansible_ssh_config }}
+          Host ${{ vars.server_host }}
+              User ${{ vars.ssh_user }}
+              IdentityFile ${HOME}/.ssh/key
           __EOF__
 
       - name: Run Ansible Playbook For Squad
