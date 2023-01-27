@@ -20,10 +20,7 @@ ENV PIP_DEFAULT_TIMEOUT=100 \
 RUN pip install "poetry==$POETRY_VERSION"
 
 COPY pyproject.toml poetry.lock ./
-# if your project is stored in src, uncomment line below
-# COPY src ./src
-# or this if your file is stored in $PROJECT_NAME, assuming `myproject`
-# COPY myproject ./myproject
+
 RUN <<__EOR__
 poetry config virtualenvs.in-project true
 poetry install --only=main --no-root --no-ansi --no-interaction
