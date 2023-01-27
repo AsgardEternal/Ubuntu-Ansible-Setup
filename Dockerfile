@@ -39,4 +39,4 @@ __EOR__
 COPY --from=build /app/.venv ./.venv
 COPY . .
 ENV PATH="${PATH}:/app/.venv/bin"
-ENTRYPOINT [ "./scripts/docker-entry.sh" ]
+ENTRYPOINT [ "/bin/sh" ]
