@@ -1,0 +1,44 @@
+name: Update Squad Configurations
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - Development
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+    container:
+      image: ${{ vars.ansible_container }}:latest
+      credentials:
+        username: "${{ secrets.DOCKER_REGISTRY_USER }}"
+        password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
+      env:
+        SQUAD_RCON_PASSWORD: "${{ secrets.squad_rcon_password }}"
+
+        SQUAD_VANILLA_SERVER_LICENSE: "${{ secrets.squad_vanilla_server_license }}"
+        SQUAD_VANILLA_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_vanilla_squadjs_discord_token }}"
+
+        SQUAD_MEE_SERVER_LICENSE: "${{ secrets.squad_mee_server_license }}"
+        SQUAD_MEE_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_mee_squadjs_discord_token }}"
+
+
+    steps:
+      - name: Inject Private Key
+        run: |
+          mkdir -p "${HOME}/.ssh"
+          cat << __EOF__ > "${HOME}/.ssh/key"
+          ${{ secrets.ansible_ssh_key }}
+          __EOF__
+
+          chmod 0600 "${HOME}/.ssh/key"
+
+          cat << __EOF__ > "${HOME}/.ssh/config"
+          ${{ vars.ansible_ssh_config }}
+          __EOF__
+
+      - name: Run Ansible Playbook For Squad
+        run: ansible-playbook playbook.yml --tags=squad
