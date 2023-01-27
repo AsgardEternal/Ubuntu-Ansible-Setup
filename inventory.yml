@@ -3,6 +3,7 @@ all:
     server_timezone: America/Chicago
   hosts:
     asgard.orion-technologies.io:
+      ansible_user: asgard
       squad_server_user: asgard
       squad_server_group: asgard
       squad_default_settings:
