@@ -1,77 +1,13 @@
 ---
 # tasks file for squad-server
-- name: Update Server Configs With Defaults if Missing
-  ansible.utils.update_fact:
-    updates:
-      - path: "squad_servers.{{ idx }}"
-        value: "{{ squad_default_settings | combine(item, recursive=True) }}"
-  loop: "{{ squad_servers }}"
-  changed_when: false
-  loop_control:
-    index_var: idx
-    label: "{{ item.name }}"
-  register: squad_servers_updated
 
-- ansible.builtin.set_fact:
-    squad_servers: "{{ squad_servers_updated.results[-1].squad_servers }}"
+- name: Deploy Configs
+  ansible.builtin.include_tasks: deploy-configs.yml
+  when: squad_deploy_configs | bool
 
-- name: Create Squad Directories
-  become: true
-  ansible.builtin.file:
-    state: directory
-    path: "{{ squad_server_configs_dir }}"
-    owner: "{{ squad_server_user }}"
-    group: "{{ squad_server_group }}"
-    mode: 0755
-
-- name: Create Squad Server Configuration Directories
-  become: true
-  ansible.builtin.file:
-    state: directory
-    path: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
-    owner: "{{ squad_server_user }}"
-    group: "{{ squad_server_group }}"
-    mode: 0755
-  loop: "{{ squad_servers }}"
-  loop_control:
-    label: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
-
-- name: Template In Squad Server's Docker Compose
-  become: true
-  ansible.builtin.template:
-    src: docker-compose.yml.j2
-    dest: "{{ squad_servers_dir }}/docker-compose.yml"
-    owner: "{{ squad_server_user }}"
-    group: "{{ squad_server_group }}"
-    mode: 0644
-
-- name: Get Server Configurations
-  ansible.builtin.include_tasks: nested_servers_loop.yml
-  loop_control:
-    loop_var: template_file
-    label: "{{ template_file | basename }}"
-  with_fileglob:
-    - ../templates/server-config/*.j2
-
-- name: Template SquadJS Into Place
-  become: true
-  ansible.builtin.template:
-    src: "SquadJS.{{ server.docker.name }}.json.j2"
-    dest: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/SquadJS.json"
-    owner: "{{ squad_server_user }}"
-    group: "{{ squad_server_group }}"
-    mode: 0644
+- name: Start Squad Server or Restart if Started
+  ansible.builtin.include_tasks: start-container.yml
+  when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
   loop: "{{ squad_servers }}"
   loop_control:
     loop_var: server
-    index_var: server_id
-    label: "{{ server.docker.name }}"
-
-- name: Open Squad Server Ports
-  ansible.builtin.include_tasks: nested_ports_open.yml
-  loop_control:
-    loop_var: server
-    label: "{{ server.name }}"
-  loop: "{{ squad_servers }}"
-
-
