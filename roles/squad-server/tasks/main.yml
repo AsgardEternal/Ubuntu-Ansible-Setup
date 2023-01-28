@@ -37,7 +37,7 @@
         restarted: true
       loop: "{{ squad_servers }}"
       loop_control:
-        label: "{{ server.name }}"
+        label: "SQUAD SERVER -> {{ server.name }}"
         loop_var: server
 
 
@@ -51,5 +51,5 @@
         restarted: true
       loop: "{{ squad_servers }}"
       loop_control:
-        label: "{{ server.name }}"
+        label: "SQUADJS -> {{ server.name }}"
         loop_var: server
