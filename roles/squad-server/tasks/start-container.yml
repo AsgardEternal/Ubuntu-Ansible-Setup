@@ -1,7 +1,0 @@
----
-- name: Start Squad Server Services
-  community.docker.docker_compose:
-    project_src: "{{ squad_servers_dir }}"
-    services:
-      - "squad-{{ server.docker.name }}"
-      - "squadjs-{{ server.docker.name }}"

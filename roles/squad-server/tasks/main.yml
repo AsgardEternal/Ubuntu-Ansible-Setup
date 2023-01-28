@@ -6,8 +6,36 @@
   when: squad_deploy_configs | bool
 
 - name: Start Squad Server or Restart if Started
-  ansible.builtin.include_tasks: start-container.yml
-  when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
-  loop: "{{ squad_servers }}"
-  loop_control:
-    loop_var: server
+  block:
+    - name: Ensure Python3 and Python3 Pip Are Installed
+      become: true
+      ansible.builtin.apt:
+        name:
+          - python3
+          - python3-pip
+        state: present
+
+    - name: Ensure docker For Python is Installed
+      ansible.builtin.pip:
+        name: "{{ item.name }}"
+        version: "{{ item.version }}"
+      loop:
+        - name: docker
+          version: 6.0.1
+
+        - name: docker-compose
+          version: 1.29.2
+
+    - name: Start Squad Server Services
+      when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
+      community.docker.docker_compose:
+        project_src: "{{ squad_servers_dir }}"
+        services:
+          - "squad-{{ server.docker.name }}"
+          - "squadjs-{{ server.docker.name }}"
+        state: present
+        restarted: true
+      loop: "{{ squad_servers }}"
+      loop_control:
+        label: "{{ server.name }}"
+        loop_var: server
