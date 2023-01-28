@@ -2,6 +2,15 @@ name: Start or Restart Squad Server
 
 on:
   workflow_dispatch:
+    inputs:
+      squad_server:
+        type: choice
+        description: Which server, or if all servers should be restarted
+        required: true
+        options:
+          - ALL
+          - vanilla
+          - mee-french
 
 jobs:
 
@@ -41,11 +50,12 @@ jobs:
               IdentityFile ~/.ssh/key
           __EOF__
 
-      - name: Run Ansible Playbook For Squad
-        if: "${{ vars.squad_server == 'ALL' }}"
+      - name: Restart or Start All Servers
+        if: "${{ inputs.squad_server == 'ALL' }}"
         run: |
-          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True'
+          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True' --extra-vars 'squad_deploy_configs=False'
 
-      - name: Run Ansible Playbook For Squad
+      - name: Restart or Start Specific Server
+        if: "${{ inputs.squad_server != 'ALL' }}"
         run: |
-          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ vars.squad_server_to_restart == '' }}"'
+          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ inputs.squad_server }}"' --extra-vars 'squad_deploy_configs=False'
