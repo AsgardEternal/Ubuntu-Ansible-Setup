@@ -39,3 +39,17 @@
       loop_control:
         label: "{{ server.name }}"
         loop_var: server
+
+
+    - name: Start Only Squadjs Server Services
+      when: server.docker.name == squadjs_to_restart or squadjs_restart_all | bool
+      community.docker.docker_compose:
+        project_src: "{{ squad_servers_dir }}"
+        services:
+          - "squadjs-{{ server.docker.name }}"
+        state: present
+        restarted: true
+      loop: "{{ squad_servers }}"
+      loop_control:
+        label: "{{ server.name }}"
+        loop_var: server
