@@ -1,0 +1,51 @@
+name: Start Squad Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  build-image:
+    uses: ./.github/workflows/build-docker.yml
+    secrets: inherit
+
+  deploy:
+    runs-on: self-hosted
+    needs:
+      - build-image
+    container:
+      image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
+      credentials:
+        username: "${{ secrets.DOCKER_REGISTRY_USER }}"
+        password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
+
+    steps:
+      - name: Inject Private Key
+        run: |
+          mkdir -p "${HOME}/.ssh"
+
+          cat << __EOF__ > "${HOME}/.ssh/key"
+          ${{ secrets.ansible_ssh_key }}
+          __EOF__
+
+          chmod 0600 "${HOME}/.ssh/key"
+
+          cat << __EOF__ > "${HOME}/.ssh/config"
+          Host *
+              User ${{ vars.ssh_user }}
+              StrictHostKeyChecking no
+
+          Host ${{ vars.server_host }}
+              HostName ${{ vars.server_host }}
+              User ${{ vars.ssh_user }}
+              IdentityFile ~/.ssh/key
+          __EOF__
+
+      - name: Run Ansible Playbook For Squad
+        if: "{{ vars.squad_server == 'ALL' }}"
+        run: |
+          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True'
+
+      - name: Run Ansible Playbook For Squad
+        run: |
+          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ vars.squad_server_to_restart == '' }}"'
