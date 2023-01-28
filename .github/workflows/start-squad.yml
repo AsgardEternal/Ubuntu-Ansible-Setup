@@ -1,4 +1,4 @@
-name: Start Squad Server
+name: Start or Restart Squad Server
 
 on:
   workflow_dispatch:
