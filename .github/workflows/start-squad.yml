@@ -42,7 +42,7 @@ jobs:
           __EOF__
 
       - name: Run Ansible Playbook For Squad
-        if: "{{ vars.squad_server == 'ALL' }}"
+        if: "${{ vars.squad_server == 'ALL' }}"
         run: |
           ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True'
 
