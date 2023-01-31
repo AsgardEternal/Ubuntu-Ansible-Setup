@@ -1,6 +1,9 @@
 name: Update Squad Configurations
 
 on:
+  push:
+    branches:
+      - Development
   workflow_dispatch:
 
 jobs:
