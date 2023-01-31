@@ -133,6 +133,10 @@ all:
 
               - name: wolf.rayne
                 steam64: 76561198107367726
+                
+              - name: Sexo
+                comment: promoted 1-31-23
+                steam64: 76561198003130199
 
           - name: JrAdmin
             squadjs:
@@ -145,11 +149,8 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members:
-              - name: Sexo
-                comment: Primary Seeder
-                steam64: 76561198003130199
-
+            members: []
+             
           - name: Whitelist
             permissions:
               - reserve
