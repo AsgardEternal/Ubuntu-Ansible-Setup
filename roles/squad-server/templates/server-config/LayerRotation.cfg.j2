@@ -7,7 +7,7 @@
 // To make it easier to see our layer rotation make a copy of active layers here:
 
 {% for layer in server.layers %}
-{{ layer }}
+{{ layer | trim() }}
 {% endfor %}
 
 // HERE IS THE FULL LAYER LIST
