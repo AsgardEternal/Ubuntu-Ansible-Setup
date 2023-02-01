@@ -1,0 +1,27 @@
+name: Lint Inventory
+
+on:
+  workflow_call:
+
+jobs:
+  build-image:
+    uses: ./.github/workflows/build-docker.yml
+    secrets: inherit
+
+  lint-inventory:
+    runs-on: self-hosted
+    needs:
+      - build-image
+    container:
+      image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
+      credentials:
+        username: "${{ secrets.DOCKER_REGISTRY_USER }}"
+        password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
+
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Lint Inventory
+        run: |
+          yamllint ./inventory.yml
