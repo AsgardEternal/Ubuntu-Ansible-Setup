@@ -86,7 +86,6 @@ all:
               - canseeadminchat
               - reserve
             members:
-
               - name: Lt_Longsword
                 steam64: 76561198373523022
 
@@ -116,13 +115,10 @@ all:
 
               - name: Mirage40K
                 steam64: 76561198059250541
-                     
+
               - name: wolf.rayne
                 steam64: 76561198107367726
-                
-             
-                
-                
+
           - name: Loki
             squadjs:
               admin_ping: true
@@ -140,19 +136,18 @@ all:
             members:
               - name: Frizz
                 steam64: 76561198339174737
-                 
-              - name: Sexo 
+
+              - name: Sexo
                 comment: promoted 1-31-23
                 steam64: 76561198003130199
-                  
+
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
                 steam64: 76561198081576045
-                  
+
               - name: Sweetwater
                 comment: promoted 12-26-22
                 steam64: 76561198124658412
-            
 
           - name: Balder
             squadjs:
@@ -166,7 +161,7 @@ all:
               - canseeadminchat
               - reserve
             members: []
-             
+
           - name: Whitelist
             permissions:
               - reserve
