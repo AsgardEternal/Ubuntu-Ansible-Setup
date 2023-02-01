@@ -12,6 +12,9 @@ pywinrm = "^0.4.3"
 [tool.poetry.dev-dependencies]
 ansible-lint = "^6.3.0"
 
+[tool.poetry.group.dev.dependencies]
+yamllint = "^1.29.0"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

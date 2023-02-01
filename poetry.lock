@@ -1032,4 +1032,4 @@ setuptools = "*"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "3bd4cdaccfb862ebbd700443548e777fe40fbc7511a8d6a077d06052d4c6cd7f"
+content-hash = "37314db960fecd6dc7fb012bb5dc659ccaa448e3d52069c9273387208eb9de6f"
