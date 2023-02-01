@@ -1,4 +1,5 @@
 ---
+# yamllint disable rule:line-length
 all:
   vars:
     server_timezone: America/Chicago
