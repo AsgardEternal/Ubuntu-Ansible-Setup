@@ -71,7 +71,7 @@ all:
               - name: SooperGloo
                 steam64: 76561198855097026
 
-          - name: SrAdmin
+          - name: Thor
             squadjs:
               admin_ping: true
             permissions:
@@ -86,17 +86,9 @@ all:
               - canseeadminchat
               - reserve
             members:
-              - name: Frizz
-                steam64: 76561198339174737
 
               - name: Lt_Longsword
                 steam64: 76561198373523022
-
-              - name: Buddy
-                steam64: 76561199201845769
-
-              - name: Ray
-                steam64: 76561198015328506
 
               - name: Freeman
                 steam64: 76561198329170534
@@ -124,21 +116,45 @@ all:
 
               - name: Mirage40K
                 steam64: 76561198059250541
-
-              - name: Rabbid_Squirrel
-                steam64: 76561198081576045
-
-              - name: Sweetwater
-                steam64: 76561198124658412
-
+                     
               - name: wolf.rayne
                 steam64: 76561198107367726
                 
-              - name: Sexo
+             
+                
+                
+          - name: Loki
+            squadjs:
+              admin_ping: true
+            permissions:
+              - balance
+              - chat
+              - kick
+              - ban
+              - teamchange
+              - canseeadminchat
+              - reserve
+              - cameraman
+              - changemap
+              - forceteamchange
+            members:
+              - name: Frizz
+                steam64: 76561198339174737
+                 
+              - name: Sexo 
                 comment: promoted 1-31-23
                 steam64: 76561198003130199
+                  
+              - name: Rabbid_Squirrel
+                comment: promoted 12-26-22
+                steam64: 76561198081576045
+                  
+              - name: Sweetwater
+                comment: promoted 12-26-22
+                steam64: 76561198124658412
+            
 
-          - name: JrAdmin
+          - name: Balder
             squadjs:
               admin_ping: true
             permissions:
