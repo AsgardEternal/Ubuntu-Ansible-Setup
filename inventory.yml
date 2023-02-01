@@ -1,3 +1,4 @@
+---
 all:
   vars:
     server_timezone: America/Chicago
