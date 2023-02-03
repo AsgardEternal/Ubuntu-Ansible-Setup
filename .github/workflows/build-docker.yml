@@ -35,7 +35,7 @@ jobs:
     - name: Build Ansible Image
       uses: docker/build-push-action@v3
       with:
-        context: ./dev
+        context: .
         file: ./Dockerfile
         push: true
         cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
