@@ -20,7 +20,7 @@ jobs:
         path: dev
     
     - name: check files
-      run: ls -a
+      run: cd dev/
 
     - name: Login To Registry
       uses: docker/login-action@v2
