@@ -15,7 +15,7 @@ jobs:
       uses: AutoModality/action-clean@v1
       
     - name: check files
-      run: ls -a
+      run: rm -R .github
     
     - name: checkout repo
       uses: actions/checkout@v3
