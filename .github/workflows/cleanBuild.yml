@@ -1,0 +1,10 @@
+name: Clean Build Area
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: AutoModality/action-clean@v1
