@@ -54,4 +54,4 @@ jobs:
           __EOF__
 
       - name: Run Ansible Playbook For Squad
-        run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad
+        run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" dev/playbook.yml --tags=squad
