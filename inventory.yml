@@ -9,6 +9,7 @@ all:
       squad_server_user: asgard
       squad_server_group: asgard
       squad_default_settings:
+        server_id: 0 # As a note, server IDs must be started at 1!
         docker:
           name: vanilla-squad
           images:
@@ -350,6 +351,7 @@ all:
 
       squad_servers:
         - name: "[ASG] Asgard Eternal | New Player Friendly"
+          server_id: 1
           docker:
             name: vanilla
             images:
@@ -376,6 +378,7 @@ all:
             - Harju_RAAS_v6
 
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
+          server_id: 2
           docker:
             name: mee-french
             images:

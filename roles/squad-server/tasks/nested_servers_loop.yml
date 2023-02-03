@@ -8,6 +8,5 @@
     mode: 0644
   loop_control:
     loop_var: server
-    index_var: server_id
     label: "{{ server.name }} -> {{ template_file | basename }}"
   loop: "{{ squad_servers }}"
