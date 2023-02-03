@@ -1,7 +1,7 @@
 name: Clean Build Area
 
 on:
-  workflow_call:
+  push:
 
 jobs:
   build:
