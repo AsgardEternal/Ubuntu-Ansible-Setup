@@ -76,7 +76,7 @@ services:
       MYSQL_ROOT_PASSWORD: {{ server.secrets.rcon_password }}
       MYSQL_DATABASE: squadjs
       MYSQL_USER: "'squadjs'@'%'"
-      MYSQL_PASSWORD: {{server.secrets.rcon_password }}
+      MYSQL_PASSWORD: {{ server.secrets.rcon_password }}
     volumes:
       - mysql-data:/var/lib/mysql:rw
     ports:
