@@ -28,12 +28,13 @@ jobs:
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
+        
 
     - name: Build Ansible Image
       uses: docker/build-push-action@v4
       with:
         context: ./dev/
-        file: ./Dockerfile
+        file: ./dev/Dockerfile
         push: true
         cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
         cache-to: type=inline
