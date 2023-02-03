@@ -67,9 +67,27 @@ services:
 
 {% endfor %}
 
+  mysql:
+    image: mysql
+    container_name: mysql
+    command: --sql-mode:TRADITIONAL
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: {{ server.secrets.rcon_password }}
+      MYSQL_DATABASE: squadjs
+      MYSQL_USER: "'squadjs'@'%'"
+      MYSQL_PASSWORD: {{server.secrets.rcon_password }}
+    volumes:
+      - mysql-data:/var/lib/mysql:rw
+    ports:
+      - 3306:3306/tcp
+      - 3306:3306/udp
+
 volumes:
 {% for server in squad_servers %}
     squadjs-{{ server.docker.name }}-data:
     squad-{{ server.docker.name }}-logs:
 
 {% endfor %}
+
+    mysql-data:
