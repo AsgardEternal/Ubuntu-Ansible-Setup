@@ -26,7 +26,15 @@
       "dialect": "sqlite",
       "storage": "/home/squadjs/data/squadjs.sqlite"
     },
-    "mysql": "mysql://squadjs:{{ server.secrets.rcon_password }}@asgard.orion-technologies.io:3306/squadjs"
+    "mysql": {
+      "dialect":"mysql",
+      "host":"asgard.orion-technologies.io",
+      "port":3306,
+      "username":"squadjs",
+      "password":"{{server.secrets.rcon_password }}",
+      "database":"squadjs"
+    }
+
   },
   "plugins": [
     {
@@ -70,7 +78,7 @@
       "plugin": "DBLog",
       "enabled": true,
       "database": "mysql",
-      "overrideServerID": null
+      "overrideServerID": {{ server_id }}
     },
     {
       "plugin": "DiscordAdminBroadcast",
