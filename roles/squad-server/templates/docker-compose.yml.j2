@@ -73,10 +73,10 @@ services:
     command: --sql-mode:TRADITIONAL
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: {{ server.secrets.rcon_password }}
-      MYSQL_DATABASE: squadjs
-      MYSQL_USER: "'squadjs'@'%'"
-      MYSQL_PASSWORD: {{ server.secrets.rcon_password }}
+      MYSQL_ROOT_PASSWORD: {{ squad_mysql.root_password }}
+      MYSQL_DATABASE: {{ squad_mysql.database }}
+      MYSQL_USER: "'{{ squad_mysql.user }}'@'%'"
+      MYSQL_PASSWORD: {{ squad_mysql.user_password }}
     volumes:
       - mysql-data:/var/lib/mysql:rw
     ports:

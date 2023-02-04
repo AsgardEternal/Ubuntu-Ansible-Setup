@@ -8,6 +8,12 @@ all:
       ansible_user: asgard
       squad_server_user: asgard
       squad_server_group: asgard
+      squad_mysql:
+        user: "squadjs"
+        user_password: "{{ lookup('ansible.builtin.env', 'SQUAD_MYSQL_ROOT_PASSWORD' )}}"
+        root_password: "{{ lookup('ansible.builtin.env', 'SQUAD_MYSQL_ROOT_PASSWORD' )}}"
+        database: squadjs
+
       squad_default_settings:
         server_id: 0 # As a note, server IDs must be started at 1!
         docker:

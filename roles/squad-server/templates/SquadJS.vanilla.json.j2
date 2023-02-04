@@ -1,6 +1,6 @@
 {
   "server": {
-    "id": {{ server_id }},
+    "id": {{ server.server_id }},
     "host": "squad",
     "queryPort": {{ server.ports.query }},
     "rconPort": {{ server.ports.rcon }},
@@ -78,7 +78,7 @@
       "plugin": "DBLog",
       "enabled": true,
       "database": "mysql",
-      "overrideServerID": {{ server_id }}
+      "overrideServerID": {{ server.server_id }}
     },
     {
       "plugin": "DiscordAdminBroadcast",
