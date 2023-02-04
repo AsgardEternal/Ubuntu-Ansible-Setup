@@ -70,7 +70,7 @@ services:
   mysql:
     image: mysql
     container_name: mysql
-    command: --sql-mode:TRADITIONAL
+    command: --sql-mode=TRADITIONAL
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: {{ squad_mysql.root_password }}
