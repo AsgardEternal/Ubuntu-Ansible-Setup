@@ -31,7 +31,7 @@ FROM base as final
 RUN <<__EOR__
 
 apk add --no-cache \
-    openssh-client=9.1_p1-r1 \
+    openssh-client=9.1_p1-r2 \
     ca-certificates=20220614-r4
 
 __EOR__
