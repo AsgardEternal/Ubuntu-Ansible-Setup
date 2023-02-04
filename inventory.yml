@@ -10,7 +10,7 @@ all:
       squad_server_group: asgard
       squad_mysql:
         user: "squadjs"
-        user_password: "{{ lookup('ansible.builtin.env', 'SQUAD_MYSQL_ROOT_PASSWORD' )}}"
+        user_password: "{{ lookup('ansible.builtin.env', 'SQUAD_MYSQL_USER_PASSWORD' )}}"
         root_password: "{{ lookup('ansible.builtin.env', 'SQUAD_MYSQL_ROOT_PASSWORD' )}}"
         database: squadjs
 
