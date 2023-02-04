@@ -31,7 +31,7 @@
       "host":"asgard.orion-technologies.io",
       "port":3306,
       "username":"squadjs",
-      "password":"{{ server.secrets.rcon_password }}",
+      "password":"{{server.secrets.rcon_password }}",
       "database":"squadjs"
     }
   },
@@ -77,7 +77,7 @@
       "plugin": "DBLog",
       "enabled": true,
       "database": "mysql",
-      "overrideServerID": null
+      "overrideServerID": {{ server_id }}
     },
     {
       "plugin": "DiscordAdminBroadcast",
