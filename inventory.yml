@@ -392,7 +392,6 @@ all:
             - Gorodok_RAAS_v01
             - Chora_RAAS_v4
             - Yehorivka_Invasion_v1
-            
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           server_id: 2
           docker:
