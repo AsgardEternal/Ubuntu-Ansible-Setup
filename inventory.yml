@@ -314,18 +314,6 @@ all:
                 comment: HC
                 steam64: 76561198191984002
 
-          - name: SLT
-            permissions:
-              - reserve
-            members:
-              - name: EnderDevs
-                comment: SLT
-                steam64: 76561198149412908
-
-              - name: JoeBrandonCheated
-                comment: SLT
-                steam64: 76561198448114730
-
           - name: BR1
             permissions:
               - reserve
@@ -341,7 +329,15 @@ all:
               - name: Bags
                 comment: BR1
                 steam64: 76561198315718944
-
+                 
+              - name: SGT Hoffman
+                comment: BR1
+                steam64: 765611990322003
+                
+               - name: Vaunt500
+                comment: BR1
+                steam64: 76561198031865730
+              
         ban_urls: []
         remote_admin_hosts: []
         messages:
