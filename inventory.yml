@@ -265,10 +265,39 @@ all:
               - name: OneBarStatus
                 comment: jacobadams135@yahoo.com
                 steam64: 76561198801895406
-                
+
               - name: The Half-WitViking
                 comment: jacobadams135@yahoo.com
                 steam64: 76561198870442236
+
+              - name: Warbot
+                comment: imawsome404@yahoo.com - Xikky
+                steam64: 76561197960350874
+
+              - name: Duffmann9992
+                comment: Attached to imawsome404@yahoo.com - xikky
+                steam64: 76561197986254647
+
+              - name: HeyWhatchaDoin
+                comment: Attached to imawsome404@yahoo.com - Xikky
+                steam64: 76561198405495371
+
+              - name: VanillaForsty
+                comment: attached to imawsome404@yahoo.com - Xikky
+                steam64: 76561198383222393
+
+              - name: Bowlpacks
+                comment: attached to imawsome404@yahoo.com - Xikky
+                steam64: 76561198054422673
+
+              - name: BoozBear
+                comment: attached to imawsome404@yahoo.com - Xikky
+                steam64: 76561198940959919
+
+              - name: BlinkOfDeath
+                comment: attached to imawsome404@yahoo.com - Xikky
+                steam64: 76561198081273292 
+
 
           - name: CAS
             permissions:
