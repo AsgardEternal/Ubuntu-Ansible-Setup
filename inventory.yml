@@ -265,9 +265,13 @@ all:
               - name: OneBarStatus
                 comment: jacobadams135@yahoo.com
                 steam64: 76561198801895406
+                
+              - name: Kazy
+                comment: jacobadams135@yahoo.com (Attached to OneBarStatus)
+                steam64: 76561198989641003
 
               - name: The Half-WitViking
-                comment: jacobadams135@yahoo.com
+                comment: jacobadams135@yahoo.com (Attached to OneBarStatus)
                 steam64: 76561198870442236
 
               - name: Warbot
