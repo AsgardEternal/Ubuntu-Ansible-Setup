@@ -120,7 +120,7 @@
   become_user: "{{ registry_system_user }}"
   community.docker.docker_compose:
     project_src: "./"
-    pull: present
+    pull: true
     state: present
     restarted: true
   when: registry_running.rc >= 1

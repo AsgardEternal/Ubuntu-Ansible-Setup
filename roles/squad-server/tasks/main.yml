@@ -30,7 +30,7 @@
       when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
       community.docker.docker_compose:
         project_src: "{{ squad_servers_dir }}"
-        pull: present
+        pull: true
         services:
           - "squad-{{ server.docker.name }}"
           - "squadjs-{{ server.docker.name }}"
@@ -46,7 +46,7 @@
       when: server.docker.name == squadjs_to_restart or squadjs_restart_all | bool
       community.docker.docker_compose:
         project_src: "{{ squad_servers_dir }}"
-        pull: present
+        pull: true
         services:
           - "squadjs-{{ server.docker.name }}"
         state: present
