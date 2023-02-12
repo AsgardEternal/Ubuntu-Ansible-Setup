@@ -118,8 +118,9 @@
 - name: Run Registry if it isn't Running
   become: true
   become_user: "{{ registry_system_user }}"
-  ansible.builtin.command:
-    cmd: docker compose up -d
-
-    chdir: "/home/{{ registry_system_user }}/docker-registry"
+  community.docker.docker_compose:
+    project_src: "./"
+    pull: present
+    state: present
+    restarted: true
   when: registry_running.rc >= 1
