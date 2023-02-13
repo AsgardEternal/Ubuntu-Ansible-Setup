@@ -76,9 +76,16 @@
     },
     {
       "plugin": "DBLog",
-      "enabled": true,
+      "enabled": false,
       "database": "mysql",
       "overrideServerID": {{ server.server_id }}
+    },
+    {
+      "plugin": "DBLogPlayerTime",
+      "enabled": true,
+      "database": "mysql",
+      "overrideServerID": 10,
+      "seedingThreshold": 50
     },
     {
       "plugin": "DiscordAdminBroadcast",
