@@ -455,7 +455,7 @@ all:
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
           docker:
-            name: vanilla
+            name: tactical
             images:
               server: squad:latest
               squadjs: squadjs:latest
