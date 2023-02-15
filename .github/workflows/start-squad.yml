@@ -11,6 +11,7 @@ on:
           - ALL
           - vanilla
           - mee-french
+          - tactical
 
 jobs:
 
