@@ -47,7 +47,7 @@ all:
               - reserve
               - config
             squadjs:
-              admin_ping: true
+              admin_ping: false
             members:
               - name: Kinsher
                 comment: Server Administrator
@@ -82,7 +82,7 @@ all:
 
           - name: Thor
             squadjs:
-              admin_ping: true
+              admin_ping: false
             permissions:
               - changemap
               - balance
@@ -130,7 +130,7 @@ all:
 
           - name: Loki
             squadjs:
-              admin_ping: true
+              admin_ping: false
             permissions:
               - balance
               - chat
@@ -160,7 +160,7 @@ all:
 
           - name: Balder
             squadjs:
-              admin_ping: true
+              admin_ping: false
             permissions:
               - balance
               - chat
