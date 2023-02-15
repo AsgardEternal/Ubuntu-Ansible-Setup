@@ -265,7 +265,7 @@ all:
               - name: OneBarStatus
                 comment: jacobadams135@yahoo.com
                 steam64: 76561198801895406
-                
+
               - name: Kazy
                 comment: jacobadams135@yahoo.com (Attached to OneBarStatus)
                 steam64: 76561198989641003
@@ -301,7 +301,6 @@ all:
               - name: BlinkOfDeath
                 comment: attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198081273292
-
 
           - name: CAS
             permissions:
@@ -370,7 +369,7 @@ all:
               - name: SGT Hoffman
                 comment: BR1
                 steam64: 765611990322003
-                
+
               - name: Vaunt500
                 comment: BR1
                 steam64: 76561198031865730
