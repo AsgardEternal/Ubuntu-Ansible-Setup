@@ -453,6 +453,34 @@ all:
             - MEE_Island_Invasion_v1_PIMAvTAF
             - MEE_Narva_RAAS_v1_POLvWAG
             - MEE_Fallujah_AAS_v1_GDvMEINS
+        - name: "[ASG] Asgard Eternal | Tactical"
+          server_id: 3
+          docker:
+            name: vanilla
+            images:
+              server: squad:latest
+              squadjs: squadjs:latest
+          secrets:
+            rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
+            squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_TACTICAL_SQUADJS_DISCORD_TOKEN') | default('')}}"
+            license: ""
+          ports:
+            game: 7791
+            query: 27169
+            rcon: 21116
+          layers:
+            - Harju_RAAS_V6
+            - Narva_RAAS_v2
+            - Fallujah_RAAS_v5
+            - Gorodok_RAAS_v12
+            - Belaya_RAAS_v1
+            - AlBasrah_Invasion_v7
+            - Yehorivka_RAAS_v08
+            - Mutaha_RAAS_v6
+            - Skorpo_RAAS_v4
+            - Gorodok_RAAS_v01
+            - Chora_RAAS_v4
+            - Yehorivka_Invasion_v1
       registry_site: asgard.orion-technologies.io
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
