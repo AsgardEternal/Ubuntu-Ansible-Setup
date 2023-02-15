@@ -1,6 +1,10 @@
 // {{ ansible_managed }}
 ServerName="{{ server.name }}"
 
+{% if server.secrets.server_password is defined and server.secrets.server_password != '' %}
+ServerPassword="${{ server.secrets.server_password}}"
+{% endif %}
+
 // Control visibility in the server browser
 ShouldAdvertise="true"
 
