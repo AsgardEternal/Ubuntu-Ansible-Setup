@@ -422,7 +422,7 @@ all:
             - Black Coast RAAS v4
             - Talil Outskirts RAAS v5
             - Goose Bay RAAS v3
-            - CBelaya RAAS v4
+            - Belaya RAAS v4
             - Yehorivka_Invasion_v13
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           server_id: 2
