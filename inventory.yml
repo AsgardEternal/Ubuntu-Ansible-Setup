@@ -457,7 +457,7 @@ all:
           docker:
             name: tactical
             images:
-              server: squad:latest
+              server: squad:tac-latest
               squadjs: squadjs:latest
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
