@@ -25,4 +25,4 @@ jobs:
 
       - name: Lint Inventory
         run: |
-          yamllint -d "{extends: default, rules: {trailing-spaces: {level: warning}}}" ./inventory.yml
+          yamllint -d "{extends: default, rules: {trailing-spaces: {level: warning}, comments: { min-spaces-from-content: 1}}}" ./inventory.yml
