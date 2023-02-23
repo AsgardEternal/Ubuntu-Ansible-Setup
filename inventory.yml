@@ -170,7 +170,7 @@ all:
               - canseeadminchat
               - reserve
             members:
-          - name: TheSaltiestAround
+              - name: TheSaltiestAround
                 comment: Permoted 02/22/2023
                 steam64: 76561198107206903
           
