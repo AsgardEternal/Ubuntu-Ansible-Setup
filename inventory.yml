@@ -169,8 +169,11 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members: []
-
+            members:
+          - name: TheSaltiestAround
+                comment: Permoted 02/22/2023
+                steam64: 76561198107206903
+          
           - name: Whitelist
             permissions:
               - reserve
