@@ -304,6 +304,10 @@ all:
               - name: BlinkOfDeath
                 comment: attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198081273292
+                
+              - name: fonzie141
+                comment: benmandino@gmail.com
+                steam64: 76561198056302525
 
           - name: CAS
             permissions:
