@@ -171,7 +171,7 @@ all:
               - reserve
             members:
               - name: TheSaltiestAround
-                comment: Permoted 02/22/2023
+                comment: Promoted 02/22/2023
                 steam64: 76561198107206903
 
           - name: Whitelist
@@ -419,17 +419,16 @@ all:
             query: 27167
             rcon: 21115
           layers:
-            - Gorodok_RAAS_v12
-            - Narva_RAAS_v4
-            - Fallujah_RAAS_v1
-            - Harju_RAAS_v6
-            - Yehorivka_RAAS_v01
-            - Mutaha_Invasion_v3
-            - Yehorivka_RAAS_v08
             - BlackCoast_RAAS_v4
-            - Tallil_RAAS_v5
-            - GooseBay_RAAS_v3
-            - Belaya_RAAS_v4
+            - Fallujah_RAAS_v7
+            - GooseBay_RAAS_v4
+            - Gorodok_RAAS_v09
+            - Harju_RAAS_v4
+            - Lashkar_AAS_v1
+            - BlackCoast_Invasion_v1
+            - Mutaha_RAAS_v7
+            - Narva_RAAS_v6
+            - Yehorivka_RAAS_v12
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           server_id: 2
           docker:
