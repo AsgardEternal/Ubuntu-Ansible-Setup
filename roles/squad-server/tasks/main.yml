@@ -5,6 +5,13 @@
   ansible.builtin.include_tasks: deploy-configs.yml
   when: squad_deploy_configs | bool
 
+- name: Login to Docker Registry
+  community.docker.docker_login:
+    registry: "{{ registry_site }}"
+    username: "{{ registry_login_user }}"
+    password: "{{ docker_registry_password }}"
+    reauthorize: true
+
 - name: Start Squad Server or Restart if Started
   block:
     - name: Ensure Python3 and Python3 Pip Are Installed
@@ -40,7 +47,6 @@
       loop_control:
         label: "SQUAD SERVER -> {{ server.name }}"
         loop_var: server
-
 
     - name: Start Only Squadjs Server Services
       when: server.docker.name == squadjs_to_restart or squadjs_restart_all | bool
