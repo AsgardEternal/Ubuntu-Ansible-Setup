@@ -32,6 +32,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
-        cache-to: type=inline
         tags: "${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest"
