@@ -30,6 +30,13 @@ jobs:
         password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
 
     steps:
+      - name: Login To Registry
+        uses: docker/login-action@v2
+        with:
+          registry: "${{ vars.DOCKER_REGISTRY_URL }}"
+          username: "${{ secrets.DOCKER_REGISTRY_USER }}"
+          password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
+
       - name: Inject Private Key
         run: |
           mkdir -p "${HOME}/.ssh"
