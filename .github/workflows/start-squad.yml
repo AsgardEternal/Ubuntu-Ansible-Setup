@@ -51,6 +51,10 @@ jobs:
               IdentityFile ~/.ssh/key
           __EOF__
 
+      - name: List Environment Variables
+        run: |
+          printenv
+
       - name: Restart or Start All Servers
         if: "${{ inputs.squad_server == 'ALL' }}"
         run: |

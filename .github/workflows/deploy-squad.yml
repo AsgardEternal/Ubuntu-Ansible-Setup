@@ -53,5 +53,9 @@ jobs:
               IdentityFile ~/.ssh/key
           __EOF__
 
+      - name: List Environment Variables
+        run: |
+          printenv
+
       - name: Run Ansible Playbook For Squad
         run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" ./playbook.yml --tags=squad
