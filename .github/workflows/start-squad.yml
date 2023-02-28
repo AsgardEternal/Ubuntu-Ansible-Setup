@@ -57,10 +57,14 @@ jobs:
 
       - name: Restart or Start All Servers
         if: "${{ inputs.squad_server == 'ALL' }}"
+        env:
+          DOCKER_REGISTRY_PASSWORD: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
         run: |
           ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True' --extra-vars 'squad_deploy_configs=False'
 
       - name: Restart or Start Specific Server
         if: "${{ inputs.squad_server != 'ALL' }}"
+        env:
+          DOCKER_REGISTRY_PASSWORD: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
         run: |
           ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ inputs.squad_server }}"' --extra-vars 'squad_deploy_configs=False'

@@ -58,4 +58,6 @@ jobs:
           printenv
 
       - name: Run Ansible Playbook For Squad
+        env:
+          DOCKER_REGISTRY_PASSWORD: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
         run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" ./playbook.yml --tags=squad
