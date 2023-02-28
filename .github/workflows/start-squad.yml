@@ -14,7 +14,6 @@ on:
           - tactical
 
 jobs:
-
   build-image:
     uses: ./.github/workflows/build-docker.yml
     secrets: inherit
@@ -58,9 +57,9 @@ jobs:
       - name: Restart or Start All Servers
         if: "${{ inputs.squad_server == 'ALL' }}"
         run: |
-          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True' --extra-vars 'squad_deploy_configs=False'
+          DOCKER_REGISTRY_USER="${{ secrets.DOCKER_REGISTRY_USER }}" DOCKER_REGISTRY_PASSWORD="${{ secrets.DOCKER_REGISTRY_PASSWORD }}" ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_restart_all=True' --extra-vars 'squad_deploy_configs=False'
 
       - name: Restart or Start Specific Server
         if: "${{ inputs.squad_server != 'ALL' }}"
         run: |
-          ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ inputs.squad_server }}"' --extra-vars 'squad_deploy_configs=False'
+          DOCKER_REGISTRY_USER="${{ secrets.DOCKER_REGISTRY_USER }}" DOCKER_REGISTRY_PASSWORD="${{ secrets.DOCKER_REGISTRY_PASSWORD }}" ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" playbook.yml --tags=squad --extra-vars 'squad_server_to_restart="${{ inputs.squad_server }}"' --extra-vars 'squad_deploy_configs=False'
