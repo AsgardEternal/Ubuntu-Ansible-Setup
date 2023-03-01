@@ -33,5 +33,5 @@ jobs:
       with:
         push: true
         cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
-        cache-to: type=inline
+        cache-to: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
         tags: "${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest"
