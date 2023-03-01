@@ -48,7 +48,7 @@ jobs:
           Host ${{ vars.server_host }}
               HostName ${{ vars.server_host }}
               User ${{ vars.ssh_user }}
-              IdentityFile ~/.ssh/key
+              IdentityFile ${HOME}/.ssh/key
           __EOF__
 
       - name: List Environment Variables
