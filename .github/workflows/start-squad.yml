@@ -2,7 +2,7 @@ name: Start or Restart Squad Server
 
 on:
   schedule:
-    - cron: '00 14 * * *'
+    - cron: '35 14 * * *'
   workflow_dispatch:
     inputs:
       squad_server:
@@ -58,7 +58,7 @@ jobs:
           printenv
 
       - name: Restart or Start All Servers
-        if: "${{ inputs.squad_server == 'ALL' }}"
+        if: "${{ inputs.squad_server == 'ALL' || inputs.squad_server == '' }}"
         env:
           DOCKER_REGISTRY_PASSWORD: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
         run: |
