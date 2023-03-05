@@ -27,7 +27,7 @@ all:
           license: ""
         groups:
           # This is for the discord admin ping
-          - name: 1039155511066636329
+          - name: 1039155511066636300
             permissions: []
             squadjs:
               admin_ping: true
@@ -51,34 +51,34 @@ all:
             members:
               - name: Kinsher
                 comment: Server Administrator
-                steam64: 76561197986710399
+                steam64: 76561197986710400
 
               - name: Atrocity
-                steam64: 76561199101367413
+                steam64: 76561199101367410
 
               - name: Xikky
-                steam64: 76561198001193856
+                steam64: 76561198001193860
 
               - name: iiTherRealMcCoy
-                steam64: 76561199028579724
+                steam64: 76561199028579730
 
               - name: MaxRecon
-                steam64: 76561198153769543
+                steam64: 76561198153769540
 
               - name: SheHulk
-                steam64: 76561198067016254
+                steam64: 76561198067016260
 
               - name: Malinoff
-                steam64: 76561198404402665
+                steam64: 76561198404402670
 
               - name: Someoneulove
-                steam64: 76561198073942737
+                steam64: 76561198073942740
 
               - name: Teggy
-                steam64: 76561198356666755
+                steam64: 76561198356666750
 
               - name: SooperGloo
-                steam64: 76561198855097026
+                steam64: 76561198855097020
 
           - name: Thor
             squadjs:
@@ -96,37 +96,37 @@ all:
               - reserve
             members:
               - name: Lt_Longsword
-                steam64: 76561198373523022
+                steam64: 76561198373523020
 
               - name: Freeman
-                steam64: 76561198329170534
+                steam64: 76561198329170530
 
               - name: Omega
-                steam64: 76561199018771290
+                steam64: 76561199018771300
 
               - name: Coiffee
-                steam64: 76561198046579272
+                steam64: 76561198046579260
 
               - name: Elon
-                steam64: 76561198203568744
+                steam64: 76561198203568740
 
               - name: Kin_Seward
-                steam64: 76561198799111045
+                steam64: 76561198799111040
 
               - name: RangerSix
-                steam64: 76561198206734757
+                steam64: 76561198206734750
 
               - name: Epimetheus
-                steam64: 76561199094282718
+                steam64: 76561199094282720
 
               - name: Chemji
-                steam64: 76561199127559778
+                steam64: 76561199127559780
 
               - name: Mirage40K
-                steam64: 76561198059250541
+                steam64: 76561198059250540
 
               - name: wolf.rayne
-                steam64: 76561198107367726
+                steam64: 76561198107367730
 
           - name: Loki
             squadjs:
@@ -144,19 +144,19 @@ all:
               - forceteamchange
             members:
               - name: Frizz
-                steam64: 76561198339174737
+                steam64: 76561198339174740
 
               - name: Sexo
                 comment: promoted 1-31-23
-                steam64: 76561198003130199
+                steam64: 76561198003130190
 
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
-                steam64: 76561198081576045
+                steam64: 76561198081576050
 
               - name: Sweetwater
                 comment: promoted 12-26-22
-                steam64: 76561198124658412
+                steam64: 76561198124658420
 
           - name: Balder
             squadjs:
@@ -172,7 +172,7 @@ all:
             members:
               - name: TheSaltiestAround
                 comment: Promoted 02/22/2023
-                steam64: 76561198107206903
+                steam64: 76561198107206900
 
           - name: Whitelist
             permissions:
@@ -180,54 +180,54 @@ all:
             members:
               - name: Treay ~ Sam
                 comment: For Asgard IT Started 01/09/2023
-                steam64: 76561198090760895
+                steam64: 76561198090760900
 
               - name: Gel The Doctor
                 comment: Added by MaX unlimited Whitelist
-                steam64: 76561198098735539
+                steam64: 76561198098735540
 
               - name: Trippy Chivas
                 comment: devbryanbar@gmail.com
-                steam64: 76561198106004468
+                steam64: 76561198106004460
 
               - name: Mauro
                 comment: men1995@gmail.com
-                steam64: 76561198098391966
+                steam64: 76561198098391970
 
               - name: RIOTYouth1
                 comment: aclerc1220@gmail.com
-                steam64: 76561198209119887
+                steam64: 76561198209119890
 
               - name: "{ASG} Scarface"
                 comment: logangrimes11@gmail.com
-                steam64: 76561198312514319
+                steam64: 76561198312514320
 
               - name: "{ASG} young sloth"
                 comment: logangrimes11@gmail.com
-                steam64: 76561198983371735
+                steam64: 76561198983371730
 
               - name: Skillet
                 comment: Server Administrator
-                steam64: 76561198221715432
+                steam64: 76561198221715420
 
               - name: LtJamesFox
-                steam64: 76561198026192477
+                steam64: 76561198026192480
                 comment: Nevetsu@hotmail.com
 
               - name: tcandan88(4skin)
                 comment: ducati979@aol.com
-                steam64: 76561198059124010
+                steam64: 76561198059124020
 
               - name: Dick Deflator
                 comment: Granted Whitelist for 3 month's started 12/01/2022/Ends 02/28/2023
-                steam64: 76561199062085282
+                steam64: 76561199062085280
 
               - name: Bagels
                 comment: adroessler10@gmail.com
-                steam64: 76561198059462064
+                steam64: 76561198059462060
 
               - name: Hypothermiack
-                steam64: 76561198119385943
+                steam64: 76561198119385940
 
               - name: TapatioTimmy
                 comment: camdenricketts4@gmail.com
@@ -235,7 +235,7 @@ all:
 
               - name: TheGoochSlooth
                 comment: justintestorelli@gmail.com
-                steam64: 76561199285813056
+                steam64: 76561199285813060
 
               - name: Subterfuge
                 comment: jwlind@gmail.com
@@ -243,63 +243,63 @@ all:
 
               - name: Kybar
                 comment: carbarykyle@gmail.com
-                steam64: 76561198128034210
+                steam64: 76561198128034200
 
               - name: Juggernaut
                 comment: robledoaustin@yahoo.com
-                steam64: 76561198049739312
+                steam64: 76561198049739310
 
               - name: DamiSupreme
                 comment: alexdemiane93@gmail.com
-                steam64: 76561197979663830
+                steam64: 76561197979663820
 
               - name: Mr_poopy_diaper
                 comment: Attached to (ASG) Kybar (carbarykyle@gmail.com)
-                steam64: 76561199302780874
+                steam64: 76561199302780880
 
               - name: OneBarStatus
                 comment: jacobadams135@yahoo.com
-                steam64: 76561198801895406
+                steam64: 76561198801895410
 
               - name: Kazy
                 comment: jacobadams135@yahoo.com (Attached to OneBarStatus)
-                steam64: 76561198989641003
+                steam64: 76561198989641010
 
               - name: The Half-WitViking
                 comment: jacobadams135@yahoo.com (Attached to OneBarStatus)
-                steam64: 76561198870442236
+                steam64: 76561198870442240
 
               - name: Warbot
                 comment: imawsome404@yahoo.com - Xikky
-                steam64: 76561197960350874
+                steam64: 76561197960350880
 
               - name: Duffmann9992
                 comment: Attached to imawsome404@yahoo.com - xikky
-                steam64: 76561197986254647
+                steam64: 76561197986254640
 
               - name: HeyWhatchaDoin
                 comment: Attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198405495371
+                steam64: 76561198405495380
 
               - name: VanillaForsty
                 comment: attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198383222393
+                steam64: 76561198383222400
 
               - name: Bowlpacks
                 comment: attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198054422673
+                steam64: 76561198054422670
 
               - name: BoozBear
                 comment: attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198940959919
+                steam64: 76561198940959920
 
               - name: BlinkOfDeath
                 comment: attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198081273292
-                
+                steam64: 76561198081273300
+
               - name: fonzie141
                 comment: benmandino@gmail.com
-                steam64: 76561198056302525
+                steam64: 76561198056302530
 
           - name: CAS
             permissions:
@@ -311,15 +311,15 @@ all:
 
               - name: JF
                 comment: CAS
-                steam64: 76561198094918611
+                steam64: 76561198094918610
 
               - name: Jashy
                 comment: CAS
-                steam64: 76561198153409985
+                steam64: 76561198153409980
 
               - name: Oscar
                 comment: CAS
-                steam64: 76561198150626482
+                steam64: 76561198150626480
 
               - name: Skay
                 comment: CAS
@@ -331,23 +331,23 @@ all:
             members:
               - name: Sir Peabody
                 comment: HC
-                steam64: 76561198043032389
+                steam64: 76561198043032380
 
               - name: Kameron
                 comment: HC
-                steam64: 76561197982328479
+                steam64: 76561197982328480
 
               - name: Evans
                 comment: HC
-                steam64: 76561198101099268
+                steam64: 76561198101099260
 
               - name: Brodizle
                 comment: HC
-                steam64: 76561198249614886
+                steam64: 76561198249614880
 
               - name: Skeebler
                 comment: HC
-                steam64: 76561198191984002
+                steam64: 76561198191984000
 
           - name: BR1
             permissions:
@@ -359,11 +359,11 @@ all:
 
               - name: Dr. Hammerstein
                 comment: BR1
-                steam64: 76561198037486479
+                steam64: 76561198037486480
 
               - name: Bags
                 comment: BR1
-                steam64: 76561198315718944
+                steam64: 76561198315718940
 
               - name: SGT Hoffman
                 comment: BR1
