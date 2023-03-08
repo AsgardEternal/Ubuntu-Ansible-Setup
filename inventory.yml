@@ -411,16 +411,16 @@ all:
             query: 27167
             rcon: 21115
           layers:
-            - BlackCoast_RAAS_v4
-            - Fallujah_RAAS_v7
-            - GooseBay_RAAS_v4
-            - Gorodok_RAAS_v09
-            - Harju_RAAS_v4
-            - Lashkar_RAAS_v3
-            - BlackCoast_Invasion_v1
-            - Mutaha_RAAS_v7
-            - Narva_RAAS_v6
-            - Yehorivka_RAAS_v12
+            - Gorodok_RAAS_v7
+            - AlBasrah_Invasion_v8
+            - Anvil_RAAS_v4
+            - Yehorivka_RAAS_v13
+            - Narva_RAAS_v1
+            - Kohat_RAAS_v1
+            - GooseBay_RAAS_v1
+            - Mutaha_RAAS_v2
+            - BlackCoast_RAAS_v3
+            - Skorpo_RAAS_v4
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           server_id: 2
           docker:
