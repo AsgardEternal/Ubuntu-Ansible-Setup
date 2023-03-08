@@ -20,7 +20,7 @@ all:
           name: vanilla-squad
           images:
             server: squad:latest
-            squadjs: squadjs:latest
+            squadjs: squadjs:testing
         secrets:
           rcon_password: test
           squadjs_discord_token: ""
