@@ -27,7 +27,7 @@ all:
           license: ""
         groups:
           # This is for the discord admin ping
-          - name: 1039155511066636300
+          - name: 1039155511066636329
             permissions: []
             squadjs:
               admin_ping: true
