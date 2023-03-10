@@ -157,6 +157,10 @@ all:
               - name: Sweetwater
                 comment: promoted 12-26-22
                 steam64: 76561198124658412
+                
+              - name: TheSaltiestAround
+                comment: Promoted 02/22/2023
+                steam64: 76561198107206903
 
           - name: Balder
             squadjs:
@@ -169,10 +173,6 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members:
-              - name: TheSaltiestAround
-                comment: Promoted 02/22/2023
-                steam64: 76561198107206903
 
           - name: Whitelist
             permissions:
