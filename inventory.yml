@@ -170,6 +170,10 @@ all:
               - canseeadminchat
               - reserve
 
+              - name: Skillet
+                comment: 
+                steam64: 76561198221715432
+                
           - name: Whitelist
             permissions:
               - reserve
