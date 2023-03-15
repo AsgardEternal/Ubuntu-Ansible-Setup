@@ -416,16 +416,17 @@ all:
             query: 27167
             rcon: 21115
           layers:
-            - Gorodok_RAAS_v7
-            - AlBasrah_Invasion_v8
-            - Anvil_RAAS_v4
+            - Belaya_RAAS_v2
+            - BlackCoast_Invasion_v2
+            - Manicouagan RAAS v6
+            - BlackCoast_Invasion_v4
+            - Gorodok_Invasion_v3
+            - Gorodok_RAAS_v12
+            - Harju_RAAS_v6
+            - Manicouagan_Invasion_v2
+            - Manicouagan_Invasion_v2
             - Yehorivka_RAAS_v13
-            - Narva_RAAS_v1
-            - Kohat_RAAS_v1
-            - GooseBay_RAAS_v1
-            - Mutaha_RAAS_v2
-            - BlackCoast_RAAS_v3
-            - Skorpo_RAAS_v4
+            - Mestia_Invasion_v2
         - name: "[ASG] Asgard Eternal | MEE - New Player Friendly"
           server_id: 2
           docker:
