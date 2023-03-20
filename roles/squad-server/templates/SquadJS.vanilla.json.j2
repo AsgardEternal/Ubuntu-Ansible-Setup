@@ -250,6 +250,22 @@
       "plugin": "TeamRandomizer",
       "enabled": true,
       "command": "randomize"
+    },
+    {
+      "plugin":SquadNameValidator",
+      "enabled": true,
+      "discordClient": "discord",
+      "channelID": "1066978080364707880",
+      "warningMessage": "Your squad has been disbanded due to a non-compliant name.",
+      "rules": [
+        {
+          "description": "Disband every ARMOR/ARMOUR/VIC/VEHICLE and other variants",
+          "type": "regex",
+          "logic": "match=disband",
+          "rule": "/(a ?r ?m ?(?:o|e)? ?u? ?r)|(v ?i ?c)|(v ?e ?h ?i ?c ?l ?e)/",
+          "warningMessage": "R9 | ARMOR/VIC/VEHICLE are not valid claims!"
+        }
+      ]
     }
   ],
   "logger": {
