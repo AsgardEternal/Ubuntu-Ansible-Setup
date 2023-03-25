@@ -157,6 +157,10 @@ all:
               - name: Sweetwater
                 comment: promoted 12-26-22
                 steam64: 76561198124658412
+                
+              - name: Skillet
+                comment:
+                steam64: 76561198221715432
 
           - name: Balder
             squadjs:
@@ -169,11 +173,6 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-
-            members:
-              - name: Skillet
-                comment:
-                steam64: 76561198221715432
 
           - name: Whitelist
             permissions:
