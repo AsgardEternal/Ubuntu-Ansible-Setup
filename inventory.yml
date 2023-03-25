@@ -301,14 +301,14 @@ all:
                 comment: benmandino@gmail.com
                 steam64: 76561198056302525
                 
-              - name: Orion159044#1238 @T/5 Fairchild [29th ID]
+              - name: "Orion159044#1238 @T/5 Fairchild [29th ID]"
                 comment: orionbarclay7@gmail.com
                 steam64: 76561198170375391
-                
-              - name: [NOT]TheSaltiestAround
+              
+              - name: "[NOT]TheSaltiestAround"
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
-
+                
           - name: CAS
             permissions:
               - reserve
