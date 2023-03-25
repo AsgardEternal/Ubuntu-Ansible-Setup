@@ -266,7 +266,60 @@
           "warningMessage": "R9 | ARMOR/VIC/VEHICLE are not valid claims!"
         }
       ]
-    }
+    },
+    {
+      "plugin": "MapVote",
+      "enabled": true,
+      "discordClient": "discord",
+      "entriesAmount": 6,
+      "entryFormat": "{map_name} {gamemode} {map_version} {factions}",
+      "automaticVoteStart": true,
+      "votingDuration": 25,
+      "minPlayersForVote": 30,
+      "voteWaitTimeFromMatchStart": 20,
+      "voteBroadcastInterval": 10,
+      "numberRecentMapsToExlude": 4,
+      "automaticSeedingMode": false,
+      "gamemodeWhitelist": [ "RAAS", "Invasion" ],
+      "layerFilteringMode": "blacklist",
+      "layerLevelBlacklist": [ "FoolsRoad", "Kamdesh", "Lashkar", "Logar", "Mestia", "Sumari" ],
+      "layerLevelWhitelist": [ "Yeho", "Gorodok", "Mutaha", "Narva", "Tallil" ],
+      "applyBlacklistToWhitelist": true,
+      "factionsBlacklist": [ "CAF", "INS" ],
+      "minRaasEntries": 3,
+      "hideVotesCount": false,
+      "showRerollOption": false,
+      "showRerollOptionInCustomVotes": false,
+      "voteBroadcastMessage": "MAPVOTE\nVote for the next map by writing in chat the corresponding number!",
+      "voteWinnerBroadcastMessage": "MAPVOTE\nThe winning layer is\n",
+      "showWinnerBroadcastMessage": true,
+      "allowedSameMapEntries": 2,
+      "logToDiscord": true,
+      "channelID": "1087437388294406334",
+      "persistentDataFile": "/home/squadjs/data/mapvotepdata.data",
+      "timezone": -4,
+      "minimumVotesToAcceptResult": 1,
+      "instantSeedingModePlayerCount": 5,
+      "nextLayerSeedingModePlayerCount": 20,
+      "seedingGameMode": "Seed",
+      "timeFrames": [
+        {
+            "name": "follow layer rotation list",
+            "start": "12:00",
+            "end": "00:00",
+            "overrides": {
+                "automaticVoteStart": false
+            }
+        },
+        {
+            "start": "00:00",
+            "end": "12:00",
+            "overrides": {
+                "voteBroadcastMessage": "Late night games? Vote your favourite map!"
+            }
+          }
+        ]
+      }
   ],
   "logger": {
     "verboseness": {
