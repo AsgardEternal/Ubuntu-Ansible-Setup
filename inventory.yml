@@ -159,7 +159,7 @@ all:
                 steam64: 76561198124658412
                 
               - name: Skillet
-                comment:
+                comment: promoted 03-25-23
                 steam64: 76561198221715432
 
           - name: Balder
