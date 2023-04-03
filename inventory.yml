@@ -427,9 +427,8 @@ all:
             query: 27167
             rcon: 21115
           layers:
-            - Belaya_RAAS_v2
-            - BlackCoast_Invasion_v2
-            - Manicouagan RAAS v6
+            - JensensRange_BAF-MIL
+            - JensensRange_USA-RUS
             - BlackCoast_Invasion_v4
             - Gorodok_Invasion_v3
             - Gorodok_RAAS_v12
