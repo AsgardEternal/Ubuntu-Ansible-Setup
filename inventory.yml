@@ -177,10 +177,7 @@ all:
               - name: Vaunt 
                 comment: promoted 4-09-2023
                 steam64: 76561198031865730
-                
-              - name:
-                comment:
-                steam64:
+
 
           - name: Balder
             squadjs:
