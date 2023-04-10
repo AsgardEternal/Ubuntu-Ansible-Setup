@@ -161,6 +161,26 @@ all:
               - name: Skillet
                 comment: promoted 03-25-23
                 steam64: 76561198221715432
+                
+              - name: Madtopher
+                comment: promoted 04-09-2023
+                steam64: 76561199060693600
+                
+              - name: Dr.hammerstien
+                comment: promoted 04-09-2023
+                steam64: 76561198037486479
+                
+              - name: Rarg
+                comment: promoted 4-09-2023
+                steam64: 76561198073565669
+                
+              - name: Vaunt 
+                comment: promoted 4-09-2023
+                steam64: 76561198031865730
+                
+              - name:
+                comment:
+                steam64:
 
           - name: Balder
             squadjs:
