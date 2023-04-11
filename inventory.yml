@@ -448,8 +448,6 @@ all:
             query: 27167
             rcon: 21115
           layers:
-            - JensensRange_BAF-MIL
-            - JensensRange_USA-RUS
             - BlackCoast_Invasion_v4
             - Gorodok_Invasion_v3
             - Gorodok_RAAS_v12
