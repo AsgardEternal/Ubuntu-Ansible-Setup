@@ -438,7 +438,7 @@ all:
             name: vanilla
             images:
               server: squad:latest
-              squadjs: squadjs:latest
+              squadjs: squadjs:testing
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_VANILLA_SQUADJS_DISCORD_TOKEN')}}"
