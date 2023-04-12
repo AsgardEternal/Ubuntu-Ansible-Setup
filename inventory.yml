@@ -153,10 +153,6 @@ all:
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
                 steam64: 76561198081576045
-
-              - name: Sweetwater
-                comment: promoted 12-26-22
-                steam64: 76561198124658412
                 
               - name: Skillet
                 comment: promoted 03-25-23
