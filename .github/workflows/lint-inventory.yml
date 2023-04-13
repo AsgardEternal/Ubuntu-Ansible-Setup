@@ -12,7 +12,7 @@ jobs:
     runs-on: self-hosted
     needs: build-image
     container:
-      image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
+      image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ANSIBLE_CONTAINER }}:latest
       credentials:
         username: "${{ secrets.DOCKER_REGISTRY_USER }}"
         password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
