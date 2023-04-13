@@ -15,9 +15,8 @@ jobs:
     container:
       image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ANSIBLE_CONTAINER }}:latest
       credentials:
-        username: "${{ secrets.DOCKER_REGISTRY_USER }}"
-        password: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
-
+        username: ${{ secrets.DOCKER_REGISTRY_USER }}
+        password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
 
     steps:
       - name: checkout repo
@@ -26,3 +25,4 @@ jobs:
       - name: Lint Inventory
         run: |
           yamllint -d "{extends: default, rules: {trailing-spaces: {level: warning}, comments: { min-spaces-from-content: 1}}}" ./inventory.yml
+
