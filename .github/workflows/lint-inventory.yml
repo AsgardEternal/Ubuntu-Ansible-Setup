@@ -10,8 +10,7 @@ jobs:
 
   lint-inventory:
     runs-on: self-hosted
-    needs:
-      - build-image
+    needs: build-image
     container:
       image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
       credentials:
