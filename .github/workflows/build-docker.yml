@@ -29,3 +29,4 @@ jobs:
           tags: "${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest"
           cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
           cache-to: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
+
