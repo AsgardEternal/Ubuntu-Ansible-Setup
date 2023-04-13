@@ -8,8 +8,14 @@ on:
 
 jobs:
 
+  lint-inventory:
+    uses: ./.github/workflows/lint-inventory.yml
+    secrets: inherit
+
   deploy:
     runs-on: self-hosted
+    needs:
+      - lint-inventory
     container:
       image: ${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ansible_container }}:latest
       credentials:
