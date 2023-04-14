@@ -186,7 +186,12 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-
+              
+          - name: RIOTYouth1
+                comment: Newest Jr Admin 4 13 2023
+                steam64: 76561198209119887
+                
+                
           - name: Whitelist
             permissions:
               - reserve
