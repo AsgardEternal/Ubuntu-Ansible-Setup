@@ -187,8 +187,8 @@ all:
               - canseeadminchat
               - reserve
               
-          - name: RIOTYouth1
-                comment: newest jr admin 4-13-2023
+              - name: RIOTYouth1
+                comment:
                 steam64: 76561198209119887
                 
                 
