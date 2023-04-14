@@ -186,8 +186,7 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-              
-             members:  
+            members:  
                - name: RIOTYouth1
                  comment: Jr Admin 4-13-2023
                  steam64: 76561198209119887
