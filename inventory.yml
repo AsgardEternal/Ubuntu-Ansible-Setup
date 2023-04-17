@@ -442,7 +442,7 @@ all:
             name: vanilla
             images:
               server: squad:latest
-              squadjs: squadjs:testing
+              squadjs: squadjs:latest
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_VANILLA_SQUADJS_DISCORD_TOKEN')}}"
@@ -494,7 +494,7 @@ all:
             name: tactical
             images:
               server: squad:tac-bots-latest
-              squadjs: squadjs:testing
+              squadjs: squadjs:latest
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_TACTICAL_SQUADJS_DISCORD_TOKEN') | default('')}}"
