@@ -3,3 +3,7 @@
 {% for remote in server.remote_admin_hosts %}
 {{ remote }}
 {% endfor %}
+
+{% for adminlist in server.remote_admin_list %}
+http://asgard.orion-technologies.io:8000/?grpName={{ adminlist }}
+{% endfor %}
