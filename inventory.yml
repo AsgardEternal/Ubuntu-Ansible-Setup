@@ -416,6 +416,7 @@ all:
 
         ban_urls: []
         remote_admin_hosts: []
+        remote_admin_list: []
         messages:
           - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
           - Check out Asgard Discord https://discord.gg/asg
@@ -500,6 +501,9 @@ all:
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_TACTICAL_SQUADJS_DISCORD_TOKEN') | default('')}}"
             server_password: "{{ lookup('ansible.builtin.env', 'SQUAD_TACTICAL_SERVER_PASSWORD') | default('')}}"
             license: ""
+          remote_admin_list:
+            - whitelist
+            - jrAdmin
           ports:
             game: 7791
             query: 27169
