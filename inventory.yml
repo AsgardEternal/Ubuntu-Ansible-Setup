@@ -388,7 +388,12 @@ all:
 
         ban_urls: []
         remote_admin_hosts: []
-        remote_admin_list: []
+        remote_admin_list: 
+            - Einherjar
+            - Balder
+            - Loki
+            - Thor
+            - LIAISON
         messages:
           - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
           - Check out Asgard Discord https://discord.gg/asg
@@ -474,8 +479,12 @@ all:
             server_password: "{{ lookup('ansible.builtin.env', 'SQUAD_TACTICAL_SERVER_PASSWORD') | default('')}}"
             license: ""
           remote_admin_list:
-            - whitelist
-            - jrAdmin
+            - Einherjar
+            - Balder
+            - Loki
+            - Thor
+            - LIAISON
+            - Asgard Tactical INF
           ports:
             game: 7791
             query: 27169
