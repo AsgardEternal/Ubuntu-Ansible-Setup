@@ -374,10 +374,6 @@ all:
                 comment: HC
                 steam64: 76561198043032389
 
-              - name: Kameron
-                comment: HC
-                steam64: 76561197982328479
-
               - name: Evans
                 comment: HC
                 steam64: 76561198101099268
