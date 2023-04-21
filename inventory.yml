@@ -386,11 +386,6 @@ all:
                 comment: HC
                 steam64: 76561198191984002
 
-          - name: BR1
-            permissions:
-              - reserve
-            members:
-
         ban_urls: []
         remote_admin_hosts: []
         remote_admin_list: []
