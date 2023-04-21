@@ -389,11 +389,11 @@ all:
         ban_urls: []
         remote_admin_hosts: []
         remote_admin_list: 
-            - Einherjar
-            - Balder
-            - Loki
-            - Thor
-            - LIAISON
+          - Einherjar
+          - Balder
+          - Loki
+          - Thor
+          - LIAISON
         messages:
           - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
           - Check out Asgard Discord https://discord.gg/asg
