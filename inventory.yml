@@ -394,25 +394,6 @@ all:
             permissions:
               - reserve
             members:
-              - name: Madtopher
-                comment: BR1
-                steam64: 76561199060693600
-
-              - name: Dr. Hammerstein
-                comment: BR1
-                steam64: 76561198037486479
-
-              - name: Bags
-                comment: BR1
-                steam64: 76561198315718944
-
-              - name: SGT Hoffman
-                comment: BR1
-                steam64: 765611990322003
-
-              - name: Vaunt500
-                comment: BR1
-                steam64: 76561198031865730
 
         ban_urls: []
         remote_admin_hosts: []
