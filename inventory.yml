@@ -146,10 +146,6 @@ all:
               - name: Frizz
                 steam64: 76561198339174737
 
-              - name: Sexo
-                comment: promoted 1-31-23
-                steam64: 76561198003130199
-
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
                 steam64: 76561198081576045
