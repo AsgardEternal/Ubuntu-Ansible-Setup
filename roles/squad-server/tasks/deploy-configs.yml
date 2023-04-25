@@ -51,6 +51,17 @@
     label: "{{ template_file | basename }}"
   with_fileglob:
     - ../templates/server-config/*.j2
+    
+- name: Delete Liscense file if no license
+  become: true
+  ansible.builtin.file:
+    path: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/License.cfg"
+    state: absent
+  when: "{{ server.secrets.license }}" == ""
+  loop: "{{ squad_servers }}"
+  loop_control:
+    loop_var: server
+    label: "{{ server.docker.name }}"
 
 - name: Template SquadJS Into Place
   become: true
