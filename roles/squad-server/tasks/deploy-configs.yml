@@ -57,7 +57,7 @@
   ansible.builtin.file:
     path: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/License.cfg"
     state: absent
-  when: "{{ server.secrets.license }}" == ""
+  when: server.secrets.license == ""
   loop: "{{ squad_servers }}"
   loop_control:
     loop_var: server
