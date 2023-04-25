@@ -483,6 +483,7 @@ all:
             - Thor
             - LIAISON
             - Asgard Tactical INF
+            - Asgard Event Team
           ports:
             game: 7791
             query: 27169
