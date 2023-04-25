@@ -46,6 +46,7 @@ all:
               - canseeadminchat
               - reserve
               - config
+              - cheat
             squadjs:
               admin_ping: false
             members:
