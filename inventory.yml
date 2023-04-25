@@ -47,6 +47,7 @@ all:
               - reserve
               - config
               - cheat
+              - featuretest
             squadjs:
               admin_ping: false
             members:
