@@ -129,6 +129,10 @@ all:
 
               - name: wolf.rayne
                 steam64: 76561198107367726
+                
+              - name: Skillet
+                comment: promoted 03-25-23
+                steam64: 76561198221715432
 
           - name: Loki
             squadjs:
@@ -151,10 +155,6 @@ all:
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
                 steam64: 76561198081576045
-                
-              - name: Skillet
-                comment: promoted 03-25-23
-                steam64: 76561198221715432
                 
               - name: Madtopher
                 comment: promoted 04-09-2023
