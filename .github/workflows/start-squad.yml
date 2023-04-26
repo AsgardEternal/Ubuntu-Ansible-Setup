@@ -15,6 +15,7 @@ on:
           - mee-french
           - tactical
           - galac
+          - teamwork
 
 jobs:
 
