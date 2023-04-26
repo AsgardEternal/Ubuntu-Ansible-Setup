@@ -73,9 +73,6 @@ all:
               - name: Malinoff
                 steam64: 76561198404402665
 
-              - name: Someoneulove
-                steam64: 76561198073942737
-
               - name: Teggy
                 steam64: 76561198356666755
 
