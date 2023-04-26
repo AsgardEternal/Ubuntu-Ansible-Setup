@@ -14,6 +14,7 @@ on:
           - vanilla
           - mee-french
           - tactical
+          - galac
 
 jobs:
 
