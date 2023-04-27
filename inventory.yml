@@ -96,29 +96,29 @@ all:
             members:
               - name: Lt_Longsword
                 steam64: 76561198373523022
-
+                
               - name: Freeman
                 steam64: 76561198329170534
-
+                
               - name: Coiffee
                 steam64: 76561198046579272
-
+                
               - name: Elon
                 steam64: 76561198203568744
-
+                
               - name: Kin_Seward
                 steam64: 76561198799111045
-
+                
               - name: Chemji
                 steam64: 76561199127559778
-
+                
               - name: wolf.rayne
                 steam64: 76561198107367726
                 
               - name: Skillet
                 comment: promoted 04-25-23
                 steam64: 76561198221715432
-
+                
           - name: Loki
             squadjs:
               admin_ping: false
