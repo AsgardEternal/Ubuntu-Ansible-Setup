@@ -100,9 +100,6 @@ all:
               - name: Freeman
                 steam64: 76561198329170534
 
-              - name: Omega
-                steam64: 76561199018771290
-
               - name: Coiffee
                 steam64: 76561198046579272
 
@@ -112,17 +109,8 @@ all:
               - name: Kin_Seward
                 steam64: 76561198799111045
 
-              - name: RangerSix
-                steam64: 76561198206734757
-
-              - name: Epimetheus
-                steam64: 76561199094282718
-
               - name: Chemji
                 steam64: 76561199127559778
-
-              - name: Mirage40K
-                steam64: 76561198059250541
 
               - name: wolf.rayne
                 steam64: 76561198107367726
