@@ -156,7 +156,10 @@ all:
               - name: Vaunt 
                 comment: promoted 4-25-2023
                 steam64: 76561198031865730
-
+                
+              - name: RIOTYouth1
+                comment: Admin 4-27-2023
+                steam64: 76561198209119887
 
           - name: Balder
             squadjs:
@@ -170,9 +173,6 @@ all:
               - canseeadminchat
               - reserve
             members:
-              - name: RIOTYouth1
-                comment: Jr Admin 4-13-2023
-                steam64: 76561198209119887
                 
               - name: Grand Slam AKA Val
                 comment: Jr Admin 4-16-2023
