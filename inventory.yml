@@ -313,18 +313,6 @@ all:
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
                 
-              - name: pdgeorge5
-                comment: 3rd Place Winner Seed Incentive Start 4 2 23 End 4 16 23
-                steam64: 76561198010920870
-                
-              - name: DaddyDan
-                comment: 4th Place Winner Seed Incentive Start 4 8 23 End 4 15 23
-                steam64: 76561198082213272
-                
-              - name: xXsussy_otakuXx
-                comment: 5th Place Winner Seed Incentive Start 4 2 23 End 4 9 23
-                steam64: 76561199132033615
-                
           - name: CAS
             permissions:
               - reserve
