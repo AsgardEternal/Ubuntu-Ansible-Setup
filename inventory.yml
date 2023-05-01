@@ -178,6 +178,10 @@ all:
                 comment: Jr Admin 4-16-2023
                 steam64: 76561199070771491
                 
+              - name: Shifty
+                comment: Jr Admin 4-26-2023
+                steam64: 76561198251723570
+                
           - name: Whitelist
             permissions:
               - reserve
