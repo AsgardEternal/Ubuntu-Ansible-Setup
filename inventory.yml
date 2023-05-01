@@ -317,6 +317,14 @@ all:
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
                 
+              - name: pdgeorge5
+                comment: 3rd Place April seeder ends 05-14-23
+                steam64: 76561198010920870
+                
+              - name: Sweetwater
+                comment: 4th Place April seeder ends 05-07-23
+                steam64: 76561198124658412
+                
           - name: CAS
             permissions:
               - reserve
