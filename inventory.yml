@@ -325,6 +325,10 @@ all:
                 comment: 4th Place April seeder ends 05-07-23
                 steam64: 76561198124658412
                 
+              - name: Sir Spuds
+                comment: Hypothermiack Request for his 1 week whitelist ends 05-09-23
+                steam64: 76561198124658412
+                
           - name: CAS
             permissions:
               - reserve
