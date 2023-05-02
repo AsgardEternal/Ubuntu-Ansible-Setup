@@ -327,7 +327,7 @@ all:
                 
               - name: Sir Spuds
                 comment: Hypothermiack Request for his 1 week whitelist ends 05-09-23
-                steam64: 76561198124658412
+                steam64: 76561198184296271
                 
           - name: CAS
             permissions:
