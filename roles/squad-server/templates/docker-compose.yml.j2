@@ -19,6 +19,10 @@ services:
           source: {{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/Admins.cfg
           target: /home/squadjs/SquadConfig/Admins.cfg
           read_only: true
+          
+        - type: bind
+          source: /home/asgard/git/DiscordWhitelist/extgrps/{{ server.docker.name }}-autowl.cfg
+          target: /home/squadjs/SquadJS/autowlfiles/{{ server.docker.name }}-autowl.cfg
 
         - type: volume
           source: squad-{{ server.docker.name }}-logs
