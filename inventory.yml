@@ -376,7 +376,7 @@ all:
         ban_urls: []
         remote_admin_hosts: []
         remote_admin_list: 
-          - vinalla-autowl
+          - vanilla-autowl
           - Einherjar
           - Balder
           - Loki
