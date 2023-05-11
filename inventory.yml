@@ -182,6 +182,10 @@ all:
                 comment: Jr Admin 4-26-2023
                 steam64: 76561198251723570
                 
+              - name: Scarface
+                comment: Jr Admin 5-11-2023
+                steam64: 76561198312514319
+                
           - name: Whitelist
             permissions:
               - reserve
