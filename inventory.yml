@@ -198,10 +198,6 @@ all:
                 comment: Added by MaX unlimited Whitelist
                 steam64: 76561198098735539
 
-              - name: Trippy Chivas
-                comment: devbryanbar@gmail.com
-                steam64: 76561198106004468
-
               - name: Mauro
                 comment: men1995@gmail.com
                 steam64: 76561198098391966
@@ -252,10 +248,6 @@ all:
               - name: Subterfuge
                 comment: jwlind@gmail.com
                 steam64: 76561197963075020
-
-              - name: Kybar
-                comment: carbarykyle@gmail.com
-                steam64: 76561198128034210
 
               - name: Juggernaut
                 comment: robledoaustin@yahoo.com
