@@ -458,8 +458,8 @@ all:
             - Loki
             - Thor
             - LIAISON
-            - Asgard Tactical INF
-            - Asgard Event Team
+            - Asgard%20Tactical%20INF
+            - Asgard%20Event%20Team
           ports:
             game: 7791
             query: 27169
