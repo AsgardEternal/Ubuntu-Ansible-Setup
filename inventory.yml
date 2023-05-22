@@ -410,12 +410,12 @@ all:
             - Manicouagan_Invasion_v2
             - Yehorivka_RAAS_v13
             - Mestia_Invasion_v2
-        - name: "[ASG] Asgard Eternal | Teamwork Required"
-          server_id: 5
+        - name: "[ASG] Asgard Eternal | Galactic Contention"
+          server_id: 4
           docker:
-            name: teamwork
+            name: galac
             images:
-              server: squad:latest
+              server: squad:galac-latest
               squadjs: squadjs:latest
 
           secrets:
