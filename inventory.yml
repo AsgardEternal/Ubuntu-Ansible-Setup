@@ -313,6 +313,18 @@ all:
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
                 
+              - name: pdgeorge5
+                comment: May Third Place seed insentive end 6 17 23
+                steam64: 76561198010920870
+                
+              - name: TheToxicTanker
+                comment: May 4th Place seed insentive end 6 8 23
+                steam64: 76561199000113460
+                
+              - name: Sir Spuds
+                comment: May 5th Place seed insentive end 6 8 23
+                steam64: 76561198184296271
+                
           - name: CAS
             permissions:
               - reserve
