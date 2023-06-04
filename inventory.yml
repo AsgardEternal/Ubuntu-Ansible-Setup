@@ -378,6 +378,7 @@ all:
           - Loki
           - Thor
           - LIAISON
+          - ASG%20Champions%20Of%20The%20Month
         messages:
           - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
           - Check out Asgard Discord https://discord.gg/asg
