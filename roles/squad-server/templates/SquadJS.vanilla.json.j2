@@ -312,7 +312,22 @@
       "instantSeedingModePlayerCount": 1,
       "nextLayerSeedingModePlayerCount": 30,
       "seedingGameMode": "Training"
-     }
+     },
+     {
+        "plugin": "Switch",
+        "commandPrefix": [ "!switch", "!change" ],
+        "enabled": true,
+        "discordClient": "discord",
+        "channelID": "1117217579921051718",
+        "switchCooldownHours": 2,
+        "switchEnabledMinutes": 5,
+        "doubleSwitchCommands": [ "!bug", "!stuck", "!doubleswitch", "!runningman" ],
+        "doubleSwitchCooldownHours": 0.5,
+        "doubleSwitchEnabledMinutes": 5,
+        "maxUnbalancedSlots": 5,
+        "switchToOldTeamAfterRejoin": true,
+        "database": "mysql"
+    }
   ],
   "logger": {
     "verboseness": {
