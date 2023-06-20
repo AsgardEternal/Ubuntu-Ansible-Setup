@@ -169,6 +169,10 @@ all:
                 comment: Jr Admin 4-26-2023
                 steam64: 76561198251723570
 
+              - name: 1stRB NinjaOfDeath
+                comment: Added by MaX
+                steam64: 76561198386944513
+
           - name: Balder
             squadjs:
               admin_ping: false
