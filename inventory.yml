@@ -193,6 +193,10 @@ all:
               - name: VanillaForsty
                 comment: Jr Admin 06-15-2023
                 steam64: 76561198383222393
+
+              - name: Pdgeorge5
+                comment: JR admin 06-23-2023
+                steam64: 76561198010920870
                 
           - name: Whitelist
             permissions:
