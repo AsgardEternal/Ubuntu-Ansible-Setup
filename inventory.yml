@@ -189,6 +189,10 @@ all:
               - name: Scarface
                 comment: Jr Admin 5-11-2023
                 steam64: 76561198312514319
+
+              - name: VanillaForsty
+                comment: Jr Admin 06-15-2023
+                steam64: 76561198383222393
                 
           - name: Whitelist
             permissions:
@@ -288,11 +292,7 @@ all:
               - name: HeyWhatchaDoin
                 comment: Attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198405495371
-
-              - name: VanillaForsty
-                comment: attached to imawsome404@yahoo.com - Xikky
-                steam64: 76561198383222393
-
+                
               - name: Bowlpacks
                 comment: attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198054422673
