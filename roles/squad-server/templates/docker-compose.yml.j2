@@ -84,7 +84,7 @@ services:
       MYSQL_USER: {{ squad_mysql.user }}
       MYSQL_PASSWORD: {{ squad_mysql.user_password }}
     volumes:
-      - /home/asgard/mysqldata:/var/lib/mysql:rw
+      - /home/asgard/mysqldata/mysql:/var/lib/mysql:rw
     ports:
       - 3306:3306/tcp
       - 3306:3306/udp
