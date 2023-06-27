@@ -84,7 +84,7 @@ services:
       MYSQL_USER: "'{{ squad_mysql.user }}'@'%'"
       MYSQL_PASSWORD: {{ squad_mysql.user_password }}
     volumes:
-      - mysql-data:/var/lib/mysql:rw
+      - /home/asgard/mysqldata:/var/lib/mysql:rw
     ports:
       - 3306:3306/tcp
       - 3306:3306/udp
@@ -95,5 +95,3 @@ volumes:
     squad-{{ server.docker.name }}-logs:
 
 {% endfor %}
-
-    mysql-data:
