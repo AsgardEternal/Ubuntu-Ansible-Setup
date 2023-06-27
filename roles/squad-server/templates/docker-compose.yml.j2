@@ -32,7 +32,7 @@ services:
             nocopy: true
 
         - type: volume
-          source: squadjs-{{ server.docker.name }}
+          source: squadjs-{{ server.docker.name }}-data
           target: /home/squadjs/data/
 
   squad-{{ server.docker.name }}:
@@ -86,14 +86,14 @@ services:
       MYSQL_USER: "'{{ squad_mysql.user }}'@'%'"
       MYSQL_PASSWORD: {{ squad_mysql.user_password }}
     volumes:
-      - mysql:/var/lib/mysql:rw
+      - mysql-data:/var/lib/mysql:rw
     ports:
       - 3306:3306/tcp
       - 3306:3306/udp
 
 volumes:
 {% for server in squad_servers %}
-    squadjs-{{ server.docker.name }}:
+    squadjs-{{ server.docker.name }}-data:
     squad-{{ server.docker.name }}-logs:
 
 {% endfor %}
