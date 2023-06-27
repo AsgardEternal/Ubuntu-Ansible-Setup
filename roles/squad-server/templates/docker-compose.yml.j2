@@ -81,7 +81,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: {{ squad_mysql.root_password }}
       MYSQL_DATABASE: {{ squad_mysql.database }}
-      MYSQL_USER: "'{{ squad_mysql.user }}'@'%'"
+      MYSQL_USER: {{ squad_mysql.user }}
       MYSQL_PASSWORD: {{ squad_mysql.user_password }}
     volumes:
       - /home/asgard/mysqldata:/var/lib/mysql:rw
