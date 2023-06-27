@@ -31,9 +31,7 @@ services:
           volume:
             nocopy: true
 
-        - type: volume
-          source: squadjs-{{ server.docker.name }}-data
-          target: /home/squadjs/data/
+        - squadjs-{{ server.docker.name }}-data:/home/squadjs/data:rw
 
   squad-{{ server.docker.name }}:
     image: {{ registry_site }}/{{ server.docker.images.server }}
