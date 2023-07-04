@@ -173,6 +173,14 @@ all:
                 comment: Added by MaX
                 steam64: 76561198386944513
 
+              - name: VanillaForsty
+                comment: Admin 06-15-2023
+                steam64: 76561198383222393
+
+              - name: Pdgeorge5
+                comment:  admin 06-23-2023
+                steam64: 76561198010920870
+
           - name: Balder
             squadjs:
               admin_ping: false
@@ -190,13 +198,7 @@ all:
                 comment: Jr Admin 5-11-2023
                 steam64: 76561198312514319
 
-              - name: VanillaForsty
-                comment: Jr Admin 06-15-2023
-                steam64: 76561198383222393
-
-              - name: Pdgeorge5
-                comment: JR admin 06-23-2023
-                steam64: 76561198010920870
+                
                 
           - name: Whitelist
             permissions:
