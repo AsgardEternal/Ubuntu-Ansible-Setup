@@ -169,10 +169,6 @@ all:
                 comment: Jr Admin 4-26-2023
                 steam64: 76561198251723570
 
-              - name: 1stRB NinjaOfDeath
-                comment: Added by MaX
-                steam64: 76561198386944513
-
               - name: VanillaForsty
                 comment: Admin 06-15-2023
                 steam64: 76561198383222393
@@ -330,6 +326,10 @@ all:
               - name: Sir Spuds
                 comment: May 5th Place seed insentive end 6 8 23
                 steam64: 76561198184296271
+
+              - name: 1stRB NinjaOfDeath
+                comment: Added by MaX
+                steam64: 76561198386944513
                 
           - name: CAS
             permissions:
