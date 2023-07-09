@@ -331,9 +331,13 @@ all:
                 comment: June Seed Incentive Winner Exp Aug 1st 23
                 steam64: 76561198288578416
 
-                - name: ASG SubTerfuge
+              - name: ASG SubTerfuge
                 comment: June Seed Incentive Winner Exp Aug 1st 23
                 steam64: 76561197963075020
+
+              - name: ASG Daddy Dan
+                comment: June Seed Incentive Winner Exp Aug 1st 23
+                steam64: 76561198082213272
                 
           - name: CAS
             permissions:
