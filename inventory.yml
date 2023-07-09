@@ -318,18 +318,22 @@ all:
               - name: "[NOT]TheSaltiestAround"
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
-                               
-              - name: TheToxicTanker
-                comment: May 4th Place seed insentive end 6 8 23
-                steam64: 76561199000113460
-                
-              - name: Sir Spuds
-                comment: May 5th Place seed insentive end 6 8 23
-                steam64: 76561198184296271
 
               - name: 1stRB NinjaOfDeath
                 comment: Added by MaX
                 steam64: 76561198386944513
+
+              - name: ASG TheToxicTanker
+                comment: June Seed Incentive Winner Exp Aug 1st 23
+                steam64: 76561199000113460
+
+              - name: ASG Kodakblackarack
+                comment: June Seed Incentive Winner Exp Aug 1st 23
+                steam64: 76561198288578416
+
+                - name: ASG SubTerfuge
+                comment: June Seed Incentive Winner Exp Aug 1st 23
+                steam64: 76561197963075020
                 
           - name: CAS
             permissions:
