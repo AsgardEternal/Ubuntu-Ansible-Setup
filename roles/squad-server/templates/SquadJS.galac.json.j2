@@ -30,11 +30,10 @@
       "dialect":"mysql",
       "host":"asgard.orion-technologies.io",
       "port":3306,
-      "username":"{{ squad_mysql.user }}",
-      "password":"{{ squad_mysql.user_password }}",
-      "database":"{{ squad_mysql.database }}"
+      "username":"squadjs",
+      "password":"{{server.secrets.rcon_password }}",
+      "database":"squadjs"
     }
-
   },
   "plugins": [
     {
@@ -44,7 +43,7 @@
       "kickMessage": "Unassigned - automatically removed",
       "frequencyOfWarnings": 30,
       "unassignedTimer": 360,
-      "playerThreshold": 90,
+      "playerThreshold": 50,
       "roundStartDelay": 900,
       "ignoreAdmins": true,
       "ignoreWhitelist": false
@@ -57,9 +56,9 @@
     },
     {
       "plugin": "CBLInfo",
-      "enabled": true,
+      "enabled": false,
       "discordClient": "discord",
-      "channelID": "1077010353147346984",
+      "channelID": "",
       "threshold": 6
     },
     {
@@ -85,16 +84,7 @@
       "enabled": true,
       "database": "mysql",
       "overrideServerID": null,
-      "seedingThreshold": 50,
-      "whitelistfilepath": "./autowlfiles/{{ server.docker.name }}-autowl.cfg",
-      "incseed": 40,
-      "decseed": 6
-    },
-    {
-      "plugin": "DiscordCheater",
-      "enabled": true,
-      "discordClient": "discord",
-      "channelID": "1101121798046765086"
+      "seedingThreshold": 50
     },
     {
       "plugin": "DiscordAdminBroadcast",
@@ -197,7 +187,7 @@
       "plugin": "DiscordServerStatus",
       "enabled": true,
       "discordClient": "discord",
-      "messageStore": "mysql",
+      "messageStore": "sqlite",
       "command": "!status",
       "disableSubscriptions": false,
       "updateInterval": 60000,
@@ -264,15 +254,15 @@
       "plugin": "SquadNameValidator",
       "enabled": true,
       "discordClient": "discord",
-      "channelID": "1066965049886908466",
+      "channelID": "1066978080364707880",
       "warningMessage": "Your squad has been disbanded due to a non-compliant name.",
       "rules": [
         {
           "description": "Disband every ARMOR/ARMOUR/VIC/VEHICLE and other variants",
           "type": "regex",
           "logic": "match=disband",
-          "rule": "/(a.?r ?m ?(?:o|e|a|u)* ?r)|((^| )v ?[ie] ?c ?($| ))|(v ?e ?h ?i ?c ?l ?e)|(i ?f ?v)|(a ?p ?c)/",
-          "warningMessage": "R9 | This name is not a valid vehicle claim! Please name your squad the vehicle you wish to claim."
+          "rule": "/(a.?r ?m ?(?:o|e|a|u)* ?r)|((^| )v ?i ?c ?($| ))|(v ?e ?h ?i ?c ?l ?e)|(i ?f ?v)|(a ?p ?c)/",
+          "warningMessage": "R9 | This name is not a valid vehicle claim!"
         }
       ]
     },
@@ -289,14 +279,14 @@
       "voteBroadcastInterval": 6,
       "numberRecentMapsToExlude": 4,
       "automaticSeedingMode": true,
-      "gamemodeWhitelist": [ "RAAS", "Invasion" ],
-      "layerFilteringMode": "blacklist",
-      "layerLevelBlacklist": [ "Kohat", "FoolsRoad", "Kamdesh", "Lashkar", "Logar", "Mestia", "Sumari", "Narva_Invasion_v5", "Narva_RAAS_v5", "Gorodok_RAAS_v04", "Fallujah_RAAS_v7", "AlBasrah_RAAS_v1", "Chora_Invasion", "Fallujah_Invasion", "GooseBay_Invasion_v3", "Gorodok_Invasion_v1", "Fallujah_RAAS_v6", "BlackCoast_Invasion_v2", "BlackCoast_Invasion_v1", "BlackCoast_Invasion_v3", "Mutaha_Invasion_v1", "Narva_Invasion_v3", "Skorpo_Invasion_v2", "Skorpo_Invasion_v3", "Skorpo_Invasion_v4", "Tallil_Tanks_v1", "Tallil_RAAS_v2", "Tallil_RAAS_v7", "Tallil_Invasion_v1", "Tallil_Invasion_v2", "Tallil_Invasion_v5", "Yehorivka_RAAS_v02", "Yehorivka_RAAS_v03", "Yehorivka_RAAS_v04", "Yehorivka_RAAS_v10", "Harju_Invasion_v1", "Harju_Invasion_v3", "Harju_Invasion_v4", "Harju_Invasion_v5", "Harju_RAAS_v2", "Harju_RAAS_v5", "Tallil_RAAS_v3" ],
-      "layerLevelWhitelist": [ "Anvil_RAAS_v4", "Belaya_RAAS_v1", "BlackCoast_RAAS_v1", "GooseBay_Invasion_v3", "Gorodok_Invasion_v2", "Gorodok_RAAS_v06", "Harju_RAAS_v4", "Narva_Invasion_v1", "Narva_RAAS_v2", "Yehorivka_RAAS_v01", "Yehorivka_RAAS_v02", "Gorodok_RAAS_v03", "Skorpo_Invasion_v2", "Belaya_Invasion_v3", "GooseBay_Invasion_v4", "GooseBay_RAAS_v1", "GooseBay_RAAS_v2", "Harju_Invasion_v4", "Mutaha_RAAS_v4", "Yehorivka_RAAS_v10", "Yehorivka_RAAS_v11", "Skorpo_RAAS_v5", "Yehorivka_RAAS_v05", "Skorpo_RAAS_v4", "BlackCoast_Invasion_v5", "BlackCoast_RAAS_v5", "Manicouagan_AAS_v4", "Manicouagan_Invasion_v8", "Manicouagan_Invasion_v9", "Manicouagan_RAAS_v10", "Manicouagan_RAAS_v11", "Manicouagan_RAAS_v12", "Manicouagan_RAAS_v13", "Manicouagan_RAAS_v14", "Manicouagan_RAAS_v15", "Narva_RAAS_v7", "Skorpo_Invasion_v1" ],
+      "gamemodeWhitelist": [ "RAAS", "Invasion", "AAS", "INV", "RINV", "INS" ],
+      "layerFilteringMode": "whitelist",
+      "layerLevelBlacklist": [ "Kohat", "FoolsRoad", "Kamdesh", "Lashkar", "Logar", "Mestia", "Sumari", "Narva_Invasion_v5", "Narva_RAAS_v5", "Gorodok_RAAS_v04", "Fallujah_RAAS_v7", "AlBasrah_RAAS_v1", "Chora_Invasion", "Fallujah_Invasion", "GooseBay_Invasion_v3", "Gorodok_Invasion_v1", "Fallujah_RAAS_v6", "BlackCoast_Invasion_v2", "BlackCoast_Invasion_v1", "BlackCoast_Invasion_v3", "Mutaha_Invasion_v1", "Narva_Invasion_v3", "Skorpo_Invasion_v2", "Skorpo_Invasion_v3", "Skorpo_Invasion_v4", "Tallil_Tanks_v1", "Tallil_RAAS_v2", "Tallil_RAAS_v7", "Tallil_Invasion_v1", "Tallil_Invasion_v2", "Tallil_Invasion_v5", "Yehorivka_RAAS_v02", "Yehorivka_RAAS_v03", "Yehorivka_RAAS_v04", "Yehorivka_RAAS_v10", "Harju_Invasion_v1", "Harju_Invasion_v3", "Harju_Invasion_v4", "Harju_Invasion_v5", "Harju_RAAS_v2", "Harju_RAAS_v5" ],
+      "layerLevelWhitelist": [ "TC_Tatooine_Seeding", "GC_Venator_Seed_V1", "GC_Coruscant_Seed_V1", "GC_BespinCloudCity_AAS_V1", "GC_BespinPlatforms_AAS_V1", "GC_BespinPlatforms_AAS_V2", "GC_BespinPlatforms_INV_V1", "GC_BespinPlatforms_Skirmish_V1", "GC_Coruscant_AAS_V1", "GC_CatoNeimoidia_AAS_V1", "GC_CatoNeimoidia_INV_V1", "GC_Galban_AAS_V1", "GC_Galban_AAS_V1_P1", "GC_Galban_INS_V1", "GC_Galban_INV_V1", "GC_Galban_INV_V1_P1", "GC_Galban_INV_V2", "GC_Galban_INV_V2_P1", "GC_Geonosis_AAS_V1", "GC_Geonosis_AAS_V2", "GC_Geonosis_INS_V1", "GC_Geonosis_INV_V1", "GC_Geonosis_INV_V2", "GC_Geonosis_INV_V3", "GC_Kashyyyk_AAS_V1", "GC_Kashyyyk_INS_V1", "GC_Kashyyyk_INV_V1", "GC_Kashyyyk_INV_V2", "GC_Kavado_INV_V1", "GC_Kavado_INV_V1_P1", "GC_Miniosis_AAS_V1", "GC_Miniosis_AAS_V2", "GC_MorakLegacy_INV_V1", "GC_MorakLegacy_AAS_V1", "GC_MorakLegacy_INS_V1", "GC_Morak2_RINV_V1", "GC_Morak2_INS_V1", "GC_Mygeeto_AAS_V1", "GC_Mygeeto_INV_V1", "GC_Mygeeto_INV_V1_2", "GC_NabooPlains_AAS_V1", "GC_NabooPlains_INV_V1", "GC_Rhenvar_AAS_V1", "GC_Rhenvar_INV_V1", "GC_Sesid_AAS_V1", "GC_Sesid_AAS_V2", "GC_Sesid_AAS_V3", "GC_Sesid_INV_V1", "GC_Sesid_INV_V2", "GC_Sullust_AAS_V1", "GC_Sullust_INV_V1", "GC_Sullust_INV_V2", "GC_Tatooine_AAS_V1", "GC_Tatooine_AAS_V1_P1", "GC_Tatooine_AAS_V1_Tusken_V_Tusken", "GC_Tatooine_INS_V1_Droids", "GC_Tatooine_INS_V1_Tusken", "GC_Tatooine_INV_V1", "GC_Tatooine_INV_V1_P1", "GC_Tatooine_INV_V2", "GC_Tatooine_INV_V2_P1", "GC_Tatooine_INV_V2_Tusken", "GC_YavinVillage_AAS_V1", "GC_YavinVillage_INV_V1", "GC_YavinVillage_INV_V2", "GC_YavinVillage_INS_V1", "GC_Venator_Skirmish_V1" ],
       "applyBlacklistToWhitelist": true,
       "factionsBlacklist": [],
       "minRaasEntries": 3,
-      "minGamemodeEntries": { "raas": 3, "invasion": 1 },
+      "minGamemodeEntries": { "aas": 3, "invasion": 1 },
       "hideVotesCount": false,
       "showRerollOption": true,
       "showRerollOptionInCustomVotes": false,
@@ -305,35 +295,20 @@
       "showWinnerBroadcastMessage": true,
       "allowedSameMapEntries": 2,
       "logToDiscord": true,
-      "channelID": "1087437388294406334",
-      "persistentDataFile": "/home/squadjs/mapvotepdata.data",
+      "channelID": "1100392613514858547",
+      "persistentDataFile": "/home/squadjs/data/mapvotepdata.data",
       "timezone": -4,
       "minimumVotesToAcceptResult": 1,
-      "instantSeedingModePlayerCount": 1,
+      "instantSeedingModePlayerCount": 2,
       "nextLayerSeedingModePlayerCount": 30,
-      "seedingGameMode": "Training"
-     },
-     {
-        "plugin": "Switch",
-        "commandPrefix": [ "!switch", "!change" ],
-        "enabled": true,
-        "discordClient": "discord",
-        "channelID": "1117217579921051718",
-        "switchCooldownHours": 2,
-        "switchEnabledMinutes": 5,
-        "doubleSwitchCommands": [ "!bug", "!stuck", "!doubleswitch", "!runningman" ],
-        "doubleSwitchCooldownHours": 0.5,
-        "doubleSwitchEnabledMinutes": 5,
-        "maxUnbalancedSlots": 5,
-        "switchToOldTeamAfterRejoin": true,
-        "database": "mysql"
-    }
+      "seedingGameMode": "Seed"
+     }
   ],
   "logger": {
     "verboseness": {
-      "SquadServer": 0,
-      "LogParser": 0,
-      "RCON": 3
+      "SquadServer": 1,
+      "LogParser": 1,
+      "RCON": 1
     },
     "colors": {
       "SquadServer": "yellowBright",
