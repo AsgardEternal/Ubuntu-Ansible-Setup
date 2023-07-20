@@ -193,6 +193,14 @@ all:
               - name: Scarface
                 comment: Jr Admin 5-11-2023
                 steam64: 76561198312514319
+                
+              - name: KodakBlackrack
+                comment: Jr Admmin 7-19-23
+                steam64: 76561198288578416
+
+              - name: TheToxicTanker
+                comment: Jr Admin 7-19-23
+                steam64: 76561199000113460
 
                 
                 
