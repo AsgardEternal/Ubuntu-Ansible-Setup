@@ -14,10 +14,9 @@ FROM base as build
 
 ENV PIP_DEFAULT_TIMEOUT=100 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
-    PIP_NO_CACHE_DIR=1 \
-    POETRY_VERSION=1.3.2
+    PIP_NO_CACHE_DIR=1
 
-RUN pip install "poetry==$POETRY_VERSION"
+RUN pip install "poetry"
 
 COPY pyproject.toml poetry.lock ./
 
