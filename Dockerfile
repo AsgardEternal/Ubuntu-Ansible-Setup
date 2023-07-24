@@ -22,6 +22,7 @@ COPY pyproject.toml poetry.lock ./
 
 RUN <<__EOR__
 poetry config virtualenvs.in-project true
+poetry lock
 poetry install --only=main,dev --no-root --no-ansi --no-interaction
 __EOR__
 
