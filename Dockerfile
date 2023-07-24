@@ -21,6 +21,7 @@ RUN pip install "poetry"
 COPY pyproject.toml poetry.lock ./
 
 RUN <<__EOR__
+apk add --no-cache build-base
 python -m pip install --upgrade pip
 pip --version
 poetry config virtualenvs.in-project true
