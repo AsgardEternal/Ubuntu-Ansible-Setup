@@ -2,7 +2,7 @@
 
 # hadolint global ignore=DL3003,DL3008
 
-FROM python:3.11-alpine3.17 as base
+FROM python:alpine as base
 
 ENV PYTHONFAULTHANDLER=1 \
     PYTHONHASHSEED=random \
