@@ -5,8 +5,8 @@ description = ""
 authors = ["Price Hiller <price@orion-technologies.io>"]
 
 [tool.poetry.dependencies]
-python = ">=3.10"
-ansible = ">=5.9.0"
+python = ">=3.11"
+ansible = ">=8.2.0"
 pywinrm = ">=0.4.3"
 
 [tool.poetry.dev-dependencies]
