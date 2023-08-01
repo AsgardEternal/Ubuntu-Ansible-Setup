@@ -397,7 +397,6 @@ all:
               permissions:
                 - reserve
               members:
-
                 - name: Killamajig
                   steam64: 76561198306338683
 
