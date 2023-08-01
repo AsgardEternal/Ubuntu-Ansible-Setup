@@ -78,6 +78,9 @@ all:
 
               - name: SooperGloo
                 steam64: 76561198855097026
+                
+              - name: wolf.rayne
+                steam64: 76561198107367726
 
           - name: Thor
             squadjs:
@@ -111,9 +114,6 @@ all:
                 
               - name: Chemji
                 steam64: 76561199127559778
-                
-              - name: wolf.rayne
-                steam64: 76561198107367726
                 
               - name: Skillet
                 comment: promoted 04-25-23
