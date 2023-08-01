@@ -392,7 +392,6 @@ all:
                 steam64: 76561198191984002
 
 
-
           - name: EXPAT
             permissions:
               - reserve
@@ -511,7 +510,7 @@ all:
               - name: Phantom
                 steam64: 76561199146666610
                   
-              - name:  Rock Fury
+              - name: Rock Fury
                 steam64: 76561197962067569
                   
               - name: Rulerofcookies
