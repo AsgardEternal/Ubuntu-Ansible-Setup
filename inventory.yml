@@ -450,6 +450,7 @@ all:
       superusers:
         - username: asgard
           public_keys:
+            - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDK2Y3vHottCwG79fbGQ6U8Vz9vP0HNcwIK2mWE21fuwcYTK3BMzYfTM22jb3IXgyUWZ9hsCIPrewgjWKbVIFkwwNfFDCie1TtOM5eepPzhGuGVs4Tny8iQul6RHAvXzBVRYV/6qWPdnZ9b7nRnH8GYU9epFDEYTNAMycmsJRBVCuYxGs9pjDFlflmkRG088xc4mU2hrz05QpXoU92ko3NCojdbNAmLrdv200VfvQFSYVevjOLR34dhRfhMBP9bLKwiREy/0mSEigjz62COCaZpdab3h25TnpdSekM+UDC+NOlRmPd+uYa5evx4O2Ii9G3GIzlIKCkIVyuGxpwrm+BTyqAn/grAImMEebCSqTxufCSxB4LPjIHa3LoouamW4acLw4cRNsWa8HIKwr2bI3NSEr+6S2DCSghv/LqL9k8jwfhzGZMHVvxFVRXWUWQh7wm0c+9k2zViX+JEJ73bR+2uEZj1jVMLUEHZOP5qm6o1KV7NSjqREkxYl/LGp8XXHPE= skillet@worklaptop
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ sam@orion
             - sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAINvi+FdQSbfTLQ9VPHggyjRGeNelQDoGWlwYAmO4AO67AAAABHNzaDo= sam@orion-fido
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFhyEqrO6GViZGUNNgobKYRI/rnc5NqTxUZrVWL9TSYV kinsher@asg
