@@ -331,6 +331,22 @@ all:
                 comment: Added by MaX
                 steam64: 76561198386944513
                 
+              - name: Wrath
+                comment:  Expires 9 9 2023
+                steam64: 76561198321121244
+
+              - name: NightsterHD
+                comment:  Expires 9 9 2023
+                steam64: 76561198035379744
+
+              - name: Jagernauted
+                comment:  Expires 9 9 2023
+                steam64: 76561198049739312
+
+              - name: Pharzuph
+                comment:  Expires 9 9 2023
+                steam64: 76561198307857974
+                
         ban_urls: []
         remote_admin_hosts: []
         remote_admin_list: 
