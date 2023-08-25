@@ -245,7 +245,7 @@ all:
                 steam64: 76561198059124010
 
               - name: Dick Deflator
-                comment: Whitelist for 4 month's started 03/11/2023/Ends 07/11/2023
+                comment: Whitelist for 4 months started 03/11/2023/Ends 07/11/2023
                 steam64: 76561199062085282
 
               - name: Bagels
@@ -327,9 +327,12 @@ all:
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
 
-              - name: 1stRB NinjaOfDeath
+              - name: "1stRB NinjaOfDeath"
                 comment: Added by MaX
                 steam64: 76561198386944513
+
+              - name: someoneulove
+                steam64: 76561198073942737
                 
         ban_urls: []
         remote_admin_hosts: []
