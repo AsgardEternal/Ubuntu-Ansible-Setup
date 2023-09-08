@@ -343,9 +343,10 @@ all:
           - Loki
           - Thor
           - LIAISON
-          - ASG%20Champions%20Of%20The%20Month
+          - ASG Champions Of The Month
           - expats
-          - ASG%20Affiliates
+          - ASG Affiliates
+          - Elevated Seeding Perms
         messages:
           - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
           - Check out Asgard Discord https://discord.gg/asg
@@ -426,8 +427,8 @@ all:
             - Loki
             - Thor
             - LIAISON
-            - Asgard%20Tactical%20INF
-            - Asgard%20Event%20Team
+            - Asgard Tactical INF
+            - Asgard Event Team
           ports:
             game: 7791
             query: 27169
