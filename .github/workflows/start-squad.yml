@@ -2,7 +2,7 @@ name: Start or Restart Squad Server
 
 on:
   schedule:
-    - cron: '40 14 * * *'
+    - cron: '40 14 */7 * *'
   workflow_dispatch:
     inputs:
       squad_server:
