@@ -78,7 +78,7 @@ all:
 
               - name: SooperGloo
                 steam64: 76561198855097026
-                
+
               - name: wolf.rayne
                 steam64: 76561198107367726
 
@@ -99,26 +99,26 @@ all:
             members:
               - name: Lt_Longsword
                 steam64: 76561198373523022
-                
+
               - name: Freeman
                 steam64: 76561198329170534
-                
+
               - name: Coiffee
                 steam64: 76561198046579272
-                
+
               - name: Elon
                 steam64: 76561198203568744
-                
+
               - name: Kin_Seward
                 steam64: 76561198799111045
-                
+
               - name: Chemji
                 steam64: 76561199127559778
-                
+
               - name: Skillet
                 comment: promoted 04-25-23
                 steam64: 76561198221715432
-                
+
           - name: Loki
             squadjs:
               admin_ping: false
@@ -140,31 +140,31 @@ all:
               - name: Rabbid_Squirrel
                 comment: promoted 12-26-22
                 steam64: 76561198081576045
-                
+
               - name: Madtopher
                 comment: promoted 04-25-2023
                 steam64: 76561199060693600
-                
+
               - name: Dr.hammerstien
                 comment: promoted 04-25-2023
                 steam64: 76561198037486479
-                
+
               - name: Rarg
                 comment: promoted 4-25-2023
                 steam64: 76561198073565669
-                
-              - name: Vaunt 
+
+              - name: Vaunt
                 comment: promoted 4-25-2023
                 steam64: 76561198031865730
-                
+
               - name: RIOTYouth1
                 comment: Admin 4-27-2023
                 steam64: 76561198209119887
-                
+
               - name: Grand Slam AKA Val
                 comment: Admin 5-9-2023
                 steam64: 76561199070771491
-                
+
               - name: Shifty
                 comment: Jr Admin 4-26-2023
                 steam64: 76561198251723570
@@ -188,12 +188,11 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members: 
-                
+            members:
               - name: Scarface
                 comment: Jr Admin 5-11-2023
                 steam64: 76561198312514319
-                
+
               - name: KodakBlackrack
                 comment: Jr Admmin 7-19-23
                 steam64: 76561198288578416
@@ -202,8 +201,6 @@ all:
                 comment: Jr Admin 7-19-23
                 steam64: 76561199000113460
 
-                
-                
           - name: Whitelist
             permissions:
               - reserve
@@ -302,7 +299,7 @@ all:
               - name: HeyWhatchaDoin
                 comment: Attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198405495371
-                
+
               - name: Bowlpacks
                 comment: attached to imawsome404@yahoo.com - Xikky
                 steam64: 76561198054422673
@@ -318,11 +315,11 @@ all:
               - name: fonzie141
                 comment: benmandino@gmail.com
                 steam64: 76561198056302525
-                
+
               - name: "Orion159044#1238 @T/5 Fairchild [29th ID]"
                 comment: orionbarclay7@gmail.com
                 steam64: 76561198170375391
-              
+
               - name: "[NOT]TheSaltiestAround"
                 comment: austinbuda99@gmail.com
                 steam64: 76561198107206903
@@ -333,10 +330,10 @@ all:
 
               - name: someoneulove
                 steam64: 76561198073942737
-                
+
         ban_urls: []
         remote_admin_hosts: []
-        remote_admin_list: 
+        remote_admin_list:
           - vanilla-autowl
           - Einherjar
           - Balder
