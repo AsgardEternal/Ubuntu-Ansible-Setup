@@ -452,3 +452,4 @@ all:
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFhyEqrO6GViZGUNNgobKYRI/rnc5NqTxUZrVWL9TSYV kinsher@asg
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILnF/FetuAprot8KjSIjod/kuJblCoZzS9xKJLz3TA/N skillet@skillet-laptop
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ github@actions
+            - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBrZWc/sqksZ5X4kUfqGHimLJx6KPqipgBVBXXnZMmhi bcrfo@BCR-SHB # Max Recon's  SSH Key
