@@ -18,6 +18,13 @@
         "type": "local",
         "source": "/home/squadjs/SquadConfig/Admins.cfg"
       }
+      {% for listsource in server.remote_admin_list %}
+      ,
+      {
+        "type": "remote",
+        "source": "http://asgard.orion-technologies.io:8000/?grpName={{ listsource | regex_replace(' ', '%20') }}"
+      }
+      {% endfor %}
     ]
   },
   "connectors": {
