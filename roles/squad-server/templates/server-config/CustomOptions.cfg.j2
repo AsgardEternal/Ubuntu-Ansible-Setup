@@ -2,20 +2,20 @@
 # This section used to exist in server.cfg
 
 // Amount of players needed to start Pre-Live countdown, integer. Default=50.
-#SeedPlayersThreshold=50
+SeedPlayersThreshold=60
 
 // After reaching the SeedPlayersThreshold, if some players disconnect but the current player count stays at or above this value, don’t stop the
 // Pre-Live countdown, integer. Should be greater than zero and less than SeedPlayersThreshold to be considered enabled. default=45. 
-#SeedMinimumPlayersToLive=45
+SeedMinimumPlayersToLive=50
 
 // Match length in seconds, integer. Default=21600 (6 hours)
-#SeedMatchLengthSeconds=21600
+SeedMatchLengthSeconds=14400
 
 // Enable or Disable availability of all kits during seeding phase, boolean (valid values are 0 and 1), default=1
 #SeedAllKitsAvailable=1
 
 // Initial number of tickets for both teams, integer. Default=100
-SeedInitialTickets=150
+SeedInitialTickets=100
 
 // Length of the pre-live countdown, float. Default=60.0
 SeedSecondsBeforeLive=10.0
