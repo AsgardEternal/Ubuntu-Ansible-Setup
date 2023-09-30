@@ -447,7 +447,7 @@ all:
       superusers:
         - username: asgard
           public_keys:
-            - no-touch-required sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIOdRagGApmTpY8Yt5HO5Pm5n8/nnoZRXFHfQes0+dstDAAAACnNzaDphc2dhcmQ= sam@orion # Sam's SSH Key
+            - no-touch-required sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIGIIZ499ytXTSwmK/sQiRSEkDpkSi7wh3Y8ft66a+yZsAAAACnNzaDphc2dhcmQ= sam@orion # Sam's ssh key
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFhyEqrO6GViZGUNNgobKYRI/rnc5NqTxUZrVWL9TSYV kinsher@asg # Kinsher's SSH Key
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILnF/FetuAprot8KjSIjod/kuJblCoZzS9xKJLz3TA/N skillet@skillet-laptop # Skillet's SSH Key
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ github@actions
