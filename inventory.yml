@@ -404,6 +404,7 @@ all:
             - JensensRange_USA-RGF
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
+          tk_auto_kick_enabled: false
           docker:
             name: tactical
             images:

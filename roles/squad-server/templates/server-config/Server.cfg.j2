@@ -67,9 +67,9 @@ ServerMessageInterval="1200"
 ForceNonSeamlessTravelIntervalSeconds=604800
 
 // The following are required for Licensed servers, but can be changed for non-licensed servers
-TKAutoKickEnabled="True"
-AutoTKBanNumberTKs="7"
-AutoTKBanTime="3600"
+TKAutoKickEnabled="{{ server.tk_auto_kick_enabled | default(true)}}"
+AutoTKBanNumberTKs="{{ server.tk_ban_number | default(10) }}"
+AutoTKBanTime="{{ server.tk_ban_time | default(20) }}"
 VehicleKitRequirementDisabled="false"
 AllowCommunityAdminAccess="true"
 
