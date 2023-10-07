@@ -48,7 +48,7 @@ UseVoteLayer="false"
 AllowTeamChanges="true"
 
 // If set to false, players can change teams regardless of team balance. Otherwise, the NumPlayersDiffForTeamChanges Value is used
-PreventTeamChangeIfUnbalanced="true"
+PreventTeamChangeIfUnbalanced="{{ server.prevent_team_change_if_unbalanced | default(true) }}"
 
 // Maximum Allowed difference in player count between teams. This takes into account the team the player leaves and the team the player joins
 NumPlayersDiffForTeamChanges="2"

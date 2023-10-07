@@ -405,6 +405,7 @@ all:
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
           tk_auto_kick_enabled: false
+          prevent_team_change_if_unbalanced: false
           docker:
             name: tactical
             images:
