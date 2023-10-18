@@ -384,12 +384,12 @@ all:
             - Manicouagan_Invasion_v2
             - Yehorivka_RAAS_v13
             - Mestia_Invasion_v2
-        - name: "[ASG] Asgard Eternal | Galactic Contention"
-          server_id: 4
+        - name: "[ASG] Asgard Eternal | MEE - Middle East Escalation"
+          server_id: 2
           docker:
-            name: galac
+            name: mee-french
             images:
-              server: squad:galac-latest
+              server: squad:mee-french-latest
               squadjs: squadjs:latest
 
           secrets:
