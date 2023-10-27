@@ -3,6 +3,7 @@ version: '3'
 services:
   registry:
     image: registry:latest
+    restart: unless-stopped
     container_name: docker-registry
     ports:
       - "5000:5000"
