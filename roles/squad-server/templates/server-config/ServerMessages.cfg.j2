@@ -1,4 +1,4 @@
 // {{ ansible_managed }}
-{% for message in server.messages %}
+{% for message in (server.messages or []) %}
 {{ message }}
 {% endfor %}
