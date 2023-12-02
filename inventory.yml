@@ -341,9 +341,6 @@ all:
           - ASG Affiliates
           - Elevated Seeding Perms
         messages:
-          - Welcome to Asgard Eternal! Remember to add Asgard to your favorites list!!
-          - Check out Asgard Discord https://discord.gg/asg
-          - Don't want to wait in the Q? Visit our Patreon page & get you one! https://patreon.com/ValhallaAsgard
         layers:
           - Gorodok_RAAS_v7
           - AlBasrah_Invasion_v8
