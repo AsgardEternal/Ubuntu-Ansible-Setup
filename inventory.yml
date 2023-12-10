@@ -82,6 +82,9 @@ all:
               - name: wolf.rayne
                 steam64: 76561198107367726
 
+              - name: Pears
+                steam64: 76561198010920870
+
           - name: Thor
             squadjs:
               admin_ping: false
