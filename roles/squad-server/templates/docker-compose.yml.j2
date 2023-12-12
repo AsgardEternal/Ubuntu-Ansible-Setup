@@ -72,6 +72,10 @@ services:
       - {{ server.ports.rcon }}:{{ server.ports.rcon }}/tcp
       - {{ server.ports.rcon }}:{{ server.ports.rcon }}/udp
 
+      # BEACON port
+      - "{{ server.ports.beacon }}-{{ server.ports.beacon|int + 22}}:{{ server.ports.beacon }}-{{ server.ports.beacon|int + 22}}/tcp"
+      - "{{ server.ports.beacon }}-{{ server.ports.beacon|int + 22}}:{{ server.ports.beacon }}-{{ server.ports.beacon|int + 22}}/udp"
+
 {% endfor %}
 
   mysql:
