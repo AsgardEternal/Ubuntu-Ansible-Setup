@@ -374,6 +374,7 @@ all:
             game: 7789
             query: 27167
             rcon: 21115
+            beacon: 15000
           layers:
             - BlackCoast_Invasion_v4
             - Gorodok_Invasion_v3
@@ -399,6 +400,7 @@ all:
             game: 7787
             query: 27165
             rcon: 21114
+            beacon: 15100
           layers:
             - JensensRange_USA-RGF
         - name: "[ASG] Asgard Eternal | Tactical"
@@ -427,6 +429,7 @@ all:
             game: 7791
             query: 27169
             rcon: 21116
+            beacon: 15200
           layers:
             - Harju_RAAS_V6
             - Narva_RAAS_v2
