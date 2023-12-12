@@ -356,6 +356,7 @@ all:
           game: 7787
           query: 27165
           rcon: 21114
+          beacon: 15000
 
       squad_servers:
         - name: "[ASG] Asgard Eternal | New Player Friendly"
