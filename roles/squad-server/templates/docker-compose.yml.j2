@@ -52,6 +52,7 @@ services:
       - GAMEPORT={{ server.ports.game }}
       - QUERYPORT={{ server.ports.query }}
       - RCONPORT={{ server.ports.rcon }}
+      - BEACONPORT={{ server.ports.beacon }}
       - FIXEDMAXPLAYERS={{ server.max_players | default(100) }}
       - RCON_PASSWORD={{ server.secrets.rcon_password }}
     ports:
