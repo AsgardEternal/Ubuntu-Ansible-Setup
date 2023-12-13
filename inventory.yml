@@ -103,9 +103,6 @@ all:
               - name: Freeman
                 steam64: 76561198329170534
 
-              - name: Coiffee
-                steam64: 76561198046579272
-
               - name: Elon
                 steam64: 76561198203568744
 
