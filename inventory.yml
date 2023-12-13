@@ -106,9 +106,6 @@ all:
               - name: Elon
                 steam64: 76561198203568744
 
-              - name: Kin_Seward
-                steam64: 76561198799111045
-
               - name: Chemji
                 steam64: 76561199127559778
 
@@ -134,10 +131,6 @@ all:
               - name: Frizz
                 steam64: 76561198339174737
 
-              - name: Rabbid_Squirrel
-                comment: promoted 12-26-22
-                steam64: 76561198081576045
-
               - name: Dr.hammerstien
                 comment: promoted 04-25-2023
                 steam64: 76561198037486479
@@ -154,21 +147,9 @@ all:
                 comment: Admin 4-27-2023
                 steam64: 76561198209119887
 
-              - name: Grand Slam AKA Val
-                comment: Admin 5-9-2023
-                steam64: 76561199070771491
-
               - name: Shifty
                 comment: Jr Admin 4-26-2023
                 steam64: 76561198251723570
-
-              - name: VanillaForsty
-                comment: Admin 06-15-2023
-                steam64: 76561198383222393
-
-              - name: Pdgeorge5
-                comment: admin 06-23-2023
-                steam64: 76561198010920870
 
           - name: Balder
             squadjs:
@@ -182,17 +163,6 @@ all:
               - canseeadminchat
               - reserve
             members:
-              - name: Scarface
-                comment: Jr Admin 5-11-2023
-                steam64: 76561198312514319
-
-              - name: KodakBlackrack
-                comment: Jr Admmin 7-19-23
-                steam64: 76561198288578416
-
-              - name: TheToxicTanker
-                comment: Jr Admin 7-19-23
-                steam64: 76561199000113460
 
           - name: Whitelist
             permissions:
