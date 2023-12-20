@@ -27,3 +27,4 @@
     - "{{ server.ports.query }}"
     - "{{ server.ports.query|int + 1 }}"
     - "{{ server.ports.rcon }}"
+    - "{{ server.ports.beacon }}"
