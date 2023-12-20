@@ -29,6 +29,7 @@ all:
           # This is for the discord admin ping
           - name: 1039155511066636329
             permissions: []
+            members: []
             squadjs:
               admin_ping: true
 
@@ -162,7 +163,7 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members:
+            members: []
 
           - name: Whitelist
             permissions:
