@@ -35,7 +35,7 @@
 //		The groups below are the defaults, add to or change them as needed:
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-{% for group in server.groups %}
+{% for group in (server.groups or []) %}
 Group={{ group.name }}:{{ group.permissions | join(',') }}
 {% endfor %}
 
@@ -50,9 +50,9 @@ Group={{ group.name }}:{{ group.permissions | join(',') }}
 //  Add your own below:
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-{% for group in server.groups %}
+{% for group in (server.groups or []) %}
 // === {{ group.name }} ===
-{% for member in group.members | default([]) %}
+{% for member in (group.members or []) %}
 Admin={{ member.steam64 }}:{{ group.name }} // {{ member.name }} - {{ member.comment | default('') }}
 {% endfor %}
 
