@@ -71,12 +71,6 @@ all:
               - name: SheHulk
                 steam64: 76561198067016254
 
-              - name: Malinoff
-                steam64: 76561198404402665
-
-              - name: SooperGloo
-                steam64: 76561198855097026
-
               - name: wolf.rayne
                 steam64: 76561198107367726
 
