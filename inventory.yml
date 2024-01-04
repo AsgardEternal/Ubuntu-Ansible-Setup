@@ -158,7 +158,7 @@ all:
               - canseeadminchat
               - reserve
             members:
-          - name: {ASG} FItzReigN
+              - name: {ASG} FItzReigN
                 comment: Gdawgeo2@gmail.com
                 steam64: 76561199225787710
 
