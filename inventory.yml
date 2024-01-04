@@ -157,7 +157,10 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members: []
+            members:
+          - name: {ASG} FItzReigN
+                comment: Gdawgeo2@gmail.com
+                steam64: 76561199225787710
 
           - name: Whitelist
             permissions:
