@@ -49,6 +49,7 @@ all:
               - config
               - cheat
               - featuretest
+              - clientdemos
             squadjs:
               admin_ping: false
             members:
@@ -91,6 +92,7 @@ all:
               - forceteamchange
               - canseeadminchat
               - reserve
+              - clientdemos
             members:
               - name: Lt_Longsword
                 steam64: 76561198373523022
