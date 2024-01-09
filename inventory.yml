@@ -334,10 +334,10 @@ all:
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_VANILLA_SQUADJS_DISCORD_TOKEN')}}"
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_VANILLA_SERVER_LICENSE')}}"
           ports:
-            game: 7789
-            query: 27167
-            rcon: 21115
-            beacon: 15000
+            game: 7787
+            query: 27165
+            rcon: 21114
+            beacon: 15100
           layers:
             - BlackCoast_Invasion_v4
             - Gorodok_Invasion_v3
@@ -360,10 +360,10 @@ all:
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_MEE_SQUADJS_DISCORD_TOKEN')}}"
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_MEE_SERVER_LICENSE')}}"
           ports:
-            game: 7787
-            query: 27165
-            rcon: 21114
-            beacon: 15100
+            game: 7789
+            query: 27167
+            rcon: 21115
+            beacon: 15000
           layers:
             - JensensRange_USA-RGF
         - name: "[ASG] Asgard Eternal | Tactical"
