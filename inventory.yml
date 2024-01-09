@@ -4,7 +4,7 @@ all:
   vars:
     server_timezone: America/Chicago
   hosts:
-    asgard.orion-technologies.io:
+    asgard-eternal.com:
       ansible_user: asgard
       squad_server_user: asgard
       squad_server_group: asgard
