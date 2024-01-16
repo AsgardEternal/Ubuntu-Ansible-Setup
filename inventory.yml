@@ -303,6 +303,7 @@ all:
           - expats
           - ASG Affiliates
           - Elevated Seeding Perms
+          - Active Whitelist
         messages:
         layers:
           - Gorodok_RAAS_v7
