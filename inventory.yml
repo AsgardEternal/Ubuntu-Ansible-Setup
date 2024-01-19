@@ -289,6 +289,12 @@ all:
 
               - name: someoneulove
                 steam64: 76561198073942737
+              
+              - name: Malinoff
+                steam64: 76561198404402665
+
+              - name: SooperGloo
+                steam64: 76561198855097026
 
         ban_urls: []
         remote_admin_hosts: []
