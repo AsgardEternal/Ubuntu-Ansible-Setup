@@ -426,3 +426,4 @@ all:
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILnF/FetuAprot8KjSIjod/kuJblCoZzS9xKJLz3TA/N skillet@skillet-laptop # Skillet's SSH Key
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHssdZ0i4vmFOWy49WmPujVEadMBxI+UvGJvFZwpziw+ github@actions
             - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBrZWc/sqksZ5X4kUfqGHimLJx6KPqipgBVBXXnZMmhi bcrfo@BCR-SHB # Max Recon's  SSH Key
+            - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFXaLeb1zZ4Pz4MLoGvk9RzTjsXP2aTWjnFN8kf/DeYq kscop@HomePC # Xikky's SSH Key
