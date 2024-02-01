@@ -394,7 +394,7 @@ all:
             - Gorodok_RAAS_v01
             - Chora_RAAS_v4
             - Yehorivka_Invasion_v1
-      registry_site: asgard.orion-technologies.io
+      registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
       registry_login_user: asgard

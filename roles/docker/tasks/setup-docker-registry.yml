@@ -44,7 +44,7 @@
 - name: Obtain SSL Certificate For Registry Site if Necessary
   become: true
   # yamllint disable-line rule:line-length
-  ansible.builtin.command: sudo certbot --nginx -d "{{ registry_site }}" -d "www.{{ registry_site }}" -m "{{ registry_site_email }}" --agree-tos --non-interactive
+  ansible.builtin.command: sudo certbot --nginx -d "{{ registry_site }}" -d "{{ registry_site }}" -m "{{ registry_site_email }}" --agree-tos --non-interactive
   when: not ssl_cert_stat.stat.exists
 
 - name: Create Docker Registry User
