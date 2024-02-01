@@ -5,6 +5,7 @@
     name: "{{ item.username }}"
     groups:
       - sudo
+      - docker
     create_home: true
     shell: /bin/bash
   loop: "{{ superusers }}"
