@@ -20,7 +20,7 @@ Password={{ server.secrets.rcon_password }}
 // connections to the server.
 // Alternatively, set this from the command line with the argument:
 //   RCONMAXCONNECTIONS=5
-MaxConnections=10
+MaxConnections=4098
 
 // Edit this to customize the number of seconds without contact from a connected
 // console before the server checks to see if the session is still active, or if
@@ -28,7 +28,7 @@ MaxConnections=10
 // to disable the timeout.
 // Alternatively, set this from the command line with the argument:
 //   RCONCONNECTIONTIMEOUT=300
-ConnectionTimeout=60
+ConnectionTimeout=300
 
 // Edit this to customize the number of seconds without contact from a connected
 // console before the server sends a TCP KEEPALIVE to check if the session is
@@ -42,4 +42,4 @@ SecondsBeforeTimeoutCheck=120
 // values between 0 and 3600 (1 hour). Set to zero to disable the timeout.
 // Alternatively, set this from the command line with the argument:
 //   RCONSECONDSBEFORETIMEOUTCHECK=5
-AuthenticationTimeout=5
+AuthenticationTimeout=30
