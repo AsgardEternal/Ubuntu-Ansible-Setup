@@ -1,7 +1,7 @@
 {
   "server": {
     "id": {{ server.server_id }},
-    "host": "asgard-eternal.com",
+    "host": "{{ ansible_host }}",
     "queryPort": {{ server.ports.query }},
     "rconPort": {{ server.ports.rcon }},
     "rconPassword": "{{ server.secrets.rcon_password }}",
