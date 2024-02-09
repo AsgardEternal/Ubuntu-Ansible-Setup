@@ -45,6 +45,106 @@
   },
   "plugins": [
     {
+        "plugin": "SquadBaiting",
+        "enabled": true,
+        "discordClient": "discord",
+        "channelID": "1205635258163404903",
+        "resetPlayerCountersAtNewGame": true,
+        "warnInGameAdmins": true,
+        "disableDefaultAdminWarns": false,
+        "roleChangeTriggersSquadBaiting": true,
+        "detectEarlySquadbaitingMinutes": 1,
+        "enforceEarlySquadBaitingAfterSeconds": 30,
+        "playerRules": [
+            {
+                "name": "Squad baiting is not allowed",
+                "enabled": true,
+                "discordLogging": false,
+                "baitingCounter": {
+                    "min": 0,
+                    "max": 6
+                },
+                "actions": [
+                    {
+                        "type": "rcon",
+                        "enabled": true,
+                        "content": "AdminWarn {old_leader:steamid} \"Squad baiting is not allowed\""
+                    }
+                ]
+            },
+            {
+                "name": "Kick player",
+                "enabled": true,
+                "discordLogging": true,
+                "baitingCounter": {
+                    "min": 7,
+                    "max": 15
+                },
+                "actions": [
+                    {
+                        "type": "rcon",
+                        "enabled": false,
+                        "content": "AdminKick {old_leader:steamid} \"Squad baiting not allowed\""
+                    }
+                ]
+            }
+        ],
+        "squadRules": [
+            {
+                "name": "Pre-disband warnings",
+                "enabled": true,
+                "baitingCounter": {
+                    "min": 4,
+                    "max": 5
+                },
+                "actions": [
+                    {
+                        "type": "rcon",
+                        "content": "AdminBroadcast \"Squad {squad:squadid} Team {squad:teamid} will be disbanded due to squad-baiting\""
+                    },
+                    {
+                        "type": "rcon",
+                        "content": "AdminDisbandSquad {squad:teamid} {squad:squadid}"
+                    },
+                    {
+                        "type": "warn-admins",
+                        "content": "{old_leader:name} is doing squadbaiting"
+                    }
+                ]
+            },
+            {
+                "name": "Disband warnings",
+                "enabled": true,
+                "baitingCounter": {
+                    "min": 6,
+                    "max": 10
+                },
+                "actions": [
+                    {
+                        "type": "rcon",
+                        "content": "AdminBroadcast \"Squad {squad:squadid} Team {squad:teamid} has been disbanded due to squad-baiting\""
+                    },
+                    {
+                        "type": "rcon",
+                        "content": "AdminDisbandSquad {squad:teamid} {squad:squadid}"
+                    }
+                ]
+            }
+        ],
+        "earlySquadBaitingRules": [
+            {
+                "name": "Disband",
+                "enabled": true,
+                "actions": [
+                    {
+                        "type": "rcon",
+                        "content": "AdminDisbandSquad {squad:teamid} {squad:squadid}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
       "plugin": "AutoKickUnassigned",
       "enabled": true,
       "warningMessage": "Join a squad, you are are unassigned and will be kicked",
