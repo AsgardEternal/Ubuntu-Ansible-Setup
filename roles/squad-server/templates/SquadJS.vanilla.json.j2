@@ -50,9 +50,9 @@
         "discordClient": "discord",
         "channelID": "1205635258163404903",
         "resetPlayerCountersAtNewGame": true,
-        "warnInGameAdmins": true,
-        "disableDefaultAdminWarns": false,
-        "roleChangeTriggersSquadBaiting": true,
+        "warnInGameAdmins": false,
+        "disableDefaultAdminWarns": true,
+        "roleChangeTriggersSquadBaiting": false,
         "detectEarlySquadbaitingMinutes": 1,
         "enforceEarlySquadBaitingAfterSeconds": 30,
         "playerRules": [
@@ -105,10 +105,6 @@
                     {
                         "type": "rcon",
                         "content": "AdminDisbandSquad {squad:teamid} {squad:squadid}"
-                    },
-                    {
-                        "type": "warn-admins",
-                        "content": "{old_leader:name} is doing squadbaiting"
                     }
                 ]
             },
