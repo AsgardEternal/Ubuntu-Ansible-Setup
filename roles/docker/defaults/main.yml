@@ -1,6 +1,6 @@
 ---
 # defaults file for docker
-registry_site: asgard.orion-technologies.io
+registry_site: asgard-eternal.com
 registry_site_email: price@orion-technologies.io
 registry_system_user: docker-reg
 registry_login_user: asgard

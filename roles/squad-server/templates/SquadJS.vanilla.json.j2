@@ -22,7 +22,7 @@
       ,
       {
         "type": "remote",
-        "source": "http://asgard.orion-technologies.io:8000/?grpName={{ listsource | regex_replace(' ', '%20') }}"
+        "source": "http://asgard-eternal.com:8000/?grpName={{ listsource | regex_replace(' ', '%20') }}"
       }
       {% endfor %}
     ]
@@ -35,7 +35,7 @@
     },
     "mysql": {
       "dialect":"mysql",
-      "host":"asgard.orion-technologies.io",
+      "host":"asgard-eternal.com",
       "port":3306,
       "username":"{{ squad_mysql.user }}",
       "password":"{{ squad_mysql.user_password }}",
