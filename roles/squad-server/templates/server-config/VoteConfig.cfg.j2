@@ -1,0 +1,33 @@
+// When using Level Vote, this value lets you control how many layers will be picked from your rotation and offered in each layer vote. Possible values from 2 to 6
+LayerOptionsNumber={{ server.vote.LayerOptionsNumber | default(6) }}
+// Duration of voting phase for next layer
+LayerVoteDuration={{ server.vote.LayerVoteDuration | default(45) }}
+// Duration of voting phase for each faction/team
+TeamVote_Duration={{ server.vote.TeamVote_Duration | default(60) }}
+// How many options will be presented on team/faction selection screen during voting. Possible values from 2 to 6
+TeamVoteOptionsNumber={{ server.vote.TeamVoteOptionsNumber | default(6) }}
+
+// If the number of players at the end of the match is less than this number then the next voting round uses a special pool that can have seeding or skirmish layers. Defined in LayerVotingLowPlayers.cfg
+LowPlayerCountThreshold={{ server.vote.LowPlayerCountThreshold | default(30) }}
+
+// Special rules to delay duplicated options in next match voting
+MapSkipRounds={{ server.vote.MapSkipRounds | default(1) }}
+GameModeSkipRounds={{ server.vote.GameModeSkipRounds | default(1) }}
+LayerSkipRounds={{ server.vote.LayerSkipRounds | default(1) }}
+FactionSkipRounds={{ server.vote.FactionSkipRounds | default(1) }}
+FactionSetupSkipRounds={{ server.vote.FactionSetupSkipRounds | default(1) }}
+
+// If true, there is an option to regenerate the map list. If it gets the most votes, the list is regenerated. The option is available only once.
+CanRegenerateLayerList={{ server.vote.CanRegenerateLayerList | default("true") }}
+
+// If true, there is an option to regenerate the faction list. If it gets the most votes, the list is regenerated. The option is available only once.
+CanRegenerateFactionList={{ server.vote.CanRegenerateFactionList | default("true") }}
+
+// If false, player vote count won't be displayed during voting
+DisplayVotes={{ server.vote.DisplayVotes | default("true") }}
+
+// Will display enemy info with details during voting process
+DisplayEnemyInfo={{ server.vote.DisplayEnemyInfo | default("true") }}
+
+// The first layer to start with in voting mode. This layer will be loaded as default each time the server starts
+FirstLayer={{ server.vote.FirstLayer | default("") }}

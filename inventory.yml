@@ -289,7 +289,7 @@ all:
 
               - name: someoneulove
                 steam64: 76561198073942737
-              
+
               - name: Malinoff
                 steam64: 76561198404402665
 
@@ -311,6 +311,18 @@ all:
           - Elevated Seeding Perms
           - Active Whitelist
         messages:
+        vote:
+        seed_layers:
+          - AlBasrah_Seed_v1
+          - BlackCoast_Seed_v1
+          - BlackCoast_Seed_v2
+          - Fallujah_Seed_v1
+          - Harju_Seed_v1
+          - Logar_Seed_v1
+          - Manicouagan_Seed_v1
+          - Mutaha_Seed_v1
+          - Sanxian_Seed_v1
+          - Sumari_Seed_v1
         layers:
           - Gorodok_RAAS_v7
           - AlBasrah_Invasion_v8
