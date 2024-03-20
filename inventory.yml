@@ -325,15 +325,79 @@ all:
           - Sumari_Seed_v1
         layers:
           - Gorodok_RAAS_v7
-          - AlBasrah_Invasion_v8
-          - Anvil_RAAS_v4
-          - Yehorivka_RAAS_v13
-          - Narva_RAAS_v1
-          - Kohat_RAAS_v1
+          - AlBasrah_Invasion_v1
+          - AlBasrah_Invasion_v2
+          - AlBasrah_RAAS_v1
+          - Anvil_Invasion_v1
+          - Anvil_RAAS_v1
+          - Anvil_RAAS_v2
+          - Belaya_Invasion_v1
+          - Belaya_Invasion_v2
+          - Belaya_RAAS_v1
+          - BlackCoast_Invasion_v1
+          - BlackCoast_Invasion_v2
+          - BlackCoast_RAAS_v1
+          - BlackCoast_RAAS_v2
+          - Chora_Invasion_v1
+          - Chora_Invasion_v2
+          - Chora_RAAS_v1
+          - Fallujah_Invasion_v1
+          - Fallujah_Invasion_v2
+          - Fallujah_RAAS_v1
+          - Fallujah_RAAS_v2
+          - FoolsRoad_Invasion_v1
+          - FoolsRoad_RAAS_v1
+          - FoolsRoad_RAAS_v2
+          - FoolsRoad_RAAS_v3
+          - GooseBay_Invasion_v1
           - GooseBay_RAAS_v1
+          - GooseBay_RAAS_v2
+          - Gorodok_Invasion_v1
+          - Gorodok_Invasion_v2
+          - Gorodok_RAAS_v1
+          - Gorodok_RAAS_v2
+          - Harju_Invasion_v1
+          - Harju_Invasion_v2
+          - Harju_Invasion_v3
+          - Harju_RAAS_v1
+          - Harju_RAAS_v2
+          - Kamdesh_Invasion_v1
+          - Kamdesh_RAAS_v1
+          - Kohat_RAAS_v1
+          - Kohat_Invasion_v1
+          - Kokan_Invasion_v1
+          - Kokan_RAAS_v1
+          - Kokan_RAAS_v2
+          - Lashkar_Invasion_v1
+          - Lashkar_RAAS_v1
+          - Logar_RAAS_v1
+          - Manicouagan_RAAS_v1
+          - Manicouagan_RAAS_v2
+          - Manicouagan_Invasion_v1
+          - Mestia_Invasion_v1
+          - Mestia_RAAS_v1
+          - Mutaha_Invasion_v1
+          - Mutaha_RAAS_v1
           - Mutaha_RAAS_v2
-          - BlackCoast_RAAS_v3
-          - Skorpo_RAAS_v4
+          - Narva_Invasion_v1
+          - Narva_Invasion_v2
+          - Narva_RAAS_v1
+          - Sanxian_Invasion_v1
+          - Sanxian_Invasion_v2
+          - Sanxian_RAAS_v1
+          - Sanxian_RAAS_v2
+          - Skorpo_Invasion_v1
+          - Skorpo_Invasion_v2
+          - Skorpo_RAAS_v1
+          - Sumari_Invasion_v1
+          - Sumari_RAAS_v1
+          - Tallil_Invasion_v1
+          - Tallil_RAAS_v1
+          - Tallil_RAAS_v2
+          - Yehorivka_Invasion_v1
+          - Yehorivka_Invasion_v2
+          - Yehorivka_RAAS_v1
+          - Yehorivka_RAAS_v2
         ports:
           game: 7787
           query: 27165
