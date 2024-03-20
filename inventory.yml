@@ -421,15 +421,6 @@ all:
             query: 27165
             rcon: 21114
             beacon: 15100
-          layers:
-            - BlackCoast_Invasion_v4
-            - Gorodok_Invasion_v3
-            - Gorodok_RAAS_v12
-            - Harju_RAAS_v6
-            - Manicouagan_Invasion_v2
-            - Manicouagan_Invasion_v2
-            - Yehorivka_RAAS_v13
-            - Mestia_Invasion_v2
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
           tk_auto_kick_enabled: false
@@ -457,19 +448,6 @@ all:
             query: 27169
             rcon: 21116
             beacon: 15200
-          layers:
-            - Harju_RAAS_V6
-            - Narva_RAAS_v2
-            - Fallujah_RAAS_v5
-            - Gorodok_RAAS_v12
-            - Belaya_RAAS_v1
-            - AlBasrah_Invasion_v7
-            - Yehorivka_RAAS_v08
-            - Mutaha_RAAS_v6
-            - Skorpo_RAAS_v4
-            - Gorodok_RAAS_v01
-            - Chora_RAAS_v4
-            - Yehorivka_Invasion_v1
       registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
