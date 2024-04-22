@@ -312,6 +312,9 @@ all:
           - Active Whitelist
         messages:
         vote:
+          FirstLayer: Sumari_Seed_v1
+          TeamVote_Duration: 20
+          LayerVoteDuration: 20
         seed_layers:
           - AlBasrah_Seed_v1
           - BlackCoast_Seed_v1
