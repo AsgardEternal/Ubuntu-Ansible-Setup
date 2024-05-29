@@ -312,7 +312,7 @@ all:
           - Active Whitelist
         messages:
         vote:
-          FirstLayer: Sumari_Seed_v1
+          FirstLayer: JensensRange_USA-RGF
           TeamVote_Duration: 20
           LayerVoteDuration: 20
         seed_layers:
