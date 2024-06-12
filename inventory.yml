@@ -367,8 +367,9 @@ all:
           - Kamdesh_Invasion_v1
           - Kamdesh_RAAS_v1
           - Kohat_RAAS_v1
+          - Kohat_RAAS_v2
           - Kohat_Invasion_v1
-          - Kokan_Invasion_v1
+          - Kokan_Invasion_v2
           - Kokan_RAAS_v1
           - Kokan_RAAS_v2
           - Lashkar_Invasion_v1
@@ -377,6 +378,7 @@ all:
           - Manicouagan_RAAS_v1
           - Manicouagan_RAAS_v2
           - Manicouagan_Invasion_v1
+          - Manicouagan_Invasion_v2
           - Mestia_Invasion_v1
           - Mestia_RAAS_v1
           - Mutaha_Invasion_v1
