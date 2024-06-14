@@ -118,9 +118,9 @@
 - name: Run Registry if it isn't Running
   become: true
   become_user: "{{ registry_system_user }}"
-  community.docker.docker_compose:
+  community.docker.docker_compose_v2:
     project_src: "./"
-    pull: true
+    pull: "always"
     state: present
     restarted: true
   when: registry_running.rc >= 1

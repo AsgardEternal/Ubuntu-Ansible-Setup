@@ -35,14 +35,13 @@
 
     - name: Start Squad Server Services
       when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
-      community.docker.docker_compose:
+      community.docker.docker_compose_v2:
         project_src: "{{ squad_servers_dir }}"
-        pull: true
+        pull: "always"
         services:
           - "squad-{{ server.docker.name }}"
           - "squadjs-{{ server.docker.name }}"
-        state: present
-        restarted: true
+        state: restarted
       loop: "{{ squad_servers }}"
       loop_control:
         label: "SQUAD SERVER -> {{ server.name }}"
@@ -50,13 +49,12 @@
 
     - name: Start Only Squadjs Server Services
       when: server.docker.name == squadjs_to_restart or squadjs_restart_all | bool
-      community.docker.docker_compose:
+      community.docker.docker_compose_v2:
         project_src: "{{ squad_servers_dir }}"
-        pull: true
+        pull: "always"
         services:
           - "squadjs-{{ server.docker.name }}"
-        state: present
-        restarted: true
+        state: restarted
       loop: "{{ squad_servers }}"
       loop_control:
         label: "SQUADJS -> {{ server.name }}"
