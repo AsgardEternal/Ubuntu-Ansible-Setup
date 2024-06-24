@@ -125,8 +125,6 @@ all:
               - changemap
               - forceteamchange
             members:
-              - name: Frizz
-                steam64: 76561198339174737
 
               - name: Dr.hammerstien
                 comment: promoted 04-25-2023
