@@ -125,7 +125,6 @@ all:
               - changemap
               - forceteamchange
             members:
-
               - name: Dr.hammerstien
                 comment: promoted 04-25-2023
                 steam64: 76561198037486479
@@ -293,6 +292,146 @@ all:
 
               - name: SooperGloo
                 steam64: 76561198855097026
+
+          - name: TCLSWhitelist
+            permissions:
+              - reserve
+            members:
+              - name: Hanbuxia
+                steam64: 76561198067930654
+
+              - name: ji_jiong9487
+                steam64: 76561198356909077
+
+              - name: Spes
+                steam64: 76561198123625812
+
+              - name: Fearless_tw
+                comment: Primary point of contact for TCLS whitelist
+                steam64: 76561198268457848
+
+              - name: skyychu
+                steam64: 76561199691730211
+
+              - name: Forensic
+                steam64: 76561198142481436
+
+              - name: weirdo0202
+                steam64: 76561199006636882
+
+              - name: stanhsu22
+                steam64: 76561198278488900
+
+              - name: alenekimo
+                steam64: 76561197992107496
+
+              - name: t7231562
+                steam64: 76561198182361675
+
+              - name: Bandit.oooo
+                steam64: 76561198391465755
+
+              - name: Qxz
+                steam64: 76561199174378874
+
+              - name: ToMo
+                steam64: 76561198013169247
+
+              - name: Stella
+                steam64: 76561199102823678
+
+              - name: josh1231031
+                steam64: 76561198449180318
+
+              - name: Dereck
+                steam64: 76561198425960311
+
+              - name: ShenhaoTW
+                steam64: 76561198404286245
+
+              - name: Yuzuriha
+                steam64: 76561198160147979
+
+              - name: LeiLei945
+                steam64: 76561198260949946
+
+              - name: 狂犬SAMA
+                steam64: 76561198125418352
+
+              - name: eglhi
+                steam64: 76561198150509929
+
+              - name: jim888222
+                steam64: 76561199087780543
+
+              - name: joesamTW
+                steam64: 76561198263293318
+
+              - name: ✪CorKiForChenYi
+                steam64: 76561198156050246
+
+              - name: I love 雪花ラミィ(willyfbi)
+                steam64: 76561199004712510
+
+              - name: dfe
+                steam64: 76561198816738661
+
+              - name: Takeshi
+                steam64: 76561199524890695
+
+              - name: bao
+                steam64: 76561197986346257
+
+              - name: Nui
+                steam64: 76561199555732876
+
+              - name: liray0909
+                steam64: 76561198423826492
+
+              - name: Whernher
+                steam64: 76561198248784394
+
+              - name: cowboyAs
+                steam64: 76561198424576401
+
+              - name: chui93056789
+                steam64: 76561198144254244
+
+              - name: Ben Dover
+                steam64: 76561198426001656
+
+              - name: Xiaohao
+                steam64: 76561198096665841
+
+              - name: LaoHuang
+                steam64: 76561198141417980
+
+              - name: TATAME0113
+                steam64: 76561198439194216
+
+              - name: KeyRC0816
+                steam64: 76561198314793872
+
+              - name: ZhuPai
+                steam64: 76561198088696714
+
+              - name: TurTle
+                steam64: 76561198169069846
+
+              - name: olleh
+                steam64: 76561198182343731
+
+              - name: 兎田ぺこら Pekora
+                steam64: 76561198817569243
+
+              - name: Blackyoo
+                steam64: 76561198092504025
+
+              - name: ♂BBM♂
+                steam64: 76561199070410002
+
+              - name: evanrecruit
+                steam64: 76561198309099265
 
         ban_urls: []
         remote_admin_hosts: []
