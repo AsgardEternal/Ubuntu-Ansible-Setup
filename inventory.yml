@@ -433,6 +433,30 @@ all:
               - name: evanrecruit
                 steam64: 76561198309099265
 
+              - name: Fong_Cow
+                steam64: 76561199228001354
+
+              - name: Solo
+                steam64: 76561199189398585
+
+              - name: Yvecca072_ttv
+                steam64: 76561198796948887
+
+              - name: Alpaca0204
+                steam64: 76561198206990771
+
+              - name: Guang
+                steam64: 76561199032407467
+
+              - name: 0927hongjun
+                steam64: 76561199014094293
+
+              - name: Hankuwu
+                steam64: 76561198122407531
+
+              - name: 190831PoPo
+                steam64: 76561198397160750
+
         ban_urls: []
         remote_admin_hosts: []
         remote_admin_list:
