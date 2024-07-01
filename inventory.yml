@@ -614,6 +614,23 @@ all:
             query: 27169
             rcon: 21116
             beacon: 15200
+        - name: "[ASG] Asgard Eternal | Steel Devision"
+          server_id: 4
+          docker:
+            name: steel-division
+            images:
+              server: squad:steel-division
+              squadjs: squadjs:latest
+          secrets:
+            rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
+            squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN') | default('')}}"
+            server_password: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVSION_SERVER_PASSWORD') | default('')}}"
+            license: ""
+          ports:
+            game: 7795
+            query: 27173
+            rcon: 21118
+            beacon: 15300
       registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg

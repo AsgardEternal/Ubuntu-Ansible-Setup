@@ -27,6 +27,8 @@ jobs:
         SQUAD_VANILLA_SERVER_LICENSE: "${{ secrets.squad_vanilla_server_license }}"
         SQUAD_VANILLA_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_vanilla_squadjs_discord_token }}"
 
+        SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_steel_division_squadjs_discord_token }}"
+
         SQUAD_MEE_SERVER_LICENSE: "${{ secrets.squad_mee_server_license }}"
         SQUAD_MEE_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_mee_squadjs_discord_token }}"
         
