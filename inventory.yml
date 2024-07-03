@@ -60,9 +60,6 @@ all:
               - name: Atrocity
                 steam64: 76561199101367413
 
-              - name: Xikky
-                steam64: 76561198001193856
-
               - name: iiTherRealMcCoy
                 steam64: 76561199028579724
 
