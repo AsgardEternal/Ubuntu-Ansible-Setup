@@ -78,6 +78,9 @@ all:
               - name: Pears
                 steam64: 76561198010920870
 
+              - name: FItzReigN
+                steam64: 76561199225787710
+
           - name: Thor
             squadjs:
               admin_ping: false
@@ -156,10 +159,7 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members:
-              - name: "{ASG} FItzReigN"
-                comment: Gdawgeo2@gmail.com
-                steam64: 76561199225787710
+            members: []
 
           - name: Whitelist
             permissions:
