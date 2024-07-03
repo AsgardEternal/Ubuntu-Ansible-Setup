@@ -81,6 +81,9 @@ all:
               - name: FItzReigN
                 steam64: 76561199225787710
 
+              - name: Greenterd
+                steam64: 76561198060911971
+
           - name: Thor
             squadjs:
               admin_ping: false
