@@ -635,7 +635,6 @@ all:
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN') | default('')}}"
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE') }}"
              messages:
-        vote:
           FirstLayer: SD_Johnsons_Range_PMCvUSSF
         seed_layers:
           - SD_Sumari_Seed_D_USSFvSOF
