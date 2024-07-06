@@ -161,6 +161,14 @@ all:
               - reserve
             members: []
 
+          - name: Liaison Admin Cam
+            permissions:
+              - cameraman
+            members:
+              - name: macnevin29id 
+                comment: Admin Cam Perms Only
+                steam64: 76561199379377310
+
           - name: Whitelist
             permissions:
               - reserve
