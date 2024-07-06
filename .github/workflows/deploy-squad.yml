@@ -30,9 +30,6 @@ jobs:
         SQUAD_STEEL_DIVISION_SERVER_LICENSE: "${{ secrets.squad_steel_division_server_license }}"
         SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_steel_division_squadjs_discord_token }}"
 
-        SQUAD_MEE_SERVER_LICENSE: "${{ secrets.squad_mee_server_license }}"
-        SQUAD_MEE_SQUADJS_DISCORD_TOKEN: "${{ secrets.squad_mee_squadjs_discord_token }}"
-
         SQUAD_TACTICAL_SQUADJS_DISCORD_TOKEN: "${{ secrets.SQUAD_TACTICAL_SQUADJS_DISCORD_TOKEN }}"
         SQUAD_TACTICAL_SERVER_PASSWORD: "${{ secrets.SQUAD_TACTICAL_SERVER_PASSWORD }}"
 
