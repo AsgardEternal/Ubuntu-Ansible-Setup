@@ -595,7 +595,7 @@ all:
             query: 27165
             rcon: 21114
             beacon: 15100
-            
+
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
           tk_auto_kick_enabled: false
@@ -623,7 +623,7 @@ all:
             query: 27169
             rcon: 21116
             beacon: 15200
-            
+
         - name: "[ASG] Asgard Eternal | Steel Devision"
           server_id: 4
           docker:
@@ -637,7 +637,7 @@ all:
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE') }}"
           seed_layers:
             - SD_Sumari_Seed_D_USSFvSOF
-            - SD_Sumari_Seed_D_PMCvRED 
+            - SD_Sumari_Seed_D_PMCvRED
             - SD_Sumari_Seed_N_USSFvRED
             - SD_Mutaha_Seed_D_USSFvSOF
             - SD_Fallujah_Seed_N_USSFvRED
