@@ -636,14 +636,14 @@ all:
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE') }}"
              messages:
           FirstLayer: SD_Johnsons_Range_PMCvUSSF
-        seed_layers:
+          seed_layers:
           - SD_Sumari_Seed_D_USSFvSOF
           - SD_Sumari_Seed_D_PMCvRED
           - SD_Sumari_Seed_N_USSFvRED
           - SD_Mutaha_Seed_D_USSFvSOF
           - SD_Fallujah_Seed_N_USSFvRED
           - SD_AlBasrah_Seed_D_TSFvRED
-        layers:
+          layers:
           - SD_Gorodok_RAAS_D_TSFvSOF
           - SD_BlackCoast_RAAS_N_TSFvSOF
           - SD_Mutaha_Invasion_N_USSFvSOF
