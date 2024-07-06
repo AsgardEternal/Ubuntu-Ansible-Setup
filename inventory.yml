@@ -632,8 +632,7 @@ all:
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN') | default('')}}"
-            server_password: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVSION_SERVER_PASSWORD') | default('')}}"
-            license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE')}}"
+            license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE') }}"
           ports:
             game: 7795
             query: 27173
