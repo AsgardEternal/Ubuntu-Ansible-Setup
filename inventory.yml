@@ -168,6 +168,9 @@ all:
               - name: macnevin29id
                 comment: Admin Cam Perms Only
                 steam64: 76561199379377310
+              - name: Squad Leader (gmg)
+                comment: Admin Cam Perms Only
+                steam64: 76561198077253406
 
           - name: Whitelist
             permissions:
