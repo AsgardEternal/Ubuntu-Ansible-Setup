@@ -165,7 +165,7 @@ all:
             permissions:
               - cameraman
             members:
-              - name: macnevin29id 
+              - name: macnevin29id
                 comment: Admin Cam Perms Only
                 steam64: 76561199379377310
 
