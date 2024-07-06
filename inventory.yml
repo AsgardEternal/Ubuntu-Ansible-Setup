@@ -634,29 +634,6 @@ all:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN') | default('')}}"
             license: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SERVER_LICENSE') }}"
-            messages:
-          FirstLayer: SD_Johnsons_Range_PMCvUSSF
-          seed_layers:
-            - SD_Sumari_Seed_D_USSFvSOF
-            - SD_Sumari_Seed_D_PMCvRED 
-            - SD_Sumari_Seed_N_USSFvRED
-            - SD_Mutaha_Seed_D_USSFvSOF
-            - SD_Fallujah_Seed_N_USSFvRED
-            - SD_AlBasrah_Seed_D_TSFvRED
-          layers:
-            - SD_Gorodok_RAAS_D_TSFvSOF
-            - SD_BlackCoast_RAAS_N_TSFvSOF
-            - SD_Mutaha_Invasion_N_USSFvSOF
-            - SD_Gorodok_RAAS_N_USSFvSOF
-            - SD_Narva_RAAS_D_TSFvSOFF
-            - SD_Yehorivka_Invasion_N_SOFvTSF
-            - SD_AlBasrah_RAAS_N_USSFvSOF
-            - SD_GooseBay_RAAS_N_PMCvUSSF
-            - SD_AlBasrah_Invasion_N_USSFvRED
-            - SD_Mutaha_RAAS_N_TSFvSOF
-            - SD_Yehorivka_RAAS_N_TSFvSOF
-            - SD_Fallujah_Invasion_N_TSFvRED
-            - SD_Mutaha_RAAS_D_REDvSOF
           ports:
             game: 7795
             query: 27173
