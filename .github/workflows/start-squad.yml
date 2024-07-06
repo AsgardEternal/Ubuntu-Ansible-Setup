@@ -12,10 +12,8 @@ on:
         options:
           - ALL
           - vanilla
-          - mee-french
+          - steel-division
           - tactical
-          - galac
-          - teamwork
 
 jobs:
 
