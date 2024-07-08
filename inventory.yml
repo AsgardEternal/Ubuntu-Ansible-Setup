@@ -648,7 +648,7 @@ all:
         - SD_Mutaha_RAAS_N_TSFvSOF
         - SD_Yehorivka_RAAS_N_TSFvSOF
         - SD_Fallujah_Invasion_N_TSFvRED
-          ports:
+            ports:
             game:  7795
             query:  27173
             rcon:  21118
