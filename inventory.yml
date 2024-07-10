@@ -54,7 +54,6 @@ all:
               admin_ping: false
             members:
               - name: Kinsher
-                comment: Server Administrator
                 steam64: 76561197986710399
 
               - name: Atrocity
@@ -104,11 +103,9 @@ all:
                 steam64: 76561199127559778
               
               - name: Rarg
-                comment:
                 steam64: 76561198073565669
               
               - name: ASG Xikky
-                comment:
                 steam64: 76561198001193856
 
               - name: ASG TheToxicTanker
@@ -153,7 +150,6 @@ all:
               - reserve
             members:
           - name: ASG Desert
-                comment:
                 steam64: 76561199128713687
 
           - name: ASG Moon
@@ -161,7 +157,6 @@ all:
                 steam64: 76561198848794268
 
           - name: ASG Wrath
-                comment:
                 steam64: 76561198321121244
 
           - name: Liaison Admin Cam
