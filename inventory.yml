@@ -633,7 +633,6 @@ all:
             images:
               server: squad:steel-division
               squadjs: squadjs:latest
-              buildid: 2432926361
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
             squadjs_discord_token: "{{ lookup('ansible.builtin.env', 'SQUAD_STEEL_DIVISION_SQUADJS_DISCORD_TOKEN') | default('')}}"
