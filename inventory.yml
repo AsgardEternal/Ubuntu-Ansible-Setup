@@ -97,19 +97,26 @@ all:
               - reserve
               - clientdemos
             members:
-              - name: Freeman
-                steam64: 76561198329170534
-
               - name: Elon
                 steam64: 76561198203568744
 
               - name: Chemji
                 steam64: 76561199127559778
+              
+              - name: Rarg
+                comment:
+                steam64: 76561198073565669
+              
+              - name: ASG Xikky
+                comment:
+                steam64: 76561198001193856
 
-              - name: Skillet
-                comment: promoted 04-25-23
-                steam64: 76561198221715432
-
+              - name: ASG TheToxicTanker
+                steam64: 76561199000113460
+                
+              - name: ASG Kodakblackarack
+                steam64: 76561198288578416
+                
           - name: Loki
             squadjs:
               admin_ping: false
@@ -125,25 +132,13 @@ all:
               - changemap
               - forceteamchange
             members:
-              - name: Dr.hammerstien
-                comment: promoted 04-25-2023
-                steam64: 76561198037486479
-
-              - name: Rarg
-                comment: promoted 4-25-2023
-                steam64: 76561198073565669
-
-              - name: Vaunt
-                comment: promoted 4-25-2023
-                steam64: 76561198031865730
-
               - name: RIOTYouth1
                 comment: Admin 4-27-2023
                 steam64: 76561198209119887
-
-              - name: Shifty
-                comment: Jr Admin 4-26-2023
-                steam64: 76561198251723570
+              
+              - name: ASG ScarFace
+                comment: Admin 4-27-2023
+                steam64: 76561198312514319
 
           - name: Balder
             squadjs:
@@ -156,7 +151,18 @@ all:
               - teamchange
               - canseeadminchat
               - reserve
-            members: []
+            members:
+          - name: ASG Desert
+                comment:
+                steam64: 76561199128713687
+
+          - name: ASG Moon
+                comment: aka Akuma
+                steam64: 76561198848794268
+
+          - name: ASG Wrath
+                comment:
+                steam64: 76561198321121244
 
           - name: Liaison Admin Cam
             permissions:
@@ -165,6 +171,7 @@ all:
               - name: macnevin29id
                 comment: Admin Cam Perms Only
                 steam64: 76561199379377310
+              
               - name: Squad Leader (gmg)
                 comment: Admin Cam Perms Only
                 steam64: 76561198077253406
@@ -204,10 +211,6 @@ all:
               - name: tcandan88(4skin)
                 comment: ducati979@aol.com
                 steam64: 76561198059124010
-
-              - name: Dick Deflator
-                comment: Whitelist for 4 months started 03/11/2023/Ends 07/11/2023
-                steam64: 76561199062085282
 
               - name: Bagels
                 comment: adroessler10@gmail.com
