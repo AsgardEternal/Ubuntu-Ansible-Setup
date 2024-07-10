@@ -97,9 +97,6 @@ all:
               - reserve
               - clientdemos
             members:
-              - name: Lt_Longsword
-                steam64: 76561198373523022
-
               - name: Freeman
                 steam64: 76561198329170534
 
@@ -303,6 +300,9 @@ all:
 
               - name: SooperGloo
                 steam64: 76561198855097026
+               
+              - name: Lt_Longsword
+                steam64: 76561198373523022 
 
           - name: TCLSWhitelist
             permissions:
