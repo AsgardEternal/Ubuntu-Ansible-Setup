@@ -149,14 +149,14 @@ all:
               - canseeadminchat
               - reserve
             members:
-          - name: ASG Desert
+              - name: ASG Desert
                 steam64: 76561199128713687
 
-          - name: ASG Moon
+              - name: ASG Moon
                 comment: aka Akuma
                 steam64: 76561198848794268
 
-          - name: ASG Wrath
+              - name: ASG Wrath
                 steam64: 76561198321121244
 
           - name: Liaison Admin Cam
