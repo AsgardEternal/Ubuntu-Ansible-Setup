@@ -640,6 +640,8 @@ all:
             query: 27173
             rcon: 21118
             beacon: 15300
+          seed_layers:
+            - SD_Sumari_Seed_D_USSFvSOF
       registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
