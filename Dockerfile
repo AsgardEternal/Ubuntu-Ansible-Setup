@@ -18,7 +18,7 @@ ENV PIP_DEFAULT_TIMEOUT=100 \
 
 RUN pip install "poetry"
 
-COPY pyproject.toml poetry.lock ./
+COPY pyproject.toml poetry.lock requirements.yml ./
 
 RUN <<__EOR__
 apk add --no-cache build-base
@@ -27,6 +27,7 @@ pip --version
 poetry config virtualenvs.in-project true
 poetry lock
 poetry install --only=main,dev --no-root --no-ansi --no-interaction
+poetry run ansible-galaxy install -r requirements.yml
 __EOR__
 
 FROM base as final
@@ -42,9 +43,5 @@ __EOR__
 COPY --from=build /app/.venv ./.venv
 COPY . .
 ENV PATH="${PATH}:/app/.venv/bin"
-
-RUN <<__EOR__
-ansible-galaxy install -r requirements.yml
-__EOR__
 
 ENTRYPOINT [ "/bin/sh" ]
