@@ -101,19 +101,19 @@ all:
 
               - name: Chemji
                 steam64: 76561199127559778
-              
+
               - name: Rarg
                 steam64: 76561198073565669
-              
+
               - name: ASG Xikky
                 steam64: 76561198001193856
 
               - name: ASG TheToxicTanker
                 steam64: 76561199000113460
-                
+
               - name: ASG Kodakblackarack
                 steam64: 76561198288578416
-                
+
           - name: Loki
             squadjs:
               admin_ping: false
@@ -132,7 +132,7 @@ all:
               - name: RIOTYouth1
                 comment: Admin 4-27-2023
                 steam64: 76561198209119887
-              
+
               - name: ASG ScarFace
                 comment: Admin 4-27-2023
                 steam64: 76561198312514319
@@ -166,7 +166,7 @@ all:
               - name: macnevin29id
                 comment: Admin Cam Perms Only
                 steam64: 76561199379377310
-              
+
               - name: Squad Leader (gmg)
                 comment: Admin Cam Perms Only
                 steam64: 76561198077253406
@@ -298,9 +298,9 @@ all:
 
               - name: SooperGloo
                 steam64: 76561198855097026
-               
+
               - name: Lt_Longsword
-                steam64: 76561198373523022 
+                steam64: 76561198373523022
 
           - name: TCLSWhitelist
             permissions:
