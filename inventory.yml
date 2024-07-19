@@ -640,8 +640,25 @@ all:
             query: 27173
             rcon: 21118
             beacon: 15300
+          vote:
+            FirstLayer: SD_Sumari_Seed_D_USSFvSOF
+            TeamVote_Duration: 20
+            LayerVoteDuration: 20
           seed_layers:
             - SD_Sumari_Seed_D_USSFvSOF
+          layers:
+            - SD_Gorodok_RAAS_D_TSFvSOF
+            - SD_Mutaha_RAAS_D_REDvSOF
+            - SD_BlackCoast_RAAS_N_TSFvSOF
+            - SD_Mutaha_Invasion_N_USSFvSOF
+            - SD_Narva_RAAS_D_TSFvSOFF
+            - SD_Gorodok_RAAS_N_USSFvSOF
+            - SD_Yehorivka_Invasion_N_SOFvTSF
+            - SD_AlBasrah_RAAS_N_USSFvSOF
+            - SD_GooseBay_RAAS_N_PMCvUSSF
+            - SD_AlBasrah_Invasion_N_USSFvRED
+            - SD_Mutaha_RAAS_N_TSFvSOF
+            - SD_Yehorivka_RAAS_N_TSFvSOF
       registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
