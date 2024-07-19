@@ -29,4 +29,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: "${{ vars.DOCKER_REGISTRY_URL }}/${{ vars.ANSIBLE_CONTAINER }}:latest"
+          cache-from: type=registry,ref=${{ vars.DOCKER_REGISTRY_URL }}/{{ vars.ANSIBLE_CONTAINER }}:latest
           cache-to: type=inline
