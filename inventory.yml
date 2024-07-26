@@ -641,7 +641,7 @@ all:
             rcon: 21118
             beacon: 15300
           vote:
-            FirstLayer: SD_Sumari_Seed_D_USSFvSOF
+            FirstLayer: SD_Johnsons_Range_SOFvUSSF
             TeamVote_Duration: 20
             LayerVoteDuration: 20
           seed_layers:
