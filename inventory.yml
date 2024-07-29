@@ -137,6 +137,9 @@ all:
                 comment: Admin 4-27-2023
                 steam64: 76561198312514319
 
+              - name: ASG Wrath
+                steam64: 76561198321121244
+
           - name: Balder
             squadjs:
               admin_ping: false
@@ -155,9 +158,6 @@ all:
               - name: ASG Moon
                 comment: aka Akuma
                 steam64: 76561198848794268
-
-              - name: ASG Wrath
-                steam64: 76561198321121244
 
           - name: Liaison Admin Cam
             permissions:
