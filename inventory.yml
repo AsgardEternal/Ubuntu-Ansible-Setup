@@ -171,6 +171,10 @@ all:
                 comment: Admin Cam Perms Only
                 steam64: 76561198077253406
 
+              - name: t7231562 (TCLS)
+                comment: Admin Cam Perms Only
+                steam64: 76561198182361675
+
           - name: Whitelist
             permissions:
               - reserve
