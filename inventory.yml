@@ -486,7 +486,7 @@ all:
           - Active Whitelist
         messages:
         vote:
-          FirstLayer: JensensRange_USA-RGF
+          FirstLayer: JensensRange_WPMC-TLF
           TeamVote_Duration: 20
           LayerVoteDuration: 20
         seed_layers:
