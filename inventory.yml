@@ -307,6 +307,7 @@ all:
                 steam64: 76561198373523022
 
               - name: Sweetwater
+                comment: Added by Max
                 steam64: 76561198124658412
 
           - name: TCLSWhitelist
