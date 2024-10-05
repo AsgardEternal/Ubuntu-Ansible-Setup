@@ -1,4 +1,3 @@
-{# vim:shiftwidth=2 #}
 # {{ ansible_managed }}
 
 services:
@@ -11,11 +10,11 @@ services:
         - "squad-{{ server.docker.name }}:squad"
     volumes:
         - type: bind
-          source: {{ squad_server_configs_dir }}/{{ server.docker.name }}/SquadJS.json
+          source: {{ squad_servers_dir }}/{{ server.docker.name }}/SquadJS.json
           target: /home/squadjs/SquadJS/config.json
 
         - type: bind
-          source: {{ squad_server_configs_dir }}/{{ server.docker.name }}/ServerConfig/Admins.cfg
+          source: {{ squad_servers_dir }}/{{ server.docker.name }}/SquadGame/ServerConfig/Admins.cfg
           target: /home/squadjs/SquadConfig/Admins.cfg
           read_only: true
 
@@ -41,7 +40,7 @@ services:
       - 8.8.4.4
       - 1.1.1.1
     volumes:
-      - {{ squad_server_configs_dir }}/{{ server.docker.name }}:/docker-mount/
+      - {{ squad_servers_dir }}/{{ server.docker.name }}:/home/steam/Squad-Server/
 
       - type: volume
         source: squad-{{ server.docker.name }}-logs
@@ -97,5 +96,4 @@ volumes:
 {% for server in squad_servers %}
     squadjs-{{ server.docker.name }}-data:
     squad-{{ server.docker.name }}-logs:
-
 {% endfor %}

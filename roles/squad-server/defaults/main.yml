@@ -3,7 +3,6 @@
 squad_server_user: asgard
 squad_server_group: asgard
 squad_servers_dir: "/home/{{ squad_server_user }}/Squad-Servers/"
-squad_server_configs_dir: "{{ squad_servers_dir }}/configs"
 squad_deploy_configs: true
 
 squad_server_to_restart: ""

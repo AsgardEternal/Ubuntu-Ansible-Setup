@@ -18,22 +18,22 @@
   become: true
   ansible.builtin.file:
     state: directory
-    path: "{{ squad_server_configs_dir }}"
+    path: "{{ squad_servers_dir }}"
     owner: "{{ squad_server_user }}"
     group: "{{ squad_server_group }}"
     mode: 0755
 
-- name: Create Squad Server Configuration Directories
+- name: Create Individual Squad Server Config Directories
   become: true
   ansible.builtin.file:
     state: directory
-    path: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
+    path: "{{ squad_servers_dir }}/{{ item.docker.name }}/SquadGame/ServerConfig"
     owner: "{{ squad_server_user }}"
     group: "{{ squad_server_group }}"
     mode: 0755
   loop: "{{ squad_servers }}"
   loop_control:
-    label: "{{ squad_server_configs_dir }}/{{ item.docker.name }}/ServerConfig"
+    label: "{{ squad_servers_dir }}/{{ item.docker.name }}"
 
 - name: Template In Squad Server's Docker Compose
   become: true
@@ -56,7 +56,7 @@
   become: true
   ansible.builtin.template:
     src: "SquadJS.{{ server.docker.name }}.json.j2"
-    dest: "{{ squad_server_configs_dir }}/{{ server.docker.name }}/SquadJS.json"
+    dest: "{{ squad_servers_dir }}/{{ server.docker.name }}/SquadJS.json"
     owner: "{{ squad_server_user }}"
     group: "{{ squad_server_group }}"
     mode: 0644
