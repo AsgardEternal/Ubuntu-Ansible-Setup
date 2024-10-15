@@ -632,7 +632,7 @@ all:
             query: 27169
             rcon: 21116
             beacon: 15200
-        - name: "[ASG] Asgard Eternal | Steel Devision"
+        - name: "[ASG] Asgard Eternal | Steel Division"
           server_id: 4
           docker:
             name: steel-division
