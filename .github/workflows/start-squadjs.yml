@@ -10,7 +10,7 @@ on:
         options:
           - ALL
           - vanilla
-          - steel-division
+          - global-escalation
           - tactical
 
 jobs:
