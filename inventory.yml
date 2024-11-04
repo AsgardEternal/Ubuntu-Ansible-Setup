@@ -635,9 +635,9 @@ all:
         - name: "[ASG] Asgard Eternal | Steel Division"
           server_id: 4
           docker:
-            name: steel-division
+            name: Global Escalation
             images:
-              server: squad:steel-division
+              server: squad:Global Escalation
               squadjs: squadjs:latest
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
@@ -649,7 +649,7 @@ all:
             rcon: 21118
             beacon: 15300
           vote:
-            FirstLayer: SD_Johnsons_Range_SOFvUSSF
+            FirstLayer:
             TeamVote_Duration: 20
             LayerVoteDuration: 20
           seed_layers:
