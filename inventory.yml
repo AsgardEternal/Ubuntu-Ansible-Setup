@@ -632,12 +632,12 @@ all:
             query: 27169
             rcon: 21116
             beacon: 15200
-        - name: "[ASG] Asgard Eternal | Steel Division"
+        - name: "[ASG] Asgard Eternal | Global Escalation"
           server_id: 4
           docker:
-            name: Global Escalation
+            name: global-escalation
             images:
-              server: squad:Global Escalation
+              server: squad:global-escalation
               squadjs: squadjs:latest
           secrets:
             rcon_password: "{{ lookup('ansible.builtin.env', 'SQUAD_RCON_PASSWORD')}}"
