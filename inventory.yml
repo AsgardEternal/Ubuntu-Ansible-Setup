@@ -838,7 +838,6 @@ all:
             - GE_Yehorivka_Skirmish_v1_UAFI-VDV
             - GE_Yehorivka_Skirmish_v2_UAFI-VDV
             - GE_Yehorivka_Skirmish_v2_USSF-WAGPMC
-            
       registry_site: asgard-eternal.com
       registry_site_email: price@orion-technologies.io
       registry_system_user: docker-reg
