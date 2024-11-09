@@ -652,10 +652,10 @@ all:
             FirstLayer: JensensRange_WPMC-TLF
             TeamVote_Duration: 20
             LayerVoteDuration: 20
-          seed_layers:  
+          seed_layers:
             - GE_Sumari_Seed_v3_TAF-AQINS
             - GE_Sumari_Seed_v4_RUSOF-USMC
-            - GE_Sumari_Seed_v5_FDF-AQINS 
+            - GE_Sumari_Seed_v5_FDF-AQINS
             - GE_Fallujah_Seed_v10_FDF-KG
             - GE_Fallujah_Seed_v1_HAMAS-WAGPMC
             - GE_Fallujah_Seed_v2_HAMAS-IDF
