@@ -159,10 +159,6 @@ all:
                 comment: aka Akuma
                 steam64: 76561198848794268
 
-              - name: ASG Leithal
-                comment: Kinshers brother
-                steam64: 76561198202505234
-
           - name: Liaison Admin Cam
             permissions:
               - cameraman
@@ -317,6 +313,10 @@ all:
               - name: Sweetwater
                 comment: Added by Max
                 steam64: 76561198124658412
+
+              - name: Leithal
+                comment: Kinshers brother
+                steam64: 76561198202505234
 
           - name: TCLSWhitelist
             permissions:
