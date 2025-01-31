@@ -186,6 +186,10 @@ all:
               - name: Frizz
                 comment: 
                 steam64: 76561198339174737
+ 
+              - name: {ASG} CClay40
+                comment: Added by MaX coby.clay40@gmail.com
+                steam64: 76561198101854862
 
               - name: Mauro
                 comment: men1995@gmail.com
