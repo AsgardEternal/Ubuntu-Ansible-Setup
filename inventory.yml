@@ -524,15 +524,17 @@ all:
           - Sanxian_Seed_v1
           - Sumari_Seed_v1
         layers:
-          - AlBasrah_Invasion_v3
+          - AlBasrah_Invasion_v1
           - AlBasrah_Invasion_v2
+          - AlBasrah_Invasion_v3
           - AlBasrah_RAAS_v1
-          - AlBasrah_RAAS_V2
+          - AlBasrah_RAAS_v2
           - Anvil_Invasion_v1
           - Anvil_RAAS_v1
           - Anvil_RAAS_v2
           - BlackCoast_Invasion_v1
           - BlackCoast_Invasion_v2
+          - BlackCoast_Invasion_v3
           - BlackCoast_RAAS_v1
           - BlackCoast_RAAS_v2
           - Chora_Invasion_v1
@@ -549,6 +551,7 @@ all:
           - GooseBay_RAAS_v2
           - Gorodok_Invasion_v1
           - Gorodok_Invasion_v2
+          - Gorodok_Invasion_v2
           - Gorodok_RAAS_v1
           - Gorodok_RAAS_v2
           - Harju_Invasion_v1
@@ -561,10 +564,9 @@ all:
           - Kohat_RAAS_v1
           - Kohat_RAAS_v2
           - Kohat_Invasion_v1
-          - Kokan_Invasion_v2
+          - Kohat_Invasion_v2
+          - Kokan_Invasion_v1
           - Kokan_RAAS_v1
-          - Kokan_RAAS_v2
-          - Lashkar_Invasion_v1
           - Lashkar_RAAS_v1
           - Logar_RAAS_v1
           - Manicouagan_RAAS_v1
@@ -595,6 +597,7 @@ all:
           - Yehorivka_Invasion_v2
           - Yehorivka_RAAS_v1
           - Yehorivka_RAAS_v2
+
         ports:
           game: 7787
           query: 27165
@@ -617,7 +620,11 @@ all:
             game: 7787
             query: 27165
             rcon: 21114
-            beacon: 15100
+            beacon: 15000
+          vote:
+            FirstLayer: JensensRange_AFU-RGF
+            TeamVote_Duration: 20
+            LayerVoteDuration: 20
 
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
