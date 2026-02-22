@@ -114,6 +114,9 @@ all:
               - name: ASG Kodakblackarack
                 steam64: 76561198288578416
 
+              - name: Chief Daft (temp for Jensens)
+                steam64: 76561198220172148
+
           - name: Loki
             squadjs:
               admin_ping: false
