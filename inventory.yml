@@ -512,9 +512,9 @@ all:
           - Active Whitelist
         messages:
         vote:
-          FirstLayer: JensensRange_AFU-RGF
-          TeamVote_Duration: 20
-          LayerVoteDuration: 20
+          FirstLayer: JensensRange_WPMC-TLF
+          TeamVote_Duration: 30
+          LayerVoteDuration: 30
         seed_layers:
           - AlBasrah_Seed_v2
           - BlackCoast_Seed_v1
@@ -525,12 +525,14 @@ all:
           - Mutaha_Seed_v1
           - Sanxian_Seed_v1
           - Sumari_Seed_v1
+          - Manicouagan_Seed_v2_CL
         layers:
           - AlBasrah_Invasion_v1
           - AlBasrah_Invasion_v2
           - AlBasrah_Invasion_v3
           - AlBasrah_RAAS_v1
           - AlBasrah_RAAS_v2
+          - Al_Basrah_AAS_v3_CL
           - Anvil_Invasion_v1
           - Anvil_RAAS_v1
           - Anvil_RAAS_v2
@@ -561,6 +563,7 @@ all:
           - Harju_Invasion_v3
           - Harju_RAAS_v1
           - Harju_RAAS_v2
+          - Harju_RAAS_v3_CL
           - Kamdesh_Invasion_v1
           - Kamdesh_RAAS_v1
           - Kohat_RAAS_v1
@@ -587,6 +590,7 @@ all:
           - Sanxian_Invasion_v2
           - Sanxian_RAAS_v1
           - Sanxian_RAAS_v2
+          - Sanxian_RAAS_v3_CL
           - Skorpo_Invasion_v1
           - Skorpo_Invasion_v2
           - Skorpo_RAAS_v1
