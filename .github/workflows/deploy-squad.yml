@@ -67,3 +67,9 @@ jobs:
         env:
           DOCKER_REGISTRY_PASSWORD: "${{ secrets.DOCKER_REGISTRY_PASSWORD }}"
         run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook --private-key="${HOME}/.ssh/key" ./playbook.yml --tags=squad
+        
+      - name: Unlock Workspace Permissions
+        run: sudo chown -R $USER:$USER ${{ github.workspace }} || true
+
+      - name: checkout repo
+        uses: actions/checkout@v4
