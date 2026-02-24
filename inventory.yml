@@ -628,9 +628,9 @@ all:
             rcon: 21114
             beacon: 15000
           vote:
-            FirstLayer: JensensRange_AFU-RGF
-            TeamVote_Duration: 20
-            LayerVoteDuration: 20
+            FirstLayer: JensensRange_WPMC-TLF
+            TeamVote_Duration: 30
+            LayerVoteDuration: 30
 
         - name: "[ASG] Asgard Eternal | Tactical"
           server_id: 3
