@@ -26,6 +26,7 @@
       ansible.builtin.pip:
         name: "{{ item.name }}"
         version: "{{ item.version }}"
+        extra_args: --break-system-packages
       loop:
         - name: docker
           version: 6.0.1
