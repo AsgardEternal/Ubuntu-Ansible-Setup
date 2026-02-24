@@ -31,9 +31,6 @@
         - name: docker
           version: 6.0.1
 
-        - name: docker-compose
-          version: 1.29.2
-
     - name: Start Squad Server Services
       when: server.docker.name == squad_server_to_restart or squad_restart_all | bool
       community.docker.docker_compose_v2:
