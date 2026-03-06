@@ -425,7 +425,7 @@ all:
           beacon: 15000
 
       squad_servers:
-        - name: "[ASG] Asgard Eternal | New Player Friendly"
+        - name: "[ASG] Asgard Eternal | US East - High Performance"
           server_id: 1
           docker:
             name: vanilla
